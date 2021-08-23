@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://e-spirit.github.io/Antora/component-b/dev/index.html</loc>
-<lastmod>2021-08-23T11:47:57.967Z</lastmod>
-</url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-component-b.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-fsxa-pwa.xml</loc>
+</sitemap>
+</sitemapindex>
