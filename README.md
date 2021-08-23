@@ -1,2 +1,2 @@
 # Antora
-our first Antora project
+Our first Antora project
