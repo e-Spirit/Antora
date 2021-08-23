@@ -1,2 +1,2 @@
 # Antora
-Infrastructure
+our first Antora project
