@@ -14,10 +14,12 @@ content:
       branches: [TNG-959-antora-navigation, TNG-950_antora_prototype.extra]
     - url: https://github.com/pahl-espirit/ecom.git
       branches: [main]
+    - url: https://github.com/pahl-espirit/ecom.git
+      branches: [main]
       start_path: Spryker
     - url: https://github.com/pahl-espirit/ecom.git
       branches: [main]
-      start_path: Spartacus      
+      start_path: Spartacus            
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
