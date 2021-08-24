@@ -6,4 +6,7 @@
 <sitemap>
 <loc>https://e-spirit.github.io/Antora/sitemap-fsxa-pwa.xml</loc>
 </sitemap>
+<sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-fsxa-ui.xml</loc>
+</sitemap>
 </sitemapindex>
