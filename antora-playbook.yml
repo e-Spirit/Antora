@@ -10,6 +10,8 @@ content:
     - url: git@github.com:e-Spirit/fsxa-pwa.git
       branches: [TNG-959-antora-navigation]
       start_path: docs
+    - url: git@github.com:e-Spirit/fsxa-ui.git
+      branches: [TNG-959-antora-navigation, TNG-950_antora_prototype.extra]      
 ui:
   bundle:
     url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
