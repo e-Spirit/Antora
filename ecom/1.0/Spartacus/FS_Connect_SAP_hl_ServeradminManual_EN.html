@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>FirstSpirit Connect (Headless) for SAP: Documentation for Server Administrators :: CrownSpirit Documentation</title>
+    <link rel="canonical" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/FS_Connect_SAP_hl_ServeradminManual_EN.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://e-spirit.github.io/Antora">CrownSpirit Documentation</a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Cloud</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Headless</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">E-Commerce</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Service A</a>
+            <a class="navbar-item" href="#">Service B</a>
+            <a class="navbar-item" href="#">Service C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">FirstSpirit</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Crownpeak</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="ecom" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">E-Commerce</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <span class="nav-text">Welcome</span>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Spryker/index.html">Spryker</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Spryker/EN/introduction/introduction.html">Introduction</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Spryker/EN/introduction/functions.html">Range of functions</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Spryker/EN/introduction/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Spryker/EN/introduction/concept.html">Concept</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Spryker/EN/introduction/requirements.html">Technical requirements</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Spryker/EN/introduction/important-information.html">Important information</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Spryker/EN/spryker-installation/spryker-installation.html">Spryker - Installation and Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Spryker/EN/fs-installation/fs-installation.html">FirstSpirit - Installation and Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Spryker/EN/referenceproject/referenceproject.html">Reference Project</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="index.html">Spartacus</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">E-Commerce</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../component-b/dev/index.html">CrownSpirit Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../component-b/dev/index.html">dev</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">E-Commerce</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pwa/1.3.0/index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pwa/1.3.0/index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../component-b/dev/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">E-Commerce</a></li>
+    <li><a href="FS_Connect_SAP_hl_ServeradminManual_EN.html">FirstSpirit Connect (Headless) for SAP: Documentation for Server Administrators</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/pahl-espirit/ecom/edit/main/modules/Spartacus/pages/FS_Connect_SAP_hl_ServeradminManual_EN.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">FirstSpirit Connect (Headless) for SAP: Documentation for Server Administrators</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_introduction">1. Introduction</a>
+<ul class="sectlevel2">
+<li><a href="#_range_of_functions">1.1. Range of functions</a></li>
+<li><a href="#_architecture">1.2. Architecture</a></li>
+</ul>
+</li>
+<li><a href="#_installation_and_configuration">2. Installation and Configuration</a>
+<ul class="sectlevel2">
+<li><a href="#_installation_of_the_modules">2.1. Installation of the modules</a></li>
+<li><a href="#fs-projectimport">2.2. Project import</a></li>
+<li><a href="#install_wcomp">2.3. Adding the web components</a></li>
+</ul>
+</li>
+<li><a href="#_legal_notices">3. Legal notices</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Customers' expectations of modern e-commerce shop systems are becoming increasingly diverse:
+In addition to the pure display of product catalogs, they must provide customers with unique and personalized shopping experiences.
+Thereby, customers want to be addressed via all channels and devices used by them.
+The number of touchpoints used is therefore unlimited.</p>
+</div>
+<div class="paragraph">
+<p>The <em>FirstSpirit Connect (Headless) for SAP Commerce Cloud</em> integration links the Digital Experience Platform FirstSpirit with the e-commerce shop system SAP Commerce Cloud in combination
+with the <a href="https://sap.github.io/cloud-commerce-spartacus-storefront-docs/">Spartacus Storefront</a>.
+It thus creates a powerful overall system that combines the functional advantages of these systems and enables the delivery of modern and personalized content.</p>
+</div>
+<div class="paragraph">
+<p>This document is intended for server administrators and therefore only describes the installation and configuration of the module as well as the import of the reference project on the FirstSpirit-Server.
+All steps to be performed in the project and the functionalities provided with the integration are described in the <em>FirstSpirit Connect (Headless) for Commerce Cloud documentation</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the expression "Commerce Cloud" is used in the remainder of this documentation, this refers to SAP Commerce Cloud in all cases.<br>
+This also applies to the short form "FirstSpirit Connect", which within this documentation always refers to the <em>FirstSpirit Connect (Headless) for SAP Commerce Cloud</em> integration.</p>
+</div>
+<div class="paragraph">
+<p>Furthermore, the entire document is geared towards connecting to the <a href="https://sap.github.io/cloud-commerce-spartacus-storefront-docs/">Spartacus Storefront</a>.
+Mention of the Storefront refers to the Spartacus Storefront in all cases.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_range_of_functions"><a class="anchor" href="#_range_of_functions"></a>1.1. Range of functions</h3>
+<div class="paragraph">
+<p><em>FirstSpirit Connect</em> allows to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Access to product and category information</p>
+</li>
+<li>
+<p>Creation of new editorial content</p>
+</li>
+<li>
+<p>Display shop elements and editorial content in the FirstSpirit preview simultaneously</p>
+</li>
+<li>
+<p>Delivery of content to any touchpoints</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The corresponding functions are made available when the module is installed and configured within the WYSIWYG client.</p>
+</div>
+<div class="paragraph">
+<p>Familiar FirstSpirit tools are used to maintain the content, meaning that editors who are already familiar with FirstSpirit do not require any additional knowledge - especially not about the e-commerce shop system.
+The content is made available to the Storefront using the CaaS and is delivered by the Storefront in combination with the content from the Commerce Cloud.</p>
+</div>
+<div class="paragraph">
+<p>This means that within the newly created overall system there is no difference for the delivery of editorial content.
+It is still carried out by the storefront.
+Even if the FirstSpirit server is maintained, this affects neither the Storefront nor the Commerce Cloud.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture"><a class="anchor" href="#_architecture"></a>1.2. Architecture</h3>
+<div class="paragraph">
+<p>By default, the SAP shop architecture consists of the Commerce Cloud and the <a href="https://sap.github.io/cloud-commerce-spartacus-storefront-docs/">Spartacus Storefront</a>.
+While, in this system, the Commerce Cloud provides all shop functionalities and persists all shop contents, the Spartacus Storefront delivers these contents.</p>
+</div>
+<div class="paragraph">
+<p>With the <em>FirstSpirit Connect (Headless) for SAP Commerce Cloud</em> solution, FirstSpirit and the <a href="https://docs.e-spirit.com/module/caas/CaaS_Product_Documentation_EN.html">CaaS</a> integrate into this architecture and extend the shop functionalities of the Commerce Cloud.
+The integration thus creates an overall system that combines the functional strengths of the individual systems.
+Within this overall system FirstSpirit and the Commerce Cloud represent the backend, while the CaaS forms the middleware and the storefront is the front end.</p>
+</div>
+<div class="paragraph">
+<p>The following graphic shows the high-level architecture of this overall system:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/sp_architecture_simple.png" alt="sp architecture simple">
+</div>
+<div class="title">Figure 1. High-level architecture</div>
+</div>
+<div class="paragraph">
+<p>Within the newly created overall system, the Storefront continues to deliver the content, which it by default obtains from the Commerce Cloud.
+In addition, it queries the contents of the respective CaaS instance and links them with those of the Commerce Cloud.
+For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.</p>
+</div>
+<div class="paragraph">
+<p>In contrast to the delivery of the contents, their creation and maintenance shifts from the Commerce Cloud to FirstSpirit.
+With the ContentCreator, FirstSpirit provides an intuitive WYSIWYG client for this purpose.
+The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows the preview and editing of external content in the ContentCreator (see figure <a href="#img_architecture2">Low-level architecture</a>).</p>
+</div>
+<div class="paragraph">
+<p>By embedding the Staged Storefront in the Omnichannel Manager, the editors are provided with a combined preview of the contents, which in this case originate from the preview CaaS and the Commerce Cloud.
+This way, the editors get the possibility to edit already existing shop pages in the ContentCreator.
+For this purpose, a variety of different components, such as shoppable videos, are available for them.</p>
+</div>
+<div class="paragraph">
+<p>Product and category information is provided via a report in the ContentCreator.
+This report accesses the Product Catalog via the Commerce Cloud&#8217;s <code>CMS WebServices</code> interface and thus determines the necessary data.</p>
+</div>
+<div class="paragraph">
+<p>The transfer of the created or modified content to the online CaaS is done with each release.
+The CaaS persists the content in JSON format in the form of content fragments and makes them available to the Storefront, which integrates them into the shop together with the Commerce Cloud contents.
+In order to display content originating from the reference project, the Storefront must include the <code>fs-spartacus-view-components</code> library in addition to the bridge.</p>
+</div>
+<div class="paragraph">
+<p>The overall system of FirstSpirit, Spartacus and the Commerce Cloud thus has an architecture in which the editorial backend of FirstSpirit is clearly separated from the Storefront.
+A maintenance of FirstSpirit affects neither the Storefront nor the Commerce Cloud.</p>
+</div>
+<div id="img_architecture2" class="imageblock">
+<div class="content">
+<img src="_images/images/sp_architecture.png" alt="sp architecture">
+</div>
+<div class="title">Figure 2. Low-level architecture</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_and_configuration"><a class="anchor" href="#_installation_and_configuration"></a>2. Installation and Configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Various components must be installed and configured in order to use the functions of the <em>FirstSpirit Connect</em> module.
+The following subchapters explain the steps required.</p>
+</div>
+<div class="sect2">
+<h3 id="_installation_of_the_modules"><a class="anchor" href="#_installation_of_the_modules"></a>2.1. Installation of the modules</h3>
+<div class="paragraph">
+<p>In order to provide the functions of the <em>FirstSpirit Connect</em> module, the modules <em>CaaS Connect</em> and <em>Omnichannel Manager</em> are additionally required, which must also be installed on the FirstSpirit server.
+Furthermore, when using the supplied <em>FirstSpirit Connect Reference Project</em>, the <em>BasicWorkflows</em>, the <em>CXT ContentCreator Extension</em> and optionally <em>TranslationStudio</em> must also be installed.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The delivery contains only the <em>FirstSpirit Connect</em> module.
+The <em>CaaS Connect</em> and <em>Omnichannel Manager</em> modules as well as the <em>BasicWorkflows</em>, the <em>CXT ContentCreator Extension</em>, and the <em>TranslationStudio</em> module are available from the <a href="https://help.e-spirit.com/">Technical Support</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>To install the modules, open <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Server properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Modules</b></span></strong></code>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/modules.png" alt="modules">
+</div>
+<div class="title">Figure 3. Server properties - Module installation</div>
+</div>
+<div class="paragraph">
+<p>The main panel displays a list of all modules installed on the FirstSpirit server.
+After clicking <b class="button">Install</b>, select the following files one after the other and confirm your selection with <b class="button">Open</b>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>contentconnect-sap-module-&lt;Versionnumber&gt;.fsm</code></p>
+</li>
+<li>
+<p><code>caas-connect-&lt;Versionnumber&gt;.fsm</code></p>
+</li>
+<li>
+<p><code>fs-tpp-api-&lt;Versionnumber&gt;.fsm</code></p>
+</li>
+<li>
+<p><code>cxt-cc-extension-&lt;Versionnumber&gt;.fsm</code> (only required when using the reference project)</p>
+</li>
+<li>
+<p><code>basicworkflows-fsm-&lt;Versionnumber&gt;.fsm</code> (only required when using the <em>BasicWorkflows</em>)</p>
+</li>
+<li>
+<p><code>translationstudio-&lt;Versionnumber&gt;.fsm</code> (only required when using <em>TranslationStudio</em>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>After the successful installation, the folders <code>FirstSpirit Connect for SAP Commerce Cloud</code>, <code>CaaS Connect</code>, <code>FirstSpirit ThirdPartyPreview</code> and optionally the folders <code>BasicWorkflows</code>, <code>CXT ContentCreator Extension</code> and <code>FirstSpirit TranslationStudio</code> were added to the list.
+Each of which must have <code>All rights</code>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The modules <em>FirstSpirit Connect</em>, <em>CaaS Connect</em>, and <em>CXT ContentCreator Extension</em> require a configuration.
+The necessary steps are described in the <em>FirstSpirit Connect (Headless) for Commerce Cloud documentation</em> and <em><a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html">CaaS Connect Documentation</a></em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After each installation or update of a module, the FirstSpirit server must be restarted.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="fs-projectimport"><a class="anchor" href="#fs-projectimport"></a>2.2. Project import</h3>
+<div class="paragraph">
+<p>A part of the delivery is the reference project <em>FirstSpirit Connect Reference Project</em>, which must be installed on the FirstSpirit server.
+To do this, open the import dialog in the <code><strong>ServerManager</strong></code> via the menu item <code><strong><span class="menuseq"><b class="menu">Project</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Import</b></span></strong></code> and click the <b class="button">Local</b> button
+to select the <code>spartacus-reference-project-&lt;VERSION&gt;.tar.gz</code> file from your local data system.
+Then assign a project name and a description and confirm the import with <b class="button">Yes</b>.
+After the successful installation, the project is added to the list in the main panel.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/importedproject.png" alt="importedproject">
+</div>
+<div class="title">Figure 4. Imported project in the ServerManager</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In addition to the standard groups <code>Everyone</code>, <code>Administrators</code> and <code>Developers</code>, there are three further <strong>external</strong> user groups in the reference project: <code>Editors</code>, <code>ChiefEditors</code> and <code>ProjectAdmins</code>.
+The groups have different rights, which are selected according to their tasks and defined for the different stores.
+Users outside these groups are not allowed to use the reference project by default.</p>
+</div>
+<div class="paragraph">
+<p>The usage of external groups requires an LDAP connection.
+Otherwise they are not usable and the rights set for them do not apply.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="install_wcomp"><a class="anchor" href="#install_wcomp"></a>2.3. Adding the web components</h3>
+<div class="paragraph">
+<p>The <em>FirstSpirit Connect</em> integration requires various web components to be added to the project used.
+Therefore open the <code><strong><span class="menuseq"><b class="menu">Server Properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Web applications</b></span></strong></code> panel in the <code><strong>ServerManager</strong></code>.</p>
+</div>
+<div class="paragraph">
+<p>Within the main panel several tabs are visible, each with a list of the existing web components.
+Choose the <code><strong>ContentCreator</strong></code> tab and add the following web components:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>BasicWorkflows_ContentCreator_Library</code> (only required when using the <em>BasicWorkflows</em>)</p>
+</li>
+<li>
+<p><code>CXT ContentCreator Extension: WebApp for ContentCreator</code></p>
+</li>
+<li>
+<p><code>FirstSpirit Connect for SAP Commerce Cloud Web App</code></p>
+</li>
+<li>
+<p><code>FirstSpirit ThirdPartyPreview WebApp</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Select the web components one after the other using the <b class="button">Add</b> button and confirm each selection with <b class="button">OK</b>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/sp_webcomponents.png" alt="sp webcomponents">
+</div>
+<div class="title">Figure 5. Web components in the Server Properties</div>
+</div>
+<div class="paragraph">
+<p>Finally, select an <code>Active web server</code> in the tab using the selection box of the same name and start the installation by clicking the <b class="button">Install</b> button.
+After successful installation, a dialog opens, in which the activation of the web server is to be confirmed.</p>
+</div>
+<div class="paragraph">
+<p>For detailed information about adding web components, see the <em><a href="https://docs.e-spirit.com/odfs/edocs/admi/introduction/index.html">FirstSpirit Manual for Administrators</a></em>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_legal_notices"><a class="anchor" href="#_legal_notices"></a>3. Legal notices</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>FirstSpirit Connect</em> is a product of e-Spirit AG, Dortmund, Germany.<br>
+Only a license agreed upon with e-Spirit AG is valid for using the module.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
