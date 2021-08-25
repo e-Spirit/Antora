@@ -1,0 +1,1780 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Content as a Service :: CrownSpirit Documentation</title>
+    <link rel="canonical" href="https://e-spirit.github.io/Antora/headless/1.0/CaaS/CaaS_FSM_Documentation_EN.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://e-spirit.github.io/Antora">CrownSpirit Documentation</a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Cloud</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Headless</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">E-Commerce</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/index.html">Spryker</a>
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/index.html">Spartacus</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">FirstSpirit</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Crownpeak</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="headless" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Headless</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">CaaS Connect</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../CaaS_Connect/CaaS_Connect_FSM_Documentation_EN.html">Module documentation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../CaaS_Connect/CaaS_Connect_ServerAdministrator_EN.html">Admin Manual</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <a class="nav-link" href="CaaS_FSM_Documentation_EN.html">Content as a Service</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../CaaS_Platform/CaaS_Platform_Documentation_EN.html">CaaS Platform</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Navigation Service (FSM)</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../Nav_Service_FSM/index.html">Main Documentation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Nav_Service_FSM/chapters/architecture.html">Architecture</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Nav_Service_FSM/chapters/components.html">Components</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Nav_Service_FSM/chapters/config.html">Configuration</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../Nav_Service_FSM/chapters/auth.html">Authentification</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../Nav_Service_FSM/Navigation_Service_Serveradmin_Documentation_EN.html">Admin Manual</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../Nav_Service_Platform/documentation.html">Navigation Service (Platform)</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Headless</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../component-b/1.0/index.html">CrownSpirit Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../component-b/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ecom/1.0/index.html">E-Commerce</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecom/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pwa/1.3.0/index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pwa/1.3.0/index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Headless</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../component-b/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Headless</a></li>
+    <li><a href="CaaS_FSM_Documentation_EN.html">Content as a Service</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/pahl-espirit/headless/edit/main/modules/CaaS/pages/CaaS_FSM_Documentation_EN.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Content as a Service</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This module has been superseeded by CaaS Connect in July 2020. e-Spirit AG still provides compatibility to the CaaS platform and to
+FirstSpirit.</p>
+</div>
+<div class="paragraph">
+<p>The CaaS module is the component that runs on the FirstSpirit Server.
+It enables the compilation and dispatch of information to the <a href="CaaS_Platform_Documentation_EN.html">CaaS platform</a>.
+The information concerns all new, changed or deleted editorial content of the used FirstSpirit project.</p>
+</div>
+<div class="paragraph">
+<p>The module supports the release- and preview state of FirstSpirit.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="tech_requirements"><a class="anchor" href="#tech_requirements"></a>Technical requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To use the CaaS module, an installed and configured <a href="CaaS_Platform_Documentation_EN.html">CaaS platform</a> must be available.
+A valid CaaS license is also required to use the CaaS module.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A missing or invalid CaaS license will abort any <a href="#generated">CaaS generation</a> with an error message.</p>
+</div>
+<div class="paragraph">
+<p>Manipulations to the license make it invalid.
+If changes are necessary, please contact <a href="http://help.e-spirit.com">Technical Support</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>For system requirements please consult the <a href="CaaS_FSM_Technical_Datasheet_EN.html">technical data sheet</a> of the CaaS module.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_installation_and_configuration"><a class="anchor" href="#_installation_and_configuration"></a>Installation and configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In order to combine the data of a FirstSpirit project in such a way that it can be processed by the CaaS platform, various FirstSpirit components must be installed and configured.
+The necessary steps are explained in the following subchapters.</p>
+</div>
+<div class="sect2">
+<h3 id="modules"><a class="anchor" href="#modules"></a>Installation of the module</h3>
+<div class="paragraph">
+<p>The module must be added to the FirstSpirit Server using the supplied <code>caas-{build-version}.fsm</code> file.
+To do this, open the <code><strong>ServerManager</strong></code> and select the <code><strong>menu:Server properties[modules]</strong></code> area.</p>
+</div>
+<div id="installed_modules" class="imageblock">
+<div class="content">
+<img src="_images/images/modules.png" alt="modules">
+</div>
+<div class="title">Figure 1. modules</div>
+</div>
+<div class="paragraph">
+<p>The main panel shows a list of all modules installed on the FirstSpirit Server.
+After clicking on btn:[Install], select the <code>caas-{build-version}.fsm</code> file and confirm the selection with btn:[Open].</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the use of CaaS is not licensed, an error message will appear when installing the CaaS module.
+However, it only points out the invalid license without preventing or aborting the installation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>After the successful installation, the folder <code>Content as a Service</code> was added to the list of folders, which must be given <code>All Rights</code> using the <code>Configure</code> button (see figure <a href="#installed_modules">modules</a>).</p>
+</div>
+<div class="paragraph">
+<p>The module also requires a configuration, which is explained in the following subchapter.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After each installation or update of a module a restart of the FirstSpirit Server is necessary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="caasconfig"><a class="anchor" href="#caasconfig"></a>Configuration of the CaaS service</h4>
+<div class="paragraph">
+<p>To transfer data to the CaaS platform, a connection between the platform and the FirstSpirit Server is required.
+For this purpose, a default configuration must be specified in the service of the module.
+If another CaaS instance is to be filled in deviation from this default configuration, it can be defined in the <a href="#activate_gen">generation schedule</a>.</p>
+</div>
+<div class="paragraph">
+<p>For the default configuration, open the <code><strong>ServerManager</strong></code> and select the <code><strong>menu:Server Properties [Modules]</strong></code> area.
+Then expand the folder <code>Content as a Service</code> and select the service contained in this folder (see figure <a href="#c_service">CaaS Service</a>).</p>
+</div>
+<div id="c_service" class="imageblock">
+<div class="content">
+<img src="_images/images/c_service.png" alt="c service">
+</div>
+<div class="title">Figure 2. CaaS Service</div>
+</div>
+<div class="paragraph">
+<p>The dialog that is opened via the btn:[Configure] button has four fields that are to be filled in as described below.</p>
+</div>
+<div id="module_service" class="imageblock">
+<div class="content">
+<img src="_images/images/service.png" alt="service">
+</div>
+<div class="title">Figure 3. CaaS Service - Configuration</div>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">REST API URL</dt>
+<dd>
+<p>In this field, enter the URL where the REST Interface of the CaaS platform can be reached.
+During installation and configuration of the CaaS platform this is determined by the network configuration used.</p>
+</dd>
+<dt class="hdlist1">API Key</dt>
+<dd>
+<p>At this point an API Key is required that has write permission for all CaaS projects.
+Alternatively the Master API Key can be used.
+See the CaaS platform documentation for more information about the creation of API Keys.</p>
+</dd>
+<dt class="hdlist1">Proxy-URI (optional)</dt>
+<dd>
+<p>In case the REST Interface can only be reached via a proxy server, its URI must be specified here.
+Otherwise this field can be left empty.</p>
+</dd>
+<dt class="hdlist1">Parallelism of media generation</dt>
+<dd>
+<p>The numeric value in this field indicates the maximum number of media processed simultaneously.
+This setting is valid server-wide.
+It is therefore not evaluated per schedule, which means that all schedules on a server share this restriction at the same time.
+By default, a value of 8 is already defined at this point, which is sufficient for most situations and therefore does not require adjustment.</p>
+<div class="paragraph">
+<p>Nevertheless, an adjustment can be helpful in the following scenarios, for example:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>high FirstSpirit-side memory consumption</strong><br>
+With FirstSpirit-side processing, each medium requires at least the amount of memory it consumes on the hard disk.
+Therefore, a generation operation that contains a lot of large media can be a limiting factor for the media to be processed simultaneously.
+In case of memory problems, reducing the value may result in less memory consumption.
+The minimum value is 1.</p>
+</li>
+<li>
+<p><strong>lower FirstSpirit-side memory consumption</strong><br>
+If FirstSpirit projects predominantly carry small media, the parallelism can be increased to increase the throughput of media.</p>
+</li>
+</ul>
+</div>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="projectsettings"><a class="anchor" href="#projectsettings"></a>Configuration of the settings page</h3>
+<div class="paragraph">
+<p>The CaaS generations require that a template for the project settings is maintained and released in the FirstSpirit project.
+Otherwise the generation job will abort early and report errors via the job logs.</p>
+</div>
+<div class="paragraph">
+<p>Further information can be found in the <em>Online Documentation for FirstSpirit</em> in the area <em>Documentation for editors</em> inside the document  <em>FirstSpirit SiteArchitect</em> under <code><strong>menu:Global settings[Project Settings]</strong></code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="projectcomp"><a class="anchor" href="#projectcomp"></a>Project component</h3>
+<div class="paragraph">
+<p>The settings defined in <a href="#caasconfig">CaaS Service</a> are valid server-wide.
+The Project component offers the possibility to partially overwrite these settings at the project level and should therefore be added to the project.</p>
+</div>
+<div class="paragraph">
+<p>To do this, open the <code><strong>ServerManager</strong></code> and select the area <code><strong>menu:Project properties[Project components]</strong></code>.</p>
+</div>
+<div id="tpp_p_list" class="imageblock">
+<div class="content">
+<img src="_images/images/tpp_p_list.png" alt="tpp p list">
+</div>
+<div class="title">Figure 4. Project components</div>
+</div>
+<div class="paragraph">
+<p>In the main panel you can see a list of all existing Project components.
+After clicking btn:[Add], select the <code>CaaSProjectConfiguration</code> and confirm your selection with btn:[OK].
+The Project component is added to the list in the main panel and must then be configured (see figure <a href="#tpp_p_list">Project components</a>).
+To do this, select the entry in the list and open the corresponding configuration dialog via btn:[Configure].</p>
+</div>
+<div class="paragraph">
+<p>The dialog is divided into three tabs, which are explained in the following subchapters.</p>
+</div>
+<div class="sect3">
+<h4 id="proj_conf"><a class="anchor" href="#proj_conf"></a>Project</h4>
+<div class="paragraph">
+<p>When transferring media to CaaS, additional metadata is also transferred and stored in CaaS by default.
+A list of these metadata fields can be found in the chapter <a href="#caas_document_metadata">Additional metadata</a>.</p>
+</div>
+<div class="paragraph">
+<p>Thus, there are always two URLs for each referenced medium.
+While the ID of the medium is used to query the metadata, the content of the metadata contains the URL of the binary data of the medium.
+This aspect must be taken into account when generating URLs for referenced media.</p>
+</div>
+<div class="paragraph">
+<p>For this reason, the tab <code><strong>Project</strong></code> in the configuration dialog of Project component provides two configuration options for media generation:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Media URLs point to content (binary)</dt>
+<dd>
+<p>This option causes the generated URL for a referenced medium to point to the binary data of the medium.</p>
+</dd>
+<dt class="hdlist1">Media URLs point to metadata (JSON)</dt>
+<dd>
+<p>Selecting this option activates the generation of media URLs that point to the corresponding metadata.
+This option assumes that the referenced media are also stored in CaaS.</p>
+</dd>
+</dl>
+</div>
+<div class="paragraph">
+<p>In addition to the configuration of the media URLs, the evaluation of the FirstSpirit metadata can be configured at project level.
+It is possible to evaluate the metadata template and thus transfer an adapted format of the metadata to CaaS.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Metadata template is evaluated</dt>
+<dd>
+<p>The FirstSpirit metadata template is rendered and transferred to CaaS.
+The transfer of the template form values is thus the responsibility of the template developer.</p>
+</dd>
+<dt class="hdlist1">Metadata template is not evaluated</dt>
+<dd>
+<p>The FirstSpirit metadata template is not evaluated, but the contents of the input fields are transferred to CaaS as JSON structure. (default behavior)</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The options shown in this tab interact with the configurable options of the tabs <code><strong>Job Configuration</strong></code> and <code><strong>Preview Configuration</strong></code>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/tpp_g_conf.png" alt="tpp g conf">
+</div>
+<div class="title">Figure 5. Project component - Project</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="schedule_conf"><a class="anchor" href="#schedule_conf"></a>Release state</h4>
+<div class="paragraph">
+<p>Projects are always individual and have specific requirements.
+One of these requirements may be to store media not in CaaS, but in a third party system.</p>
+</div>
+<div class="paragraph">
+<p>For this reason, the tab <code><strong>Release state</strong></code> in the Project component configuration dialog provides two configuration options for processing media:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Generate media in CaaS</dt>
+<dd>
+<p>This option corresponds to the use of the standard CaaS generation, where the referenced media are transmitted to and persisted by CaaS.</p>
+</dd>
+<dt class="hdlist1">Use FirstSpirit default generation</dt>
+<dd>
+<p>Selecting this option causes the FirstSpirit default mechanism to be used and the media to be stored in the file system.
+This can be useful for subsequent processing of the media, such as transfer to a CDN.</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the option <code>FirstSpirit Use default generation</code> is activated, the option <code>Media URLs point to content (binary)</code> must be selected in the tab <a href="#proj_conf">Project</a>.
+If the option <code>Media URLs point to metadata (JSON)</code> is selected there instead, the selection will change automatically.</p>
+</div>
+<div class="paragraph">
+<p>If, in combination with a possibly assigned CDN prefix, the folder names in the generation directory are not generated as desired,
+you can set the parameter <code>caasEnsureMediaPathStartsWithSlash</code> to the value <code>true</code> in the properties of the action <code>Initialize CaaSGeneration</code> of the generation schedule.</p>
+</div>
+<div class="paragraph">
+<p>For backwards compatibility, this option must be explicitly enabled.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The following fields are only available if the option <code>Use default generation</code> is selected.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">CDN prefix for media</dt>
+<dd>
+<p>If you want media to be served from a CDN instead of CaaS, you can specify a prefix in this field.
+This can be the same as specifying a host name and, if necessary, a context path.
+It is prefixed to all URLs generated during generation by the URL Factory used.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The transfer of the media to the CDN can be solved with the help of the usual FirstSpirit mechanisms and is not part of this documentation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">URL Factory for media use</dt>
+<dd>
+<p>The CaaS module has its own URL Factory for the generation of media and their URLs.
+At this point, the URL factory to be used when using the FirstSpirit default generation must be specified.
+There is a selection of URL factories available on the FirstSpirit server.
+If no selection is made, <em>Advanced URLs</em> will be used by default during CaaS generation.</p>
+</dd>
+</dl>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For technical reasons, only a limited selection of the path generation methods installed on the server is available in this field: These must implement the Java interface <code>UrlFactory</code>.
+For the implementations provided by FirstSpirit this applies to the <em>Advanced URLs</em> (<code>AdvancedUrlFactory</code>), as well as the <em>CaaS URL Creator</em> (<code>CaaSUrlFactory</code>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="p_comp_conf_release" class="imageblock">
+<div class="content">
+<img src="_images/images/tpp_p_conf.png" alt="tpp p conf">
+</div>
+<div class="title">Figure 6. Project component - release status</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="preview_conf"><a class="anchor" href="#preview_conf"></a>Preview state</h4>
+<div class="paragraph">
+<p>When processing unreleased content, it is important to note that mixing the release status with unreleased content must be avoided.
+This is solved with a Preview CaaS.
+At this point it is assumed that a Preview CaaS already exists in the CaaS platform and its URL is known.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In order to be able to automatically generate unreleased content when changes are made to a FirstSpirit project without executing a job, the FirstSpirit Eventing API is used.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using CaaS in conjunction with the <em>FirstSpirit Omnichannel Manager</em> requires the installation and configuration of the <em>Omnichannel Manager</em> module.
+The necessary steps are described in the <a href="https://docs.e-spirit.com/tpp/"><em>documentation for the FirstSpirit Omnichannel Manager</em></a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The configuration for using the Preview CaaS is done in the tab <code><strong>Preview state</strong></code> of the configuration dialog of the Project component:</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">REST API URL</dt>
+<dd>
+<p>To use Preview CaaS, its URL must be specified.
+The URL depends on the chosen implementation of the Preview CaaS in the CaaS platform.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the field remains empty, the preview functionality is disabled for the respective FirstSpirit project.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">API Key</dt>
+<dd>
+<p>At this point, a API Key is required that has write permission for the project in use.</p>
+</dd>
+<dt class="hdlist1">Proxy URI</dt>
+<dd>
+<p>In case the REST Interface can only be reached via a proxy server, its URI must be specified here.
+Otherwise this field can be left empty.</p>
+</dd>
+<dt class="hdlist1">Template set</dt>
+<dd>
+<p>At this point, the <a href="#caas_channel">template set</a> must be selected, in which the CaaS contents to be generated are defined.</p>
+</dd>
+<dt class="hdlist1">Language</dt>
+<dd>
+<p>Select all languages for which contents are to be transferred to the Preview CaaS.</p>
+</dd>
+<dt class="hdlist1">Template evaluation context</dt>
+<dd>
+<p>The standard FirstSpirit functionality allows template developers to display certain editorial content in the FirstSpirit preview or ContentCreator only.
+With the generation of the unreleased content, this content can also be transferred to the Preview CaaS.
+The context selection determines whether all preview contents or contents intended exclusively for the ContentCreator are transferred.
+The option <code>Preview</code> corresponds to the case <code>#global.isPreview = true</code> and <code>#global.is("WEBEDIT") = false</code>, while the option <code>ContentCreator</code> covers both <code>#global.is("WEBEDIT") = true</code> and <code>#global.isPreview = true</code>.
+The default setting, <code>Default</code> does not capture any of the above parameters and returns <code>false</code> for both <code>#global.isPreview</code> and <code>#global.is("WEBEDIT")</code>.
+In combination with the Omnichannel Manager it is recommended to use the mode <code>ContentCreator</code>.</p>
+</dd>
+<dt class="hdlist1">Media usage</dt>
+<dd>
+<p>In conjunction with the Preview CaaS, it may be useful under certain conditions to obtain media from the FirstSpirit Server rather than from CaaS when displaying the preview.
+Two options are available for the corresponding configuration:</p>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Generate media in CaaS</dt>
+<dd>
+<p>This option corresponds to the default behavior, where the referenced media are retrieved from CaaS. You should use this
+mode if the preview data is used outside the FirstSpirit edit environment.</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In combination with remote media and references to the very same project in the remote configuration the
+<code>CaaSUrlFactory</code> must be configured.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt class="hdlist1">Use media from FirstSpirit preview</dt>
+<dd>
+<p>Selecting this option causes the FirstSpirit defaults to be used to display media in the preview and retrieve them directly from the FirstSpirit Server.
+In this case the media will not be stored in CaaS and the generated media URLs will point to the FirstSpirit internal preview.
+Depending on the setting of "Template evaluation context" the URLs either reference the Preview or the ContentCreator web application (Mode <code>ContentCreator</code>).</p>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the option <code>Use media from FirstSpirit preview</code> is activated, the option <code>Media URLs point to content (binary)</code> must be selected in the tab <a href="#proj_conf">Project</a>.
+If the option <code>Media URLs point to metadata (JSON)</code> is selected there instead, the selection will change automatically.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</div>
+</dd>
+<dt class="hdlist1">Variables</dt>
+<dd>
+<p>No page variables are evaluated within the preview.
+Here you can set variables that are available in the page context at the time of generation.</p>
+</dd>
+</dl>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/tpp_b_conf.png" alt="tpp b conf">
+</div>
+<div class="title">Figure 7. Project component - Preview</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="caas_channel"><a class="anchor" href="#caas_channel"></a>Template set</h3>
+<div class="paragraph">
+<p>In addition to the already existing template sets of a project, a new template set for the <a href="#fs_templating">definition of the contents to be transmitted</a> to CaaS is required, which must be created manually.</p>
+</div>
+<div class="paragraph">
+<p>To do this, open the <code><strong>Server and Project Configuration</strong></code> and select the item <code><strong>menu:Project properties[Template sets]</strong></code>.
+By clicking on btn:[Add] a dialog is displayed, which is to be filled as follows</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/templateset.png" alt="templateset">
+</div>
+<div class="title">Figure 8. create template set</div>
+</div>
+<div class="paragraph">
+<p>Then confirm the dialog with btn:[OK] to finish adding the template set.</p>
+</div>
+<div class="paragraph">
+<p>The list of existing template sets is then extended by the new template set.
+This has been automatically activated and is thus directly available in the project.</p>
+</div>
+<div class="paragraph">
+<p>Information about templating are described in section <a href="#createcontent">Transmission of documents</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="generate"><a class="anchor" href="#generate"></a>Generation schedule (full generation)</h3>
+<div class="paragraph">
+<p>The initial filling of CaaS as well as the later notification of changes in the FirstSpirit project is done by messages that the CaaS module sends to the CaaS platform.
+To create these messages, a schedule is required that contains at least the actions described in the following subchapters (see also figure <a href="#fullgeneration">full generation</a>).</p>
+</div>
+<div class="paragraph">
+<p>Open the <code><strong>ServerManager</strong></code> for the required schedule and select the <code><strong>menu:Project properties[Schedule management]</strong></code> area.</p>
+</div>
+<div class="paragraph">
+<p>Add a new default schedule or edit an existing one.</p>
+</div>
+<div id="fullgeneration" class="imageblock">
+<div class="content">
+<img src="_images/images/fullgeneration.png" alt="fullgeneration">
+</div>
+<div class="title">Figure 9. full generation</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To avoid data loss in CaaS in case of an error, the checkbox <em>Execute even in case of error</em> must be deactivated for all actions of the schedule except the <em>Finalize CaaS Generation</em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Page references with an empty template set cause the generation to be aborted.
+For this reason, care must be taken within the project to generate only the necessary page references during generation, or to <a href="#skipmessage">skip</a> the corresponding pages during CaaS generation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="activate_gen"><a class="anchor" href="#activate_gen"></a>Initialize CaaSGeneration</h4>
+<div class="paragraph">
+<p>Within the schedule, an initialization must first take place.
+This ensures the transmission of the messages generated by FirstSpirit to CaaS.</p>
+</div>
+<div class="listingblock">
+<div class="title">initialize CaaS Generation</div>
+<div class="content">
+<pre class="highlightjs highlight"><code>#! executable-class
+com.espirit.caas.generation.CaaSScheduleInitializer</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Furthermore, the call activates the generation to be carried out in the next step, which cannot be carried out without this activation.
+The action is therefore <strong>obligatory</strong> for successful generation.</p>
+</div>
+<div class="paragraph">
+<p>If it is necessary to fill a specific CaaS instance with data, after the script has been created, its <code><strong>properties</strong></code> can optionally be adjusted, and the following parameters can be created via btn:[Add]:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>caasUrl</p>
+</li>
+<li>
+<p>caasApiKey</p>
+</li>
+<li>
+<p>caasProxyUri</p>
+</li>
+<li>
+<p>caasMaxTransferTimeoutInMs</p>
+</li>
+<li>
+<p>caasMaxTransferRetries</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/timeout.png" alt="timeout">
+</div>
+<div class="title">Figure 10. parameters</div>
+</div>
+<div class="paragraph">
+<p>If the REST Interface of the specific CaaS instance is accessible via a proxy server, its URI can be specified additionally.</p>
+</div>
+<div class="paragraph">
+<p>If the parameters are missing at this point, the generation uses the default configuration defined in the <a href="#caasconfig">Service</a>.
+If they are specified, they overwrite the default configuration.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The parameters are <strong>not</strong> mutually dependent and can therefore also be defined individually.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The parameters <code>caasMaxTransferTimeoutInMs</code> and <code>caasMaxTransferRetries</code> influence the behavior of the module with regard to the transfer of data to the CaaS platform.
+They are not globally adjustable and are only needed in case of problems.
+In this case an error message during the FirstSpirit deployment indicates that the values need to be increased.
+A single transfer always aborts when the value of the parameter <code>caasMaxTransferTimeoutInMs</code> is exceeded.
+If a problem occurs during the transfer, it will be repeated as often as the value of the parameter <code>caasMaxTransferRetries</code> allows.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="gen"><a class="anchor" href="#gen"></a>CaaS Generate</h4>
+<div class="paragraph">
+<p>The generation activated in the previous action is executed by the generation action to be added.</p>
+</div>
+<div class="paragraph">
+<p>Any name (here: <em>CaaS Generate</em>) must be specified in the <code><strong>Properties</strong></code> of the generation.
+Make sure that the option <code>Generate only if necessary</code> is deactivated and the option <code>Generate release version</code> is activated (see figure <a href="#caasprop">properties</a>).
+Furthermore, the <code>CaaS URL Creator</code> must be selected for <code>Path Generation</code>.</p>
+</div>
+<div id="caasprop" class="imageblock">
+<div class="content">
+<img src="_images/images/caasgenerate.png" alt="caasgenerate">
+</div>
+<div class="title">Figure 11. properties</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Using a custom URL Creator in a CaaS scenario is not possible because URLs must be created in a fixed, CaaS-compatible schema.
+Selecting your own URL Creator in the <code><strong>Properties</strong></code> of the generation is therefore not allowed.
+If the user nevertheless makes a selection, it has no effect.</p>
+</div>
+<div class="paragraph">
+<p>Depending on whether the order generates the release or preview state, the URL generation is automatically adjusted internally.
+Thus the FirstSpirit preview URLs are generated in a preview state schedule when the media are controlled via FirstSpirit (see figure <a href="#p_comp_conf_release">Project component - release status</a>).
+For a schedule with generation of the release state, however, the configured URL factory is still used.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>In the register <code><strong>Extended</strong></code> the previously created <a href="#caas_channel">template set</a> must be selected for all languages of the project (see figure <a href="#caasext">extended</a>).</p>
+</div>
+<div id="caasext" class="imageblock">
+<div class="content">
+<img src="_images/images/caasext.png" alt="caasext">
+</div>
+<div class="title">Figure 12. extended</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since a generation of the CaaS module itself already works in parallel, the use of several parallel generation actions in one schedule is not supported.
+The option for parallel execution of several generation actions must therefore not be activated.
+The number of parallel connections can be defined during the <a href="#caasconfig">module configuration</a> and, if necessary, can be overwritten <a href="#activate_gen">per schedule</a> .</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Use of the CaaS module requires a valid license.
+A missing or invalid CaaS license interrupts the data transfer between it and the CaaS platform.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_cleanup"><a class="anchor" href="#_cleanup"></a>CleanUp</h4>
+<div class="paragraph">
+<p>To ensure that the data is always up-to-date, the information deleted in the FirstSpirit project must also be removed in CaaS.
+The following script call ensures this:</p>
+</div>
+<div class="listingblock">
+<div class="title">cleanup</div>
+<div class="content">
+<pre class="highlightjs highlight"><code>#! executable-class
+com.espirit.caas.generation.CaaSCleanupExecutable</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If different generations - even within a FirstSpirit project - use the same project, no cleanup process may take place here,
+otherwise one of the generations will clean up the data of the other schedule.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The action only deletes obsolete information within CaaS.
+However, the potentially empty collections in which the transferred data is stored are always retained (see also chapter <a href="#createcontent">Transmission of documents</a>).</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>This script action may only be used in conjunction with full generation.
+If it is used in partial or delta generation, data will be lost CaaS-sided.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="fin"><a class="anchor" href="#fin"></a>Finalize CaaS Generation</h4>
+<div class="paragraph">
+<p>The action <code>Finalize CaaS Generation</code> is used to detect errors during the delivery of the generated messages.</p>
+</div>
+<div class="paragraph">
+<p>To do this, create another script and add the following code to it:</p>
+</div>
+<div class="listingblock">
+<div class="title">finalize CaaS Generation</div>
+<div class="content">
+<pre class="highlightjs highlight"><code>#! executable-class
+com.espirit.caas.generation.CaaSScheduleFinalizer</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In contrast to the other actions of the schedule, the <em>Finalize CaaS Generation</em> must be executed even in case of an error.
+Otherwise, a failed job may result in a subsequent deployment being impossible to execute.
+In this case a restart of the FirstSpirit Server is required.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="delta_generate"><a class="anchor" href="#delta_generate"></a>Generation schedule (delta generation)</h3>
+<div class="paragraph">
+<p>A second schedule is required to create the messages, which only informs CaaS about the changes made since the last delta generation of this schedule.
+It must <strong>supplement</strong> the actions of full generation described in the previous chapter with the action <code>CaaS DeltaGeneration</code> (see also figure <a href="#delta">delta generation</a>).
+This is explained in the following subchapter.</p>
+</div>
+<div id="delta" class="imageblock">
+<div class="content">
+<img src="_images/images/deltageneration.png" alt="deltageneration">
+</div>
+<div class="title">Figure 13. delta generation</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When duplicating the full generation, the action <code>CleanUp</code> must be removed.
+In connection with delta generation it leads to data loss on the CaaS side and may therefore only be used in full generation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the properties of the <code>CaaS Generate</code> action, the option <code>Generate only if necessary</code> must be disabled and any existing startup nodes must be removed.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>To avoid data loss in CaaS in case of an error, the checkbox <em>Execute even in case of error</em> must be deactivated for all actions of the job except the <em>Finalize CaaS Generation</em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If no changes were made to the project between the current and the last delta generation, the job simply runs through.
+In this case no pages are generated and therefore no information is transmitted to CaaS.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_caas_delta_generation"><a class="anchor" href="#_caas_delta_generation"></a>CaaS Delta Generation</h4>
+<div class="paragraph">
+<p>The <code>CaaS DeltaGeneration</code> action determines the changes made since the last generation within the FirstSpirit project used.
+It also configures the subsequent generation action.
+In this way, the update of the data stored in CaaS is realized via a minimum amount of data transfers to the REST Interface.</p>
+</div>
+<div class="paragraph">
+<p>It is therefore absolutely necessary that the action is executed after the <a href="#activate_gen">initialization</a> and before the <a href="#gen">generation</a>.</p>
+</div>
+<div class="paragraph">
+<p>A script action with the following content is used to determine the changes made and to transfer the necessary information to the generation action:</p>
+</div>
+<div class="listingblock">
+<div class="title">CaaS Delta Generation</div>
+<div class="content">
+<pre class="highlightjs highlight"><code>#! executable-class
+com.espirit.caas.generation.CaaSDeltaGenerationExecutable</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p><strong>Handling of data sources</strong></p>
+</div>
+<div class="paragraph">
+<p>In the context of delta generations, newly created or changed datasets lead to a processing of all page references that have included the corresponding data source.
+As a consequence, all datasets are retransferred to CaaS.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For all content projections that generate exactly one dataset per page, this behavior can be optimized so that only the changed data is transferred to CaaS.</p>
+</div>
+<div class="paragraph">
+<p>To do so, please set the parameter <code>caasOptimizeSingleDatasetDeployment</code> in the properties of the action <code>CaaS DeltaGeneration</code> to the value <code>true</code>.
+For backwards compatibility reasons, this option must be explicitly enabled.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="fs_templating"><a class="anchor" href="#fs_templating"></a>Definition of the contents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The CaaS module provides the possibility to transfer editorial content to CaaS.
+These must be defined in the <a href="#caas_channel">template set</a> previously created.
+The selection of the information to be transferred is always individual and must therefore be based on existing project-specific requirements.</p>
+</div>
+<div class="sect2">
+<h3 id="namingrules"><a class="anchor" href="#namingrules"></a>Normalization of the FirstSpirit project, collection and document names</h3>
+<div class="paragraph">
+<p>Because the CaaS platform allows only a limited choice of characters for naming, the project, collection, and document names from FirstSpirit are normalized in use.
+These normalized names only contain alphanumeric characters, as well as underscores and hyphens.
+The only additional restriction is that the project name must not begin with an underscore.
+Any other characters, such as spaces and special characters, are removed.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Since the project name within the CaaS serves as an identifier, its uniqueness must be maintained even after normalization.
+This aspect must therefore be taken into account when assigning project names.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="createcontent"><a class="anchor" href="#createcontent"></a>Transmission of documents</h3>
+<div class="paragraph">
+<p>By default, FirstSpirit content is not transferred to CaaS.
+Therefore, the contents to be transferred must first be defined project-specifically.
+This definition is made in the <a href="#caas_channel">template set</a> created during the installation.
+In this template set, the contents are to be specified in the form of a JSON object.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>No message to CaaS is generated for page references to external addresses, so there is no entry for them in CaaS.
+Corresponding statements in the template set are not evaluated.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Even though the JSON can be generated manually in the template, we strongly recommend using the <code>json</code> function provided by FirstSpirit.
+This has the following main advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Simplifying a future migration to CaaS Connect, since the data format in CaaS is almost identical</p>
+</li>
+<li>
+<p>Avoidance of errors when generating the JSON format manually, especially with nested content</p>
+</li>
+<li>
+<p>Modifications to the form do not require further modifications to the template</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This reduces the configuration of the output channel to the following content:</p>
+</div>
+<div class="listingblock">
+<div class="title">Example configuration of the template</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">$CMS_VALUE(json(#this))$</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>More information is available in the <em>Online Documentation for FirstSpirit</em> under the item <code><strong>menu:Enhanced JSON support[Single expression page rendering]</strong></code>.</p>
+</div>
+<div class="paragraph">
+<p>If you deviate from this recommendation, please always make sure first that valid JSON is generated via the
+templating valid JSON, as this is the main source of errors.</p>
+</div>
+<div class="sect3">
+<h4 id="_preventing_the_generation"><a class="anchor" href="#_preventing_the_generation"></a>Preventing the generation</h4>
+<div class="paragraph">
+<p>It is possible to prevent the activation of a generation in a template.
+To do this, the page variable <code>caasSkipMessage</code> must be set within the template set:</p>
+</div>
+<div id="skipmessage" class="listingblock">
+<div class="title">caasSkipMessage</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">$CMS_SET(#global.pageContext["caasSkipMessage"], true)$</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In this case no content is transferred to CaaS and any existing content is deleted as part of the <a href="#fin">CleanUp</a>.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Page references with an empty template set cause the generation to be aborted.
+For this reason, you must make sure within the project that you only create the necessary page references during generation.
+Such a restriction can be achieved by partial generation, for example.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Further information can be found in the <em>Online Documentation for FirstSpirit</em> under <code><strong>menu:Template development[Template syntax&gt;System objects&gt;#global&gt;preview-specific&gt;Cancel a generation]</strong></code>.</p>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_transmission_of_media"><a class="anchor" href="#_transmission_of_media"></a>Transmission of media</h3>
+<div class="paragraph">
+<p>As mentioned in the previous chapter, media can also be transferred to CaaS.
+When using the <code>json</code> function provided by FirstSpirit, all referenced media will be processed automatically.</p>
+</div>
+<div class="paragraph">
+<p>To allow language-dependent processing of the transferred data, all media are given a suffix corresponding to the language before being saved in CaaS.
+For language-independent media, the master language of the FirstSpirit project is the default suffix.</p>
+</div>
+<div class="paragraph">
+<p>In contrast to all other transferred information, the persistence of the media in CaaS is not done in collections, but in a so-called bucket called <code>assets.files</code>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="caas_document_metadata"><a class="anchor" href="#caas_document_metadata"></a>Additional metadata</h3>
+<div class="paragraph">
+<p>The <a href="#fs_templating">information</a> defined within the FirstSpirit project are transferred to CaaS via <a href="#generate">Deployment</a>.
+By default, they also contain the following FirstSpirit data:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Id (<code>fs_id</code>)</p>
+</li>
+<li>
+<p>Language (<code>fs_language</code>)</p>
+</li>
+<li>
+<p>Timestamp (<code>fs_date</code>)</p>
+</li>
+<li>
+<p>Execution of the schedule (<code>fs_scheduler_date</code>)</p>
+</li>
+<li>
+<p>Reference name (<code>fs_reference_name</code>)</p>
+</li>
+<li>
+<p>Revision Id (<code>fs_revision_id</code>)</p>
+</li>
+<li>
+<p>FirstSpirit UID Type (<code>fs_uid_type</code>)</p>
+</li>
+<li>
+<p>Project Id (<code>fs_project_id</code>)</p>
+</li>
+<li>
+<p>Object type (<code>fs_object_type</code>)</p>
+</li>
+<li>
+<p>FirstSpirit metadata (<code>fs_metadata</code>)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>For media, additional information is also transferred, if available:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>File extension (<code>fs_extension</code>)</p>
+</li>
+<li>
+<p>Resolution - width (<code>fs_resolution_width</code>)</p>
+</li>
+<li>
+<p>Resolution - Height (<code>fs_resolution_height</code>)</p>
+</li>
+<li>
+<p>Checksum (<code>fs_crc</code>)</p>
+</li>
+<li>
+<p>Description (<code>fs_description</code>)</p>
+</li>
+<li>
+<p>Mimetype (<code>fs_mimetype</code>)</p>
+</li>
+<li>
+<p>File size (<code>fs_size</code>)</p>
+</li>
+<li>
+<p>File encoding (<code>fs_encoding</code>)</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="save_content"><a class="anchor" href="#save_content"></a>Adjustment of project/collection in CaaS</h3>
+<div class="paragraph">
+<p>By default, all information sent by the CaaS module is persisted in CaaS in a collection named <em>content</em>.
+It is automatically created on the first transmission and includes all content that is not media.</p>
+</div>
+<div class="paragraph">
+<p>In addition to the default collection, additional collections can be defined to sort the contents in CaaS.
+This is especially useful if a large amount of different information is transmitted to CaaS.</p>
+</div>
+<div class="paragraph">
+<p>Optionally, contents from one FirstSpirit project can also be transferred to several CaaS projects.
+This allows even finer sorting of complex data and enables advanced application scenarios, such as manual versioning.</p>
+</div>
+<div class="paragraph">
+<p>The definition of additional collections and CaaS projects is done via a plug-in, which is provided via the menu bar as well as via the context menu in the Site Store of the FirstSpirit project.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/plugin.png" alt="plugin">
+</div>
+<div class="title">Figure 14. menu bar and context menu</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>These settings can only be made by a project administrator.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The plug-in opens a dialog in which a CaaS project and a collection can be specified for the selected page reference or the referenced structure folder.
+The initial value of the CaaS project is derived from the name of the FirstSpirit project, the initial value of the collection corresponds to the default <em>content</em> collection (see figure <a href="#edit_prf">Change the collection name for a structure folder</a>).
+For page references, it is also possible to customize the document name (see figure <a href="#edit_pr">Change the collection and document name for a page reference</a>).
+This name is used to store the JSON objects generated on the basis of the page reference in CaaS.
+Without an adjustment, the document name corresponds to the reference name of the page reference.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>When transferring to CaaS, the document name is supplemented by a language suffix, which allows a language-dependent storage of the contents.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="edit_prf" class="imageblock">
+<div class="content">
+<img src="_images/images/edit_pagereffolder.png" alt="edit pagereffolder">
+</div>
+<div class="title">Figure 15. Change the collection name for a structure folder</div>
+</div>
+<div id="edit_pr" class="imageblock">
+<div class="content">
+<img src="_images/images/edit_pageref.png" alt="edit pageref">
+</div>
+<div class="title">Figure 16. Change the collection and document name for a page reference</div>
+</div>
+<div class="paragraph">
+<p>If a CaaS project or new collection is defined on a structure folder, the change applies to all items subordinate to it.
+However, following the usual FirstSpirit behavior, specifying a collection for a child always takes precedence over specifying a collection for a parent.
+This means that the customization made for a structure folder is only applied to a child item if no change has been made to the child item itself.</p>
+</div>
+<div class="paragraph">
+<p><strong>Example</strong></p>
+</div>
+<div class="paragraph">
+<p>In the example shown in the following figure, a separate collection <em>folder</em> was specified for the <em>structure folder</em>.
+This adjustment affects the <em>page 1</em> contained in it and the <em>subfolder</em> with the <em>page 2</em> contained in it.
+Since a change was also made for <em>page A</em> and the <em>page</em> collection was selected, the parent definition has no effect on it.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/example.png" alt="example">
+</div>
+<div class="title">Figure 17. Example</div>
+</div>
+<div class="paragraph">
+<p>During generation, the JSON objects based on <em>page A</em> are then stored in the <em>page</em> collection.
+However, the JSON objects generated by <em>page 1</em> or <em>page 2</em> are stored in the <em>folder</em> collection.</p>
+</div>
+<div class="paragraph">
+<p>If the change to the collection or the document name for a force element is to be reversed, this can also be done using the plug-in provided.
+Note that the associated JSON objects are then processed according to the default configuration and saved in CaaS.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><code>URL settings</code> made in the <code>Global Settings</code> are not taken into account when generating JSON objects and therefore have no influence on URL generation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_change_and_delete_contents"><a class="anchor" href="#_change_and_delete_contents"></a>Change and delete contents</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The contents of a FirstSpirit project can be changed or deleted at any time during the normal editing process.
+In order to ensure that the release state is always up-to-date, changes must be incorporated into CaaS.
+Just like the initial filling of CaaS, an update is done by generation.</p>
+</div>
+<div class="sect2">
+<h3 id="_renaming_a_firstspirit_project"><a class="anchor" href="#_renaming_a_firstspirit_project"></a>Renaming a FirstSpirit project</h3>
+<div class="paragraph">
+<p>Changing the project name creates a new project in CaaS, which contains all current information.
+The initial project with the obsolete data is not automatically removed, but remains and must be deleted manually e.g. via the CaaS Admin Interface.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="changecollection"><a class="anchor" href="#changecollection"></a>Change of an assigned collection</h3>
+<div class="paragraph">
+<p>The persistence of all information transmitted by FirstSpirit takes place in CaaS in so-called collections.
+These can be <a href="#save_content">freely defined</a> within the SiteArchitect.
+Changing a collection for contents already persisted in the CaaS creates a consistent dataset only in the case of a <a href="#generated">full generation</a>.
+The FirstSpirit contents are stored in the new collection and simultaneously removed from the initial collection.
+Since the initially selected collection potentially has other contents, it is retained.
+If it is no longer needed, it can be deleted via the CaaS Admin Interface, for example.</p>
+</div>
+<div class="paragraph">
+<p>The <a href="#delta_generate">Delta Generation</a> only recognizes the change to a collection if additional changes have also been made to the corresponding contents.
+In this case the new collection is created including the changed contents.
+At the same time, however, the initial collection remains with the now obsolete information and an inconsistent dataset is created.</p>
+</div>
+<div class="paragraph">
+<p>Without further changes to the contents, delta generation cannot determine the change to a collection.
+The new collection is therefore <strong>not</strong> created and the initial collection remains in existence, including its contents.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_change_to_an_assigned_caas_project"><a class="anchor" href="#_change_to_an_assigned_caas_project"></a>Change to an assigned CaaS project</h3>
+<div class="paragraph">
+<p>Like the assigned collection (see section <a href="#changecollection">Changing an Assigned Collection</a>), the assigned CaaS project can also be freely defined.
+This results in behavior similar to changing collections with regard to cleanup and delete operations.
+If, for example, the CaaS project is changed for all items to be generated, no more cleanup is performed on the previously configured project and the old data is retained.
+For delta generation, additional changes must also be made to the corresponding contents.
+If an item is deleted on the FirstSpirit side, it is only deleted from the CaaS if it was previously transferred with the currently configured CaaS project.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deleting_a_firstspirit_item"><a class="anchor" href="#_deleting_a_firstspirit_item"></a>Deleting a FirstSpirit item</h3>
+<div class="paragraph">
+<p>Deleting a FirstSpirit item removes all associated information from the CaaS with the next generation.
+Even in this case, the associated collection is retained, even if the generation removes the last document from it.
+If the collection is no longer needed, it can be deleted using the CaaS Admin Interface.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_deleting_a_project_or_collection_from_the_caas_admin_interface"><a class="anchor" href="#_deleting_a_project_or_collection_from_the_caas_admin_interface"></a>Deleting a Project or Collection from the CaaS Admin Interface</h3>
+<div class="paragraph">
+<p>Deleting a project or collection in the CaaS Admin Interface removes all information contained in the project or collection from the CaaS.
+Restoring the deleted data is not possible via the interface, but only via <a href="#generate">full generation</a>.
+The <a href="#delta_generate">delta generation</a> only transfers the data since the last change.
+In this case, this creates an incomplete dataset in CaaS and inevitably leads to inconsistencies.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A collection is potentially filled from different sources.
+For this reason, a generation can never delete it.
+Deleting both a collection and a project is basically only possible manually via the CaaS Admin Interface.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_best_practices"><a class="anchor" href="#_best_practices"></a>Best Practices</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In this chapter solutions for questions that may arise when using the CaaS are shown.</p>
+</div>
+<div class="sect2">
+<h3 id="_links_from_caas_contents_to_static_pages"><a class="anchor" href="#_links_from_caas_contents_to_static_pages"></a>Links from CaaS contents to static pages</h3>
+<div class="paragraph">
+<p>If the used FirstSpirit project creates static web pages in addition to the CaaS contents, there may be links between them.
+Since the CaaS content is generated with the <a href="#gen"><code>CaaS URL Creator</code></a>, but static content is generated with a different URL Creator, the links cannot be resolved correctly.
+Including your own project as a remote project circumvents this by specifying a URL Creator.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/remote_project.png" alt="remote project">
+</div>
+<div class="title">Figure 18. configuration dialog of a remote project</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Remote access requires a license-dependent additional module.
+For further information please refer to the <em>FirstSpirit CorporateMedia</em> documentation.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The linking of contents from the remote project is done via remote references.
+These behave for the editor in the same way as normal references within the project used.
+Only the use case differs.</p>
+</div>
+<div class="listingblock">
+<div class="title">remote reference</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">&lt;FS_REFERENCE name="remote" useLanguages="no"&gt;
+    &lt;LANGINFO&gt;
+      &lt;LANGINFO long="*" label="Remote-Project"/&gt;
+      &lt;LANGINFO lang="en" label="Remote project"/&gt;
+    &lt;/LONGINFOS&gt;
+    &lt;PROJECTS&gt;
+      &lt;REMOTE name="myself"/&gt;
+    &lt;/PROJECTS&gt;
+&lt;/FS_REFERENCE&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A prefix for absolute paths can be specified during generation.
+This is not possible for a remote project and must therefore be taken into account if necessary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_maintenance"><a class="anchor" href="#_maintenance"></a>Maintenance</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The transfer of FirstSpirit data to CaaS can only work if the individual components work properly.
+If faults occur or an update is necessary, both the FirstSpirit Server and all CaaS components must therefore always be considered.
+The following subchapters describe the necessary steps of an error analysis in case of a malfunction as well as the execution of a backup or update.</p>
+</div>
+<div class="sect2">
+<h3 id="_error_analysis"><a class="anchor" href="#_error_analysis"></a>Error analysis</h3>
+<div class="paragraph">
+<p>If a malfunction occurs while using the CaaS module, it may be due to various causes.
+The basic analysis steps for determining the causes of faults are explained below.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Analysis of the logs</dt>
+<dd>
+<p>In case of a problem, the log files are a good starting point for analysis.
+They offer the possibility to trace all processes on the system.
+In this way, possible errors and warnings become apparent.</p>
+<div class="paragraph">
+<p>The schedule and server logs of the FirstSpirit Server can be viewed both in the <code><strong>Schedule overview</strong></code> and in the <code><strong>Server monitoring</strong></code>.</p>
+</div>
+</dd>
+<dt class="hdlist1">FirstSpirit-License</dt>
+<dd>
+<p>Transferring data to the CaaS requires a valid license.
+If no transfer takes place, an invalid license may be the cause.</p>
+</dd>
+<dt class="hdlist1">Template error</dt>
+<dd>
+<p>The FirstSpirit contents are transferred to the CaaS as JSON objects.
+They are defined in the <a href="#caas_channel">template set</a>.
+Errors in the definition can lead to invalid JSON, which prevents the data from being transferred to CaaS.
+Errors of this type are expressed as generation errors in the schedule and are visible in the schedule logs.</p>
+</dd>
+<dt class="hdlist1">Configuration of the schedule</dt>
+<dd>
+<p>If the CaaS does not receive any data, check that the deployment schedule has been completely created and configured according to the <a href="#generated">description</a>.
+If, for example, the action <a href="#activate_gen"><em>Initialize CaaS Generation</em></a> is missing, the job will still run without errors.
+In this case, however, only a deployment to the <strong><code>Staging</code></strong> directory of the FirstSpirit Server takes place and no data is sent to CaaS.</p>
+</dd>
+<dt class="hdlist1">Specific CaaS instance</dt>
+<dd>
+<p>A specific CaaS instance can be defined instead of the CaaS platform specified during the <a href="#caasconfig">configuration of the module</a>.
+If this does not receive any data from the FirstSpirit Server, the configurations in the <a href="#activate_gen"><em>Initialize CaaS Generation</em></a> action of the generation job must be checked.
+If the configurations of the specific instance are missing in this action, the generation uses the default configuration defined in <a href="#caasconfig">Service</a>.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect2">
+<h3 id="backup"><a class="anchor" href="#backup"></a>Backup</h3>
+<div class="paragraph">
+<p>For the FirstSpirit-sided backup, different procedures are available from which the preferred one can be selected individually.
+A detailed description of the corresponding procedure is contained in the <em>FirstSpirit Documentation for Administrators</em>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Depending on the backup, it is recommended to save settings and configuration changes separately.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="update"><a class="anchor" href="#update"></a>Update</h3>
+<div class="paragraph">
+<p>If a newer version of the CaaS module is available, an update must be performed.</p>
+</div>
+<div class="paragraph">
+<p>Just like the installation, the update of the CaaS module is done in the <code><strong>ServerManager</strong></code> in the <code><strong>menu:Server Properties[Modules]</strong></code> section.
+For this purpose the new version of the CaaS module must be selected via the btn:[Install] button and installed on the FirstSpirit Server.
+A previous deinstallation of the module is not necessary.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After each installation or update of a module a restart of the FirstSpirit Server is necessary.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_legal_information"><a class="anchor" href="#_legal_information"></a>Legal information</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <em>CaaS module</em> is a product of e-Spirit AG, Dortmund, Germany.</p>
+</div>
+<div class="paragraph">
+<p>Only the licence agreed with e-Spirit AG applies to the user for the use of the module.</p>
+</div>
+<div class="paragraph">
+<p>Details of any third-party software products used that are not produced by e-Spirit AG, their own licences and, if applicable, update information, can be found in the file 'THIRD-PARTY.txt', which is supplied with the module.</p>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
