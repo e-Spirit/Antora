@@ -2,6 +2,7 @@
 .gradle/
 target/
 build/
+build/site
 out/
 .gradletasknamecache
 nohup.out
