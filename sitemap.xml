@@ -12,4 +12,7 @@
 <sitemap>
 <loc>https://e-spirit.github.io/Antora/sitemap-fsxa-ui.xml</loc>
 </sitemap>
+<sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-headless.xml</loc>
+</sitemap>
 </sitemapindex>

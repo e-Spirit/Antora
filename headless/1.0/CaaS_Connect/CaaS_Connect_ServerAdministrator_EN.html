@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Documentation for Administrators :: CrownSpirit Documentation</title>
+    <link rel="canonical" href="https://e-spirit.github.io/Antora/headless/1.0/CaaS_Connect/CaaS_Connect_ServerAdministrator_EN.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://e-spirit.github.io/Antora">CrownSpirit Documentation</a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Cloud</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Headless</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">E-Commerce</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/index.html">Spryker</a>
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/index.html">Spartacus</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">FirstSpirit</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Crownpeak</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="headless" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Headless</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">CaaS Connect</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="CaaS_Connect_FSM_Documentation_EN.html">Module documentation</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="CaaS_Connect_ServerAdministrator_EN.html">Admin Manual</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Headless</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../component-b/1.0/index.html">CrownSpirit Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../component-b/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../ecom/1.0/index.html">E-Commerce</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../ecom/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-pwa/1.3.0/index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-pwa/1.3.0/index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../index.html">Headless</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../component-b/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Headless</a></li>
+    <li>CaaS Connect</li>
+    <li><a href="CaaS_Connect_ServerAdministrator_EN.html">Admin Manual</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/pahl-espirit/headless/edit/main/modules/CaaS_Connect/pages/CaaS_Connect_ServerAdministrator_EN.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Documentation for Administrators</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Content as a Service provides the editorial data of FirstSpirit via a uniform JSON-based data format that can be consumed by any endpoint.
+Using the CaaS Connect module reduces the configuration and administration effort in the FirstSpirit project for the delivery layer considerably.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>In the remainder of this document the abbreviation <em>CaaS</em> will be used instead of <em>Content as a Service</em>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect2">
+<h3 id="technicalrequirements"><a class="anchor" href="#technicalrequirements"></a>1.1. Technical requirements</h3>
+<div class="paragraph">
+<p>Besides the FirstSpirit version {fsRuntimeVersion}, the module requires access to the CaaS platform.
+An API key with appropriate permissions must be configured, and the accessibility of the platform endpoint over the network must be ensured.
+For more information on installing and using the CaaS platform, refer to <a href="https://docs.e-spirit.com/modules/caas">the appropriate documentation</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="moduleinstallation"><a class="anchor" href="#moduleinstallation"></a>2. Installation of the module</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The module has no dependencies on other modules and can therefore be installed very easily on the FirstSpirit server.
+Since projects must be explicitly marked as CaaS projects, the project data is not automatically synchronized after the module is installed.
+In order for the module to work as expected, the service component must be configured.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>After installation or update of the module, restarting the FirstSpirit server is required.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="components"><a class="anchor" href="#components"></a>3. Components</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the following chapters all components of the module and their administration are described.</p>
+</div>
+<div class="sect2">
+<h3 id="_caas_service"><a class="anchor" href="#_caas_service"></a>3.1. CaaS service</h3>
+<div class="paragraph">
+<p>The service component <code>CaaS Connect Service</code> is the link between the projects on the FirstSpirit server and the CaaS platform.
+In order for project content to be transferred to the platform, the service must be started.
+If the service is stopped, no synchronization takes place.
+A valid configuration is required to operate the service.
+The configuration dialog of the service component <code>CaaS Connect Service</code> shows which fields are optional or mandatory.
+If a field is empty or the entry is invalid, the field is highlighted with a red border.
+The different configuration points are explained in more detail in the chapter <a href="#automated-config">Automated configuration of the module</a>.
+The minimal configuration includes a reachable CaaS platform and an API key that has read and write access to all CaaS projects.
+More information about API keys and permissions can be found in the <a href="https://docs.e-spirit.com/modules/caas">CaaS platform documentation</a>.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/service-config.png" alt="service config">
+</div>
+<div class="title">Figure 1. Configuration dialog of the <code>CaaS Connect Service</code> component</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The tenant ID may consist of a maximum of 63 characters and is not case-sensitive.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>A detailed explanation of the resulting URL scheme can be found in the <a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html#caas-urls">CaaS Connect documentation</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="sect3">
+<h4 id="_media_deployment"><a class="anchor" href="#_media_deployment"></a>3.1.1. Media deployment</h4>
+<div class="paragraph">
+<p>Media binary data can be stored either in the CaaS platform or in an S3-compatible service.
+Saving binary data in the CaaS platform is the default configuration.
+If binary data is to be delivered via a S3 service, the configuration of the service component CaaS Connect Service must be adjusted accordingly.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If the media deployment is changed, previous binary data URLs become invalid.
+As soon as a medium is changed or released again, both binary data and URLs are updated.
+If needed, a full synchronization can be performed to avoid having to make project changes.
+The two schedules that were automatically created can be used to trigger a full synchronization for this purpose.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p><strong>Configuration of an S3 deployment:</strong> Both Amazon S3 and S3-compatible services can be used for delivery.
+The specification of an S3 endpoint is optional.
+If no end point is specified, it is assumed that Amazon S3 is being accessed.
+In this case, a client region must be specified so that the Amazon end point can be determined.
+It is composed as follows: <code>s3.$clientRegion.amazonaws.com</code>.
+The access credentials for the S3 service are also optional.
+If there is no specification in the configuration, environment variables and system properties are evaluated.
+Further information about such a configuration can be found in the official <a href="https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/setup-credentials.html">Amazon S3 documentation</a>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If an S3-compatible service is used without using a CloudFront domain, the links of the
+binary data of media files will use the <a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">virtual hosted-style</a>
+format. For more information about the format and its limitations see
+<a href="https://docs.aws.amazon.com/AmazonS3/latest/dev/VirtualHosting.html">Virtual hosting of buckets</a> and
+<a href="https://aws.amazon.com/de/blogs/aws/amazon-s3-path-deprecation-plan-the-rest-of-the-story/">Amazon S3 Path Deprecation Plan</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_projectapp"><a class="anchor" href="#_projectapp"></a>3.2. ProjectApp</h3>
+<div class="paragraph">
+<p>When adding the project component <code>CaaS Connect project app</code> to a project, it activates the CaaS Connect module for that project.
+No project-specific configurations are possible and therefore not necessary.
+However, the configuration dialog of the project component can be used to lookup the CaaS base URLs that are available for the project.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="_images/images/project-app-config.png" alt="project app config">
+</div>
+<div class="title">Figure 2. Configuration dialog of the project component of CaaS Connect</div>
+</div>
+<div class="paragraph">
+<p>Adding the project component generates two jobs for the respective project, <code>CaaS Connect Release Generation</code> and <code>CaaS Connect Preview Generation</code>.
+These carry out a full synchronization for the release or preview status for the project.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>The two schedules that are created after adding the project component can be used to synchronize the data of pre-existing project content with the CaaS platform.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="automated-config"><a class="anchor" href="#automated-config"></a>4. Automated configuration of the module</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Besides the manual configuration via the FirstSpirit interface, CaaS Connect version 3 or later on can also be configured via the file system.
+To achieve this, all that is necessary is to create a JSON configuration file.
+The service <code>CaaS Connect Service</code> automatically loads the file <code>caasConnect.json</code> at startup, which must be located in the FirstSpirit server in <code>./conf/modules/CaasConnect.CaasConnectService/caasConnect.json</code>.
+The following examples show the format of the configuration file that is required and supported.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Never use the values of the sample configurations on your test or production systems as is, but replace them with values specific to your project.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="title">Minimal configuration, content of the <code>caasConnect.json</code> file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-JSON hljs" data-lang="JSON">{
+  // The CaaS platform endpoint
+  "baseUrl":"http://localhost:8080",
+  // The API key that is used for data transfer between module and platform
+  "apiKey": "ef27ef88-11c1-4ba0-946c-5c82d2880a18",
+  // The name or abbreviation of the tenant
+  "tenantId": "defaultTenant"
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="title">Content of the <code>caasConnect.json</code> file</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-JSON hljs" data-lang="JSON">{
+  // The CaaS platform endpoint
+  "baseUrl":"http://localhost:8080",
+  // The API key that is used for data transfer between module and platform
+  "apiKey": "ef27ef88-11c1-4ba0-946c-5c82d2880a18",
+  // The name or abbreviation of the tenant
+  "tenantId": "defaultTenant",
+  // optional, to be used when deploying media to S3 instead of CaaS
+  "mediaConnectorConfig" : {
+    "S3": {
+      // The endpoint of the S3 service
+      "endpointUri": "http://localhost:9000",
+      // optional, to use if no environment variables or system properties are used for S3 credentials
+      "credentials": {
+        "accessKeyId": "mySecretS3KeyId",
+        "secretAccessKey": "mySecretS3AccessKey"
+      },
+      "bucketName": "examplebucketname",
+      "timeoutInSeconds": 10,
+      // optional, to be used if a specific region should be used for Amazon S3
+      "clientRegion": "eu-central-1"
+    }
+  },
+  // optional, use only if the CaaS platform or other services (S3, CloudFront) should be accessed via a proxy
+  "proxyAddress": "foo:123"
+}</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>If an error occurs while the service is reading the configuration file, a corresponding error message is displayed in the FirstSpirit log.
+Since the service cannot start without a valid configuration file, the functionality of the module is severely limited in this case.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Some configuration values are subject to further restrictions besides optionality, for example, a bucket name cannot contain uppercase letters.
+Invalid values are displayed directly in the UI and cannot be saved.
+If such an invalid configuration is stored as a file, a corresponding error message will appear in the FirstSpirit log and the service will not start.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Adding a project component to a project is also possible via the FirstSpirit API.</p>
+</div>
+<div class="paragraph">
+<p>ModuleAdminAgent.installProjectApp("CaasConnect", caasConnectProjectAppName, project)</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_error_handling"><a class="anchor" href="#_error_handling"></a>5. Error handling</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Invalid configuration or network problems may cause errors on the CaaS Connect module side.
+All errors are logged in the FirstSpirit log.</p>
+</div>
+<div class="sect2">
+<h3 id="_network_error_or_overload"><a class="anchor" href="#_network_error_or_overload"></a>5.1. Network error or overload</h3>
+<div class="paragraph">
+<p>The module depends on the full availability of the CaaS platform.
+If the platform is not available or cannot process incoming requests fast enough, the module tries to repeat the requests.
+If this does not succeed either, an error is displayed in the FirstSpirit log and possible changes to the data are not synchronized with the CaaS platform.
+The editor is not notified of the error, so monitoring the server log by the administration is essential.
+If an error occurs it can be corrected either by executing the schedules or by repeating the action that lead to the data change.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration_of_the_api_key"><a class="anchor" href="#_configuration_of_the_api_key"></a>5.2. Configuration of the API key</h3>
+<div class="paragraph">
+<p>The API key configured in the service component is used to synchronize all projects on the server with the CaaS platform.
+The API key therefore requires write and read permissions for all CaaS projects, on the FirstSpirit server.
+For more information on configuring API keys, refer to the <a href="https://docs.e-spirit.com/modules/caas">CaaS platform documentation</a>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_push_notifications_change_streams"><a class="anchor" href="#_push_notifications_change_streams"></a>5.3. Push notifications (change streams).</h3>
+<div class="paragraph">
+<p>The change stream definitions can be found in the metadata of the collections.
+They are created at the same time as the collection.
+If the definitions are missing, they can be restored by triggering a new deployment by executing a schedule.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_indexes"><a class="anchor" href="#_indexes"></a>5.4. Indexes</h3>
+<div class="paragraph">
+<p>Indexes that are provided by default for a collection are created at the same time as the collection.
+This happens when the CaaS Connect Service is started or when a deployment job is executed in the CaaS.
+If an index cannot be created, a corresponding error is written to the FirstSpirit log.</p>
+</div>
+<div class="paragraph">
+<p>If an index with the same content but a different name already exists in a collection, it remains unchanged.
+The same applies to an index with the same name but different content.
+In both cases, the new index cannot be created.
+The request is answered with HTTP status 406 and logged as an error.
+Such errors can either be ignored or the existing index can be deleted.
+A new attempt to create the index is triggered by starting the service or executing the request.</p>
+</div>
+<div class="paragraph">
+<p>Information on existing indexes can be found in each collection under <code>_indexes</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../_/js/site.js"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>
