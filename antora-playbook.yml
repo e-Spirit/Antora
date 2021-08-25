@@ -14,6 +14,8 @@ content:
       branches: [TNG-959-antora-navigation, TNG-950_antora_prototype.extra]
     - url: https://github.com/pahl-espirit/ecom.git
       branches: [main]
+    - url: https://github.com/pahl-espirit/headless.git
+      branches: [main]      
 ui:
   bundle:
     url: https://github.com/e-Spirit/Antora-UI/raw/main/build/ui-bundle.zip
