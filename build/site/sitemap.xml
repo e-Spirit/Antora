@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-cloud.xml</loc>
+</sitemap>
+<sitemap>
 <loc>https://e-spirit.github.io/Antora/sitemap-component-b.xml</loc>
+</sitemap>
+<sitemap>
+<loc>https://e-spirit.github.io/Antora/sitemap-dxm.xml</loc>
 </sitemap>
 <sitemap>
 <loc>https://e-spirit.github.io/Antora/sitemap-ecom.xml</loc>
