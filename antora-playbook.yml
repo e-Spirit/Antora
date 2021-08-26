@@ -15,8 +15,13 @@ content:
     - url: https://github.com/pahl-espirit/ecom.git
       branches: [main]
     - url: https://github.com/pahl-espirit/headless.git
-      branches: [main]      
+      branches: [main]
+    - url: https://github.com/pahl-espirit/dxm.git
+      branches: [main]
+    - url: https://github.com/pahl-espirit/cloud.git
+      branches: [main]         
 ui:
   bundle:
-    url: https://github.com/e-Spirit/Antora-UI/raw/main/build/ui-bundle.zip
+    url: https://github.com/e-Spirit/Antora-DefaultUI/raw/main/build/ui-bundle.zip
+#    url: https://github.com/e-Spirit/Antora-UI/raw/main/build/ui-bundle.zip
     snapshot: true
