@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="rp_productpages"><a class="anchor" href="#rp_productpages"></a>Extension of existing product pages</h3>
+<div class="sect1">
+<h2 id="rp_productpages"><a class="anchor" href="#rp_productpages"></a>Extension of existing product pages</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Product pages that already exist in   are equivalent to the <a href="#rp_categorypages">category pages</a> described in the previous chapter.
 They can also be displayed and edited in the {cc} using the {ocm}.
@@ -233,8 +250,8 @@ These can be removed from the project via the <a href="#uc_orphanedpages">report
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="rp_pdp_pagetemp"><a class="anchor" href="#rp_pdp_pagetemp"></a>Page template</h4>
+<div class="sect2">
+<h3 id="rp_pdp_pagetemp"><a class="anchor" href="#rp_pdp_pagetemp"></a>Page template</h3>
 <div class="paragraph">
 <p>Editing a product page is equivalent to extending a <a href="#rp_categorypages">category page</a> and is, in the {fs} project, also based on a page reference.
 This and its associated page are automatically created in the background and invisible to the editor.</p>
@@ -271,8 +288,8 @@ The Product SKU is a unique product ID which, together with the Page UID, is use
 By using the script {script_set_sku}[<code>set_product_sku</code>], the Product SKU is automatically saved in the form of the page when a product page is created in the {fs} project.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_pdp_twigtemp"><a class="anchor" href="#rp_pdp_twigtemp"></a>Twig template</h4>
+<div class="sect2">
+<h3 id="rp_pdp_twigtemp"><a class="anchor" href="#rp_pdp_twigtemp"></a>Twig template</h3>
 <div class="paragraph">
 <p>The Twig template <code>product-cms-block.twig</code> represents a product section on the   side and extends the parent template <code>pdp.twig</code>, in which the basic layout of all product pages is defined.
 It is a part of the zip file <code>b2c-demo-shop-extensions-&lt;VERSION&gt;.zip</code> included in the delivery and must be stored under the path`<strong>src/Pyz/Yves/CmsBlockWidget/Theme/default/components/molecules/product-cms-block</strong>` in  .</p>
@@ -320,6 +337,7 @@ The block <code>body</code> is used to output the contents that are maintained f
 {% block body %}
    {{ fsSpyCmsBlock({ product: data.idProductAbstract }) }}
 {% endblock %}</pre>
+</div>
 </div>
 </div>
 </div>

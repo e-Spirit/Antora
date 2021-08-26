@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="rp_navigation"><a class="anchor" href="#rp_navigation"></a>Extension of the main navigation</h3>
+<div class="sect1">
+<h2 id="rp_navigation"><a class="anchor" href="#rp_navigation"></a>Extension of the main navigation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In addition to the different page types, the main navigation of the   B2C Demo Shop can be edited in the {cc}.
 In {fs} the navigation is represented by a {navigation_extensions}[global page], a {navigation_section}[section template] and a {tech_nav_github}[technical page reference].
@@ -264,8 +281,8 @@ Otherwise the button is hidden.</p>
 <div class="title">Figure 1. Button to extend the navigation</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_navigation_section"><a class="anchor" href="#rp_navigation_section"></a>Section template</h4>
+<div class="sect2">
+<h3 id="rp_navigation_section"><a class="anchor" href="#rp_navigation_section"></a>Section template</h3>
 <div class="paragraph">
 <p>The global page <a href="#rp_navigation_globalpage"><code>navigation_extension</code></a> contained in the reference project enables the extension of the main navigation in the {cc}.
 The navigation can be enhanced by adding menu items on the first level, each of which corresponds to a structure folder and serves as a start node.
@@ -281,8 +298,8 @@ Starting from the selected structure folder, this function generates the sub-nav
 All these sub-navigations of the individual menu items are combined using the technical page template <a href="#rp_navigation_page"><code>navigations</code></a> and transferred to the <em>{c}</em>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_navigation_page"><a class="anchor" href="#rp_navigation_page"></a>Page template</h4>
+<div class="sect2">
+<h3 id="rp_navigation_page"><a class="anchor" href="#rp_navigation_page"></a>Page template</h3>
 <div class="paragraph">
 <p>In addition to the <a href="#rp_navigation_globalpage">global page</a> the reference project contains the {tech_nav_github}[technical page reference <code>navigations</code>].
 This is used to transfer all navigation changes made <strong>in {fs}</strong> to the <em>{c}</em>.</p>
@@ -306,8 +323,8 @@ At the same time, it triggers a script that ensures that the technical page refe
 The publication of the adaptations and their transfer to the <em>Online {c}</em> only takes place in the context of a <a href="#fs-deployment">full generation</a>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_navigation_twigtemplates"><a class="anchor" href="#rp_navigation_twigtemplates"></a>Twig templates</h4>
+<div class="sect2">
+<h3 id="rp_navigation_twigtemplates"><a class="anchor" href="#rp_navigation_twigtemplates"></a>Twig templates</h3>
 <div class="paragraph">
 <p>In addition to the described {fs} templates, the adaptation of the following Twig templates is required in  ,
 to enable the extension of the main navigation of the   B2C Demo Shop in the {cc}.</p>
@@ -344,6 +361,7 @@ The adaptations provide the main navigation with a button in the {cc}, which all
 <div class="paragraph">
 <p>If other navigations should be editable in the {cc}, only an adjustment of the corresponding Twig templates is necessary.
 The chapter <a href="#uc_navigation">navigation maintenance</a> explains the required steps for this.</p>
+</div>
 </div>
 </div>
 </div>

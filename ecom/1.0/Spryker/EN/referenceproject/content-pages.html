@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="rp_contentpage"><a class="anchor" href="#rp_contentpage"></a>Creation of dynamic content pages</h3>
+<div class="sect1">
+<h2 id="rp_contentpage"><a class="anchor" href="#rp_contentpage"></a>Creation of dynamic content pages</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In addition to the extension of existing <a href="#rp_staticsite">static pages</a> or <a href="#rp_categorypages">category pages</a>, the <em>{modulname}</em> module allows the creation of dynamic content pages.
 These correspond, for example, to the imprint, the data security explanation or the general terms and conditions.
@@ -228,8 +245,8 @@ The template is part of the zip file <code>b2c-demo-shop-extensions-&lt;VERSION&
 <p>The section templates contained in the reference project are allowed for all pages.
 For this reason, no additional extensions are required that go beyond the requirements already described for the <a href="#rp_section">Shoppable Video section</a>.</p>
 </div>
-<div class="sect3">
-<h4 id="rp_dcp_pagetemp"><a class="anchor" href="#rp_dcp_pagetemp"></a>Page template</h4>
+<div class="sect2">
+<h3 id="rp_dcp_pagetemp"><a class="anchor" href="#rp_dcp_pagetemp"></a>Page template</h3>
 <div class="paragraph">
 <p>Just like <a href="#rp_staticsite">static pages</a> and <a href="#rp_categorypages">category pages</a>, the maintenance of dynamic content pages in the {fs} project is based on a page reference.
 However, in contrast to the other pages that already exist in the project, dynamic content pages are created using the familiar editing process.
@@ -426,8 +443,8 @@ $CMS_VALUE(json.toJSON)$</code></pre>
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_dcp_twigtemp"><a class="anchor" href="#rp_dcp_twigtemp"></a>Twig template</h4>
+<div class="sect2">
+<h3 id="rp_dcp_twigtemp"><a class="anchor" href="#rp_dcp_twigtemp"></a>Twig template</h3>
 <div class="paragraph">
 <p>In  , the <a href="#sp_twigtemplates">Twig template <code>fs-content-page.twig</code></a> represents a dynamic content page.
 Unlike <a href="#rp_staticsite">static pages</a> and <a href="#rp_categorypages">category pages</a>, dynamic content pages have placeholders.
@@ -477,6 +494,7 @@ They reference the CMS blocks assigned to them, which in turn control the output
       {{ fsSpyCms('content_body') | raw }}
    &lt;/div&gt;
 {% endblock %}</code></pre>
+</div>
 </div>
 </div>
 </div>

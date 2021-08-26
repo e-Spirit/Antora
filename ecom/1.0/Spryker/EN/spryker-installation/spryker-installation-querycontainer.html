@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="_query_container"><a class="anchor" href="#_query_container"></a>Query Container</h3>
+<div class="sect1">
+<h2 id="_query_container"><a class="anchor" href="#_query_container"></a>Query Container</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The previously installed &lt;sp_install_module,Cms Block Data Connector module&gt;&gt; creates a Zed table.
 During the import, the editorial contents determined from the <em>Online {c}</em> are stored in this table.
@@ -223,6 +240,7 @@ The CMS blocks are persisted in another table.</p>
 For this reason, it is necessary to overwrite the <code>CmsBlockStorageQueryContainer</code> and thus adapt the standard behavior of   for publishing CMS blocks.
 The query container is overwritten by creating the class <code>CmsBlockStorageQueryContainer.php</code>.
 It is part of the zip file <code>b2c-demo-shop-extensions-&lt;VERSION&gt;.zip</code> included in the delivery and must be copied into the directory <code><strong>src/Pyz/Zed/CmsBlockStorage/Persistence</strong></code> to be created.</p>
+</div>
 </div>
 </div>
 </article>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: CrownSpirit Documentation</title>
+    <title>Introduction :: CrownSpirit Documentation</title>
     <link rel="canonical" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/index.html">
     <meta name="description" content="Dieses Dokument enthält die Dokumentation für das {modulname}-Modul von {fs}.">
     <meta name="generator" content="Antora 2.3.4">
@@ -159,11 +159,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -216,13 +232,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect1">
-<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
+<h1 class="page">Introduction</h1>
+<div id="preamble">
 <div class="sectionbody">
-<div class="paragraph">
-<p>FirstSpirit is used to create versatile and project-specific content.
-Thanks to the <em>FirstSpirit Connect for Spryker Commerce OS</em> module, it is possible to transfer these contents to the e-commerce shop system Spryker Commerce OS and use it there.</p>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -280,8 +292,11 @@ It is <strong>not</strong> intended as a manual for FirstSpirit editors.</p>
 </tr>
 </table>
 </div>
-<div class="sect2">
-<h3 id="_range_of_functions"><a class="anchor" href="#_range_of_functions"></a>1.1. Range of functions</h3>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_range_of_functions"><a class="anchor" href="#_range_of_functions"></a>1. Range of functions</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p><em>FirstSpirit Connect</em> enables editors to do the following:</p>
 </div>
@@ -314,8 +329,10 @@ Spryker then integrates the information into the shop.</p>
 Even if the FirstSpirit server is shut down due to maintenance work, for example, this does not affect Spryker.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_architecture"><a class="anchor" href="#_architecture"></a>1.2. Architecture</h3>
+</div>
+<div class="sect1">
+<h2 id="_architecture"><a class="anchor" href="#_architecture"></a>2. Architecture</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The connection of FirstSpirit and Spryker is realized by an architecture made up of a range of components (see figure <a href="#architecture">Architecture</a>).</p>
 </div>
@@ -380,15 +397,17 @@ There is only a loose link between FirstSpirit and Spryker.
 They primarily work in parallel with one another.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_concept"><a class="anchor" href="#_concept"></a>1.3. Concept</h3>
+</div>
+<div class="sect1">
+<h2 id="_concept"><a class="anchor" href="#_concept"></a>3. Concept</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The <em>FirstSpirit Connect</em> module offers the possibility to maintain editorial contents in FirstSpirit and to transfer them afterwards via deployment to Spryker.
 For this, content processing in both systems must be coordinated and compatible with each other.
 The subchapters below describe the underlying concept used to archieve this compatibility.</p>
 </div>
 <div class="sect3">
-<h4 id="_pages"><a class="anchor" href="#_pages"></a>1.3.1. Pages</h4>
+<h4 id="_pages"><a class="anchor" href="#_pages"></a>3.1. Pages</h4>
 <div class="paragraph">
 <p>Similar to FirstSpirit, pages in Spryker are based on a structure of different components.
 In order to exchange editorial content between the two systems, these components must be coordinated.</p>
@@ -408,7 +427,7 @@ Sections corresponding to a CMS block can be added to them.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_preview"><a class="anchor" href="#_preview"></a>1.3.2. Preview</h4>
+<h4 id="_preview"><a class="anchor" href="#_preview"></a>3.2. Preview</h4>
 <div class="paragraph">
 <p>The integration realized with the <em>FirstSpirit Connect</em> module only allows FirstSpirit to generate and maintain editorial content and to publish it in the form of CMS blocks.
 However, Spryker still determines the framework of a page whose CMS slots integrate the generated blocks.</p>
@@ -420,7 +439,7 @@ FirstSpirit displays the result using the <em>Omnichannel Managers</em> in Conte
 </div>
 </div>
 <div class="sect3">
-<h4 id="_deployment"><a class="anchor" href="#_deployment"></a>1.3.3. Deployment</h4>
+<h4 id="_deployment"><a class="anchor" href="#_deployment"></a>3.3. Deployment</h4>
 <div class="paragraph">
 <p>The transmission of the content created in FirstSpirit into the live state is done by Spryker.
 For this, the content must be provided, which happens in form of the <em>Online CaaS</em>.
@@ -428,8 +447,10 @@ From it Spryker imports the editorial content and persists it in its data system
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_technical_requirements"><a class="anchor" href="#_technical_requirements"></a>1.4. Technical requirements</h3>
+</div>
+<div class="sect1">
+<h2 id="_technical_requirements"><a class="anchor" href="#_technical_requirements"></a>4. Technical requirements</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>To use the <em>FirstSpirit Connect</em> module, the following technical requirements must be met:</p>
 </div>
@@ -457,13 +478,15 @@ with the extensions <a href="https://documentation.spryker.com/docs/enabling-cat
 <p>When using the supplied <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project <em>FirstSpirit Connect Reference Project</em></a>, the current version of the <em>BasicWorkflows</em> module is also required.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_important_information"><a class="anchor" href="#_important_information"></a>1.5. Important information</h3>
+</div>
+<div class="sect1">
+<h2 id="_important_information"><a class="anchor" href="#_important_information"></a>5. Important information</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>This chapter contains information that should be observed when using the <em>FirstSpirit Connect</em> module.</p>
 </div>
 <div class="sect3">
-<h4 id="_configuration_of_the_glue_web_server"><a class="anchor" href="#_configuration_of_the_glue_web_server"></a>1.5.1. Configuration of the glue web server</h4>
+<h4 id="_configuration_of_the_glue_web_server"><a class="anchor" href="#_configuration_of_the_glue_web_server"></a>5.1. Configuration of the glue web server</h4>
 <div class="paragraph">
 <p>During deployment, the content maintained in FirstSpirit is retrieved from the <em>Online CaaS</em> using the importer.
 It transfers the data to Spryker and persists them in the backend in its data system.</p>
@@ -475,7 +498,7 @@ Due to this reason the web server of the glue API needs to be configured to allo
 </div>
 </div>
 <div class="sect3">
-<h4 id="_configuration_of_the_firstspirit_project_settings_page"><a class="anchor" href="#_configuration_of_the_firstspirit_project_settings_page"></a>1.5.2. Configuration of the FirstSpirit project settings page</h4>
+<h4 id="_configuration_of_the_firstspirit_project_settings_page"><a class="anchor" href="#_configuration_of_the_firstspirit_project_settings_page"></a>5.2. Configuration of the FirstSpirit project settings page</h4>
 <div class="paragraph">
 <p>The <em>CaaS</em> generations assume that a template for the project settings is maintained in the FirstSpirit project.
 Otherwise, the generation job terminates early and reports the following error in the job logs:</p>
@@ -499,7 +522,7 @@ This can happen when a deployment does not include a single PageRef (blue), whic
 </div>
 </div>
 <div class="sect3">
-<h4 id="_use_of_the_spryker_b2c_demo_shop"><a class="anchor" href="#_use_of_the_spryker_b2c_demo_shop"></a>1.5.3. Use of the Spryker B2C Demo Shop</h4>
+<h4 id="_use_of_the_spryker_b2c_demo_shop"><a class="anchor" href="#_use_of_the_spryker_b2c_demo_shop"></a>5.3. Use of the Spryker B2C Demo Shop</h4>
 <div class="paragraph">
 <p>As mentioned before, the entire documentation is geared to the connection of the Spryker B2C Demo Shop.
 When using it, some difficulties may occur that are neither caused by the <em>FirstSpirit Connect</em> module nor by the integration.
@@ -526,7 +549,6 @@ For this reason, the limit defined in the <code>php.ini</code> configuration fil
 <pre class="highlightjs highlight"><code class="language-PHP hljs" data-lang="PHP">[...]
 set memory_limit=-1
 [...]</code></pre>
-</div>
 </div>
 </div>
 </div>

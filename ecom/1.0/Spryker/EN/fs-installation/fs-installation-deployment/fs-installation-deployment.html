@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="fs-deployment"><a class="anchor" href="#fs-deployment"></a>Generation schedule - full generation</h3>
+<div class="sect1">
+<h2 id="fs-deployment"><a class="anchor" href="#fs-deployment"></a>Generation schedule - full generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>By default, releasing content does not update the <em>Online {c}</em> and does not transfer data to  .
 Instead, it only includes the {fs} release process, which can be mapped using the <em>{bwfs}</em> release workflow, for example.
@@ -264,8 +281,8 @@ This setting has already been made in the schedule supplied.</p>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-media"><a class="anchor" href="#fs-deployment-media"></a>Execute Publish Media to CDN</h4>
+<div class="sect2">
+<h3 id="fs-deployment-media"><a class="anchor" href="#fs-deployment-media"></a>Execute Publish Media to CDN</h3>
 <div class="paragraph">
 <p>Unlike the content created with {fs}, the released media is not transferred to the <em>{c}</em>, but to the CDN provided by the {creator}.
 Therefore the schedule contains the script action <em>Execute Publish Media to CDN</em>.</p>
@@ -303,8 +320,8 @@ The script contains the variable <code>SCHEDULER_NAME</code>, which has the name
 If the name changes, it must also be adjusted accordingly here.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-aggregations"><a class="anchor" href="#fs-deployment-aggregations"></a>Setup {c} Blocks Aggregations</h4>
+<div class="sect2">
+<h3 id="fs-deployment-aggregations"><a class="anchor" href="#fs-deployment-aggregations"></a>Setup {c} Blocks Aggregations</h3>
 <div class="paragraph">
 <p>By default, <em>{c}</em> stores and delivers the content transferred from {fs} page-based.
 However, the processing and persistence of editorial content in   is done on the basis of CMS blocks, each corresponding to a {fs} section.
@@ -339,8 +356,8 @@ Its value must correspond to a list of all collections, separated by semicolons,
 <div class="title">Figure 3. Configuration parameter</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-import"><a class="anchor" href="#fs-deployment-spryker-import"></a>Trigger   Import</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-import"><a class="anchor" href="#fs-deployment-spryker-import"></a>Trigger   Import</h3>
 <div class="paragraph">
 <p>In {fs}, the creation and editing of editorial content takes place in the {cc}.
 After release, they are transferred by deployment to the <em>Online {c}</em> and imported from there by   to be integrated into the shop.
@@ -386,8 +403,8 @@ Errors occurring in this context and recorded in the   log are transferred to th
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-fetch-spryker-logs"><a class="anchor" href="#fs-deployment-fetch-spryker-logs"></a>Trigger Fetch   Logs</h4>
+<div class="sect2">
+<h3 id="fs-deployment-fetch-spryker-logs"><a class="anchor" href="#fs-deployment-fetch-spryker-logs"></a>Trigger Fetch   Logs</h3>
 <div class="paragraph">
 <p>Deleting or deactivating categories or products in   that are referenced in the {fs} project leads to errors and warnings during the import.
 However, by default these are only recorded in the   log.
@@ -404,8 +421,8 @@ com.espirit.ecom.contentconnect.spryker.module.trigger.triggerfetchlogs.TriggerF
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-cleanup"><a class="anchor" href="#fs-deployment-spryker-cleanup"></a>Trigger   Cleanup</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-cleanup"><a class="anchor" href="#fs-deployment-spryker-cleanup"></a>Trigger   Cleanup</h3>
 <div class="paragraph">
 <p>The creation and editing of editorial content takes place in {fs} before it is transferred to the <em>Online {c}</em> via deployment and imported from there by  .
 In order to keep the data in both systems up-to-date, deleted content from the {fs} project must also be removed on the   side.
@@ -421,8 +438,8 @@ com.espirit.ecom.contentconnect.spryker.module.trigger.triggercleanup.TriggerCle
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-sendmail"><a class="anchor" href="#fs-deployment-spryker-sendmail"></a>Send Result Mail</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-sendmail"><a class="anchor" href="#fs-deployment-spryker-sendmail"></a>Send Result Mail</h3>
 <div class="paragraph">
 <p>In most cases, the deployment of the content created or edited in {fs} is performed via the {cc}.
 However, the {cc} does not inform the editor whether a publication was successful or failed.
@@ -439,8 +456,10 @@ com.espirit.ecom.contentconnect.spryker.module.schedule.ReviewScheduleResultExec
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>Generation schedule - Media generation</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>Generation schedule - Media generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Unlike the content created with {fs}, the released media is not transferred to the <em>{c}</em>, but to the CDN provided by the {creator}.
 Therefore, the {refproject_github}[reference project] has the schedule <em>Media Deployment</em>, which is created within the <code><strong>{manager}</strong></code> in the <code><strong>menu:Project properties[Schedule management]</strong></code> area.
@@ -468,8 +487,8 @@ These are described in the following subchapters.</p>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>Media Generation</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>Media Generation</h3>
 <div class="paragraph">
 <p>To transfer the media to the CDN provided by the {creator}, they must first be generated.
 Therefore the schedule contains the generation action <em>Media Generation</em>.
@@ -487,8 +506,8 @@ Furthermore, it is necessary that the URL Factory selected at this point for <co
 <div class="title">Figure 5. Properties of the Media Generation action</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>Publish to CDN</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>Publish to CDN</h3>
 <div class="paragraph">
 <p>Once the media have been generated, they are transferred to the CDN.
 Therefore, the schedule contains the action <em>Publish to CDN</em>.
@@ -518,8 +537,10 @@ The necessary information is provided by the {creator}.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-previewdeployment"><a class="anchor" href="#fs-previewdeployment"></a>Generation schedule - preview generation</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-previewdeployment"><a class="anchor" href="#fs-previewdeployment"></a>Generation schedule - preview generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Under certain <a href="#uc-datasync">circumstances</a> it might happen that the datasets in the {fs} project, the {c} and in   differ.
 In this case the contents from the <em>Online {c}</em> and in   can be updated by a <a href="#fs-deployment">full generation</a>.
@@ -629,6 +650,7 @@ Otherwise, due to technical restrictions, they are kept in   and are only remove
 </div>
 </dd>
 </dl>
+</div>
 </div>
 </div>
 </article>

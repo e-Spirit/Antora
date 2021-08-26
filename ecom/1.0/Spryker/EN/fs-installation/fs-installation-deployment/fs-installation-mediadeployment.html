@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>Generation schedule - Media generation</h3>
+<div class="sect1">
+<h2 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>Generation schedule - Media generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Unlike the content created with {fs}, the released media is not transferred to the <em>{c}</em>, but to the CDN provided by the {creator}.
 Therefore, the {refproject_github}[reference project] has the schedule <em>Media Deployment</em>, which is created within the <code><strong>{manager}</strong></code> in the <code><strong>menu:Project properties[Schedule management]</strong></code> area.
@@ -240,8 +257,8 @@ These are described in the following subchapters.</p>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>Media Generation</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>Media Generation</h3>
 <div class="paragraph">
 <p>To transfer the media to the CDN provided by the {creator}, they must first be generated.
 Therefore the schedule contains the generation action <em>Media Generation</em>.
@@ -259,8 +276,8 @@ Furthermore, it is necessary that the URL Factory selected at this point for <co
 <div class="title">Figure 2. Properties of the Media Generation action</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>Publish to CDN</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>Publish to CDN</h3>
 <div class="paragraph">
 <p>Once the media have been generated, they are transferred to the CDN.
 Therefore, the schedule contains the action <em>Publish to CDN</em>.
@@ -287,6 +304,7 @@ The necessary information is provided by the {creator}.</p>
 <img src="../../../_images/mediageneration_publication.png" alt="mediageneration publication">
 </div>
 <div class="title">Figure 3. Publish to CDN</div>
+</div>
 </div>
 </div>
 </div>

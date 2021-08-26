@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: CrownSpirit Documentation</title>
+    <link rel="canonical" href="https://e-spirit.github.io/Antora/cloud/1.0/chapters/handover/module-development.html">
+    <meta name="generator" content="Antora 2.3.4">
+    <link rel="stylesheet" href="../../../../_/css/site.css">
+    <script>var uiRootPath = '../../../../_'</script>
+    <link rel="icon" href="../../../../_/img/shortcut-icon.ico" type="image/x-icon">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://e-spirit.github.io/Antora">CrownSpirit Documentation</a>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">Cloud</a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Headless</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Product A</a>
+            <a class="navbar-item" href="#">Product B</a>
+            <a class="navbar-item" href="#">Product C</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">E-Commerce</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/index.html">Spryker</a>
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/index.html">Spartacus</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">FirstSpirit</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://docs.e-spirit.com/lp/?locale=en&main=firstspirit&sub=editors">Editors</a>
+            <a class="navbar-item" href="https://docs.e-spirit.com/lp/?locale=en&main=firstspirit&sub=developers">Developers</a>
+            <a class="navbar-item" href="https://docs.e-spirit.com/lp/?locale=en&main=firstspirit&sub=administrators">Administrators</a>
+          </div>
+        </div>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link" href="#">Crownpeak</a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="#">Resource A</a>
+            <a class="navbar-item" href="#">Resource B</a>
+            <a class="navbar-item" href="#">Resource C</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="cloud" data-version="1.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../../index.html">FirstSpirit Cloud</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../First_Steps_with_FS_Cloud_EN.html">First Steps</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../../Getting_Started_EN.html">Getting Started</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">FirstSpirit Cloud</span>
+    <span class="version">1.0</span>
+  </div>
+  <ul class="components">
+    <li class="component">
+      <a class="title" href="../../../../component-b/1.0/index.html">CrownSpirit Documentation</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../component-b/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../ecom/1.0/index.html">E-Commerce</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../ecom/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component is-current">
+      <a class="title" href="../../index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../fsxa-pwa/1.3.0/index.html">FSXA-PWA</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-pwa/1.3.0/index.html">1.3.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../fsxa-ui/4.1.0/index.html">FSXA-UI</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../fsxa-ui/4.1.0/index.html">4.1.0</a>
+        </li>
+        <li class="version">
+          <a href="../../../../fsxa-ui/3.0.0/index.html">3.0.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../headless/1.0/index.html">Headless</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../headless/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../../../../component-b/1.0/index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/pahl-espirit/cloud/edit/main/modules/ROOT/pages/chapters/handover/module-development.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect2">
+<h3 id="_module_development"><a class="anchor" href="#_module_development"></a>Module Development</h3>
+<div class="paragraph">
+<p>For module development in your cloud environment an initial setup is required.
+Please contact our Technical Support.</p>
+</div>
+<div class="paragraph">
+<p>Please let us know the <strong>name of the git-repository</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Each Code repository initially comes with two branches:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The development branch is the continuous integration branch connected through the build server to DEV stage.</p>
+</li>
+<li>
+<p>The master branch is the release branch and connected to QA stage.
+If you need the  module on your productive stage, please contact our Technical Support including the following information</p>
+<div class="paragraph">
+<p><strong>Necessary information about the FSM module</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Module name</p>
+</li>
+<li>
+<p>Group-ID</p>
+</li>
+<li>
+<p>Artifact-ID</p>
+</li>
+<li>
+<p>Artifact-Classifier</p>
+</li>
+<li>
+<p>Version</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setup_local_deployment"><a class="anchor" href="#_setup_local_deployment"></a>Setup local Deployment</h3>
+<div class="paragraph">
+<p>To resolve FirstSpirit specific dependencies you&#8217;ll have to add the e-Spirit Cloud artifactory to your maven settings.
+Check out the current development branch of your desired module.
+You&#8217;ll find our git stash here <a href="https://git.e-spirit.hosting" class="bare">https://git.e-spirit.hosting</a></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_invoke_build_pipeline"><a class="anchor" href="#_invoke_build_pipeline"></a>Invoke Build Pipeline</h3>
+<div class="sect3">
+<h4 id="_generally"><a class="anchor" href="#_generally"></a>Generally</h4>
+<div class="paragraph">
+<p>All projects in our git supports the gitflow workflow, which we recommend.
+Every push you&#8217;ll make to the development branch will trigger the build server to try to build and deploy your module to your FirstSpirit DEV stage.
+The result of the successful build will be stored in your internal snapshot artifactory.</p>
+</div>
+<div class="paragraph">
+<p>The module needs to have unit tests to make the build successful.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Please note that after every deployment an immediate restart of the FirstSpirit server is needed in ordner for all the changes to take effect.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mirroring_git_repository_without_a_local_copy"><a class="anchor" href="#_mirroring_git_repository_without_a_local_copy"></a>Mirroring Git repository without a local copy</h4>
+<div class="paragraph">
+<p>If you haven’t cloned the repository before, you can mirror it to a new home by</p>
+</div>
+<div class="listingblock">
+<div class="title">Git commands</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-GIT hljs" data-lang="GIT">$git clone --mirror git@git.e-spirit.hosting/upstream-repository.git
+
+$ cd upstream-repository.git
+$ git push --mirror git@git.e-spirit.hosting/new-location.git</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>This will get all the branches and tags that are available in the upstream repository and will replicate those into the new location.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Don’t use <code>git push --mirror</code> in repositories that weren’t cloned by <code>--mirror</code> as well.
+It’ll overwrite the remote repository with your local references (and your local branches).
+This is not what we want.
+Read the next section to discover what to do in these cases.</p>
+</div>
+<div class="paragraph">
+<p>Also git clone <code>--mirror</code> is prefered over git clone <code>--bare</code> because the former also clones git notes and some other attributes.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_mirroring_a_git_repository_if_you_already_have_a_local_working_copy"><a class="anchor" href="#_mirroring_a_git_repository_if_you_already_have_a_local_working_copy"></a>Mirroring a git repository if you already have a local working copy</h4>
+<div class="paragraph">
+<p>By working copy, we mean a “normal” repository, in which you have the files that are being tracked into git and where you perform commands like <code>git add</code> and so on.</p>
+</div>
+<div class="paragraph">
+<p>In this case, you may have a lot of local branches and tags that you don’t want to copy to the new location.
+But you do have references to remote branches.
+You can view them with <code>git branches -r</code>.
+If you pay attention to that list, though, you may notice that you have a lot of branches that were already deleted in the upstream repository.
+Why?</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_cleaning_old_references_to_remote_branches"><a class="anchor" href="#_cleaning_old_references_to_remote_branches"></a>Cleaning old references to remote branches</h4>
+<div class="paragraph">
+<p>By default, when you do a <code>git fetch</code> or <code>git pull</code>, git will not delete the references to branches that were deleted in the upstream repository
+(you may view them in your <code>.git/refs/remotes</code> dir).
+We need to clean those old references before mirroring them to a new location.</p>
+</div>
+<div class="paragraph">
+<p>To do so, run <code>git fetch --prune</code>.</p>
+</div>
+<div class="paragraph">
+<p>This will update your references to the origin repository and also clean the stale branches reported by <code>git branch -r</code>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_finally_mirroring_the_repository_to_a_new_location"><a class="anchor" href="#_finally_mirroring_the_repository_to_a_new_location"></a>Finally mirroring the repository to a new location</h4>
+<div class="paragraph">
+<p>Now we’re ready to send those updated references back to the <code>origin</code> repository:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-GIT hljs" data-lang="GIT">git push --prune
+git@git.e-spirit.hosting:/new-location.git
++refs/remotes/origin/*:refs/heads/*
++refs/tags/*:refs/tags/*</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>We want those references inside the <code><strong>.git/refs/remotes/origin</strong></code> to be the LOCAL references in the new location.
+The local references there will be stored in the <code>refs/heads</code> dir.
+Same thing happens to tags.</p>
+</div>
+<div class="paragraph">
+<p>The <code>+</code> sign indicates that we want to <strong>overwrite</strong> any reference there may already exist.
+<code>--prune</code> means we want to delete any reference that may exist there if we don’t have such reference in our <code><strong>refs/remotes/origin/</strong>*</code> (and tags) references.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_best_practises"><a class="anchor" href="#_best_practises"></a>Best practises</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Please do not push to the master branch.</p>
+</li>
+<li>
+<p>Rather do a pull request from development to master branch.</p>
+</li>
+<li>
+<p>Every push to the master branch will build a release which is stored in your internal artifactory.</p>
+</li>
+<li>
+<p>This artifact gets installed on the QA stage.</p>
+</li>
+<li>
+<p>To get the module installed on your FirstSpirit Production stage during next maintenance please file a ticket via <a href="mailto:help@e-spirit.com">help@e-spirit.com</a> including following information</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Group-ID</p>
+</li>
+<li>
+<p>Artifact-ID</p>
+</li>
+<li>
+<p>Artifact-Classifier</p>
+</li>
+<li>
+<p>Version</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"></dt>
+<dd>
+<p><em>This step is necessary because of our Service Level Agreement.</em></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_module_development_pipeline"><a class="anchor" href="#_module_development_pipeline"></a>Module Development Pipeline</h3>
+<div class="imageblock">
+<div class="content">
+<img src="../../_images/images/dev_pipeline.png" alt="dev pipeline">
+</div>
+<div class="title">Figure 1. Module development pipeline</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_setup_your_maven_tool_to_use_e_spirit_cloud_artifactory"><a class="anchor" href="#_setup_your_maven_tool_to_use_e_spirit_cloud_artifactory"></a>Setup your Maven tool to use e-Spirit Cloud Artifactory</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Please open following URL:<br>
+<a href="https://git.e-spirit.hosting/projects/CLOUD/repos/public/browse" class="bare">https://git.e-spirit.hosting/projects/CLOUD/repos/public/browse</a><br>
+<em>Only users with the role Git-User can access to this repository.</em></p>
+</li>
+<li>
+<p>Navigate to the <code>maven-settings/settings.xml</code> file in the Bitbucket file browser.</p>
+</li>
+<li>
+<p>Copy the content of the file or download it to your local maven directory.
+A common location for User Home Directory is <code>.m2/</code>.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For more information please have a look at the official documentation at <a href="https://maven.apache.org/settings.html" class="bare">https://maven.apache.org/settings.html</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</li>
+<li>
+<p>Further you need to replace the following placeholders:<br></p>
+<div class="listingblock">
+<div class="title">Placeholders</div>
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-XML hljs" data-lang="XML">&lt;server&gt;
+	&lt;username&gt;CLOUD_USERNAME&lt;/username&gt;
+	&lt;password&gt;CLOUD_ENCRYPTED_PASSWORD&lt;/password
+	&lt;id&gt;...&lt;/id&gt;
+&lt;/server&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>CLOUD_USERNAME</code>: This is your email address which represents your user name in FirstSpirit.</p>
+</li>
+<li>
+<p><code>CLOUD_ENCRYPTED_PASSWORD</code>: To generate your encrypted password, please</p>
+<div class="ulist">
+<ul>
+<li>
+<p>click <a href="https://artifactory.e-spirit.hosting/artifactory/api/security/encryptedPassword">here</a></p>
+</li>
+<li>
+<p>login with your FirstSpirit Credentials</p>
+</li>
+<li>
+<p>the generated password will appear</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>CUSTOMER</code>: For the repository nodes, replace this value in following URLs with your lowercase customer name: <a href="https://artifactory.e-spirit.hosting/artifactory/CUSTOMER-release" class="bare">https://artifactory.e-spirit.hosting/artifactory/CUSTOMER-release</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>For additional information about maven artifactory please have a look at <a href="https://maven.apache.org/guides/introduction/introduction-to-profiles.html">Maven Introduction</a>.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<script src="../../../../_/js/site.js"></script>
+<script async src="../../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

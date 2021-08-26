@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="sp_controller"><a class="anchor" href="#sp_controller"></a>Controllers</h3>
+<div class="sect1">
+<h2 id="sp_controller"><a class="anchor" href="#sp_controller"></a>Controllers</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The previously installed <a href="#sp_plugin"><code>CmsBlockTwigFunctionPlugin</code></a> allows mapping between the content stored in {fs} and in  .
 For this, it assumes that the view data of a page contains its ID and type.
@@ -301,6 +318,7 @@ protected function getRouteProvider(): array
       new FirstSpiritPreviewRoutePlugin()
    ];
 }</code></pre>
+</div>
 </div>
 </div>
 </div>

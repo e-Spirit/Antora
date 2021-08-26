@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="rp_staticsite"><a class="anchor" href="#rp_staticsite"></a>Extension of existing static pages</h3>
+<div class="sect1">
+<h2 id="rp_staticsite"><a class="anchor" href="#rp_staticsite"></a>Extension of existing static pages</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The <em>{modulname}</em> module allows editors to enrich static pages that already exist on   side with {fs} content.
 The pages are displayed within the {cc} using the <em>{ocm}</em> and thus integrate seamlessly into the editorial process familiar from {fs}.</p>
@@ -221,8 +238,8 @@ The pages are displayed within the {cc} using the <em>{ocm}</em> and thus integr
 <p>Besides the integration of the <em>{ocm}</em>, which is a step of the installation, the extension of static pages in {fs} requires the filling of the output channel of the page and section templates.
 In addition, an adaptation of the corresponding Twig templates is necessary on   side.</p>
 </div>
-<div class="sect3">
-<h4 id="rp_pagetemp"><a class="anchor" href="#rp_pagetemp"></a>Page template</h4>
+<div class="sect2">
+<h3 id="rp_pagetemp"><a class="anchor" href="#rp_pagetemp"></a>Page template</h3>
 <div class="paragraph">
 <p>Editorial content in the {fs} project is always edited on the basis of a page reference.
 It and the page on which it is based must first be created in the {fs} project.
@@ -272,8 +289,8 @@ This information is indicated by the <code>pagetype</code>.</p>
 <p>The generated JSON object is part of the <em>{c}</em> item to be generated, which is persisted on the   side by the importer.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_section"><a class="anchor" href="#rp_section"></a>Section template</h4>
+<div class="sect2">
+<h3 id="rp_section"><a class="anchor" href="#rp_section"></a>Section template</h3>
 <div class="paragraph">
 <p>The {homepage_github}[page template <code>homepage</code>] contained in the reference project is an example of a static page.
 It contains the content areas <code>fs_slt_2</code>, and <code>fs_slt_3</code>.
@@ -424,8 +441,8 @@ With the help of a timeline, the video items can be intuitively created, edited 
 <div class="title">Figure 1. Editing dialog for video items</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_twigtemplates"><a class="anchor" href="#rp_twigtemplates"></a>Twig templates</h4>
+<div class="sect2">
+<h3 id="rp_twigtemplates"><a class="anchor" href="#rp_twigtemplates"></a>Twig templates</h3>
 <div class="paragraph">
 <p>In {fs}, the creation and editing of editorial content takes place in {cc}.
 The storefront is embedded in it using the <em>{ocm}</em>.
@@ -574,6 +591,7 @@ These correspond to the time at which the video item is displayed, an image, a t
 <img src="../../_images/section.png" alt="section">
 </div>
 <div class="title">Figure 2. Representation of the section</div>
+</div>
 </div>
 </div>
 </div>

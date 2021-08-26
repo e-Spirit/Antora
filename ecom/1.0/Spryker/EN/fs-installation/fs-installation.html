@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Untitled :: CrownSpirit Documentation</title>
+    <title>FirstSpirit - Installation and Configuration :: CrownSpirit Documentation</title>
     <link rel="canonical" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/EN/fs-installation/fs-installation.html">
     <meta name="description" content="Dieses Dokument enthält die Dokumentation für das {modulname}-Modul von {fs}.">
     <meta name="generator" content="Antora 2.3.4">
@@ -159,11 +159,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -217,15 +233,10 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
+<h1 class="page">FirstSpirit - Installation and Configuration</h1>
 <div class="sect1">
-<h2 id="fs-installation"><a class="anchor" href="#fs-installation"></a>1. FirstSpirit - Installation and Configuration</h2>
+<h2 id="fs_pcomp"><a class="anchor" href="#fs_pcomp"></a>1. Configuration of the project component</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Various components must be installed and configured in order to use the functions of the <em>FirstSpirit Connect</em> module.
-The following subchapters explain the steps required.</p>
-</div>
-<div class="sect2">
-<h3 id="fs_pcomp"><a class="anchor" href="#fs_pcomp"></a>1.1. Configuration of the project component</h3>
 <div class="paragraph">
 <p>A project-specific configuration is necessary for the use of the <em>FirstSpirit Connect</em> module.
 This is done via the project component, which is already added to the supplied <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project</a>.</p>
@@ -353,8 +364,10 @@ This allows to reference a YouTube video from a specific channel.</p>
 <div class="title">Figure 5. Projekt-Komponente - YouTube</div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-webcomponents"><a class="anchor" href="#fs-webcomponents"></a>1.2. Adding the web component</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-webcomponents"><a class="anchor" href="#fs-webcomponents"></a>2. Adding the web component</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>To prepare the ContentCreator, a web component is needed, which is already added to the <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project</a>.
 By default it is installed globally in the <code><strong>ServerManager</strong></code> in the area <code><strong><span class="menuseq"><b class="menu">Server Properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Web applications</b></span></strong></code>.
@@ -385,8 +398,10 @@ After the successful installation, a dialog opens, in which the activation of th
 <div class="title">Figure 6. Web components in the project properties</div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs_previewurl"><a class="anchor" href="#fs_previewurl"></a>1.3. Definition of the external preview URL</h3>
+</div>
+<div class="sect1">
+<h2 id="fs_previewurl"><a class="anchor" href="#fs_previewurl"></a>3. Definition of the external preview URL</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>By using the <em>Omnichannel Manager</em>, the ContentCreator displays external content from Spryker to which the <em>Omnichannel Manager</em> needs access.
 The preview URL of the Spryker storefront must therefore be specified in the ContentCreator properties.
@@ -409,8 +424,10 @@ It is stored in the <a href="https://documentation.spryker.com/docs/configuratio
 <div class="title">Figure 7. External Preview URL</div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-conversionrule"><a class="anchor" href="#fs-conversionrule"></a>1.4. Conversion rule</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-conversionrule"><a class="anchor" href="#fs-conversionrule"></a>4. Conversion rule</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The data to be transferred to <em>CaaS</em> is defined in the <a href="#fs-templateset">template set</a> still to be created.
 The use of certain special characters could lead to invalid JSON objects.
@@ -442,8 +459,10 @@ The new rule is then added to the list in the main panel and is to be assigned t
 <p>More information is available in the <em><a href="https://docs.e-spirit.com/odfs/edocs/admi/index.en.html">FirstSpirit Documentation for Administrators</a></em>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-templateset"><a class="anchor" href="#fs-templateset"></a>1.5. Template set</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-templateset"><a class="anchor" href="#fs-templateset"></a>5. Template set</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>In addition to the existing template sets of a project, another XML channel is required.
 This must be created manually for empty projects, but is already contained within the supplied <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project <em>FirstSpirit Connect Reference Project</em></a>.</p>
@@ -476,8 +495,10 @@ This must be created manually for empty projects, but is already contained withi
 It is used to define the contents to be transmitted, which are summarized in messages during generation and transmitted to the <em>CaaS</em>.</p>
 </div>
 </div>
-<div class="sect2">
-<h3 id="_resolutions"><a class="anchor" href="#_resolutions"></a>1.6. Resolutions</h3>
+</div>
+<div class="sect1">
+<h2 id="_resolutions"><a class="anchor" href="#_resolutions"></a>6. Resolutions</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>The <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project <em>FirstSpirit Connect Reference Project</em></a> has different sections, which can be used to include images on the various pages.
 The editor should be able to cut the images to a certain detail.
@@ -494,8 +515,10 @@ They are already created within the <code><strong>ServerManagers</strong></code>
 <div class="title">Figure 9. Resolutions</div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-deployment"><a class="anchor" href="#fs-deployment"></a>1.7. Generation schedule - full generation</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-deployment"><a class="anchor" href="#fs-deployment"></a>7. Generation schedule - full generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>By default, releasing content does not update the <em>Online CaaS</em> and does not transfer data to Spryker.
 Instead, it only includes the FirstSpirit release process, which can be mapped using the <em>BasicWorkflows</em> release workflow, for example.
@@ -547,8 +570,8 @@ This setting has already been made in the schedule supplied.</p>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-media"><a class="anchor" href="#fs-deployment-media"></a>1.7.1. Execute Publish Media to CDN</h4>
+<div class="sect2">
+<h3 id="fs-deployment-media"><a class="anchor" href="#fs-deployment-media"></a>7.1. Execute Publish Media to CDN</h3>
 <div class="paragraph">
 <p>Unlike the content created with FirstSpirit, the released media is not transferred to the <em>CaaS</em>, but to the CDN provided by the e-Spirit AG.
 Therefore the schedule contains the script action <em>Execute Publish Media to CDN</em>.</p>
@@ -586,8 +609,8 @@ The script contains the variable <code>SCHEDULER_NAME</code>, which has the name
 If the name changes, it must also be adjusted accordingly here.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-aggregations"><a class="anchor" href="#fs-deployment-aggregations"></a>1.7.2. Setup CaaS Blocks Aggregations</h4>
+<div class="sect2">
+<h3 id="fs-deployment-aggregations"><a class="anchor" href="#fs-deployment-aggregations"></a>7.2. Setup CaaS Blocks Aggregations</h3>
 <div class="paragraph">
 <p>By default, <em>CaaS</em> stores and delivers the content transferred from FirstSpirit page-based.
 However, the processing and persistence of editorial content in Spryker is done on the basis of CMS blocks, each corresponding to a FirstSpirit section.
@@ -622,8 +645,8 @@ Its value must correspond to a list of all collections, separated by semicolons,
 <div class="title">Figure 12. Configuration parameter</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-import"><a class="anchor" href="#fs-deployment-spryker-import"></a>1.7.3. Trigger Spryker Import</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-import"><a class="anchor" href="#fs-deployment-spryker-import"></a>7.3. Trigger Spryker Import</h3>
 <div class="paragraph">
 <p>In FirstSpirit, the creation and editing of editorial content takes place in the ContentCreator.
 After release, they are transferred by deployment to the <em>Online CaaS</em> and imported from there by Spryker to be integrated into the shop.
@@ -669,8 +692,8 @@ Errors occurring in this context and recorded in the Spryker log are transferred
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-fetch-spryker-logs"><a class="anchor" href="#fs-deployment-fetch-spryker-logs"></a>1.7.4. Trigger Fetch Spryker Logs</h4>
+<div class="sect2">
+<h3 id="fs-deployment-fetch-spryker-logs"><a class="anchor" href="#fs-deployment-fetch-spryker-logs"></a>7.4. Trigger Fetch Spryker Logs</h3>
 <div class="paragraph">
 <p>Deleting or deactivating categories or products in Spryker that are referenced in the FirstSpirit project leads to errors and warnings during the import.
 However, by default these are only recorded in the Spryker log.
@@ -687,8 +710,8 @@ com.espirit.ecom.contentconnect.spryker.module.trigger.triggerfetchlogs.TriggerF
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-cleanup"><a class="anchor" href="#fs-deployment-spryker-cleanup"></a>1.7.5. Trigger Spryker Cleanup</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-cleanup"><a class="anchor" href="#fs-deployment-spryker-cleanup"></a>7.5. Trigger Spryker Cleanup</h3>
 <div class="paragraph">
 <p>The creation and editing of editorial content takes place in FirstSpirit before it is transferred to the <em>Online CaaS</em> via deployment and imported from there by Spryker.
 In order to keep the data in both systems up-to-date, deleted content from the FirstSpirit project must also be removed on the Spryker side.
@@ -704,8 +727,8 @@ com.espirit.ecom.contentconnect.spryker.module.trigger.triggercleanup.TriggerCle
 </div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-deployment-spryker-sendmail"><a class="anchor" href="#fs-deployment-spryker-sendmail"></a>1.7.6. Send Result Mail</h4>
+<div class="sect2">
+<h3 id="fs-deployment-spryker-sendmail"><a class="anchor" href="#fs-deployment-spryker-sendmail"></a>7.6. Send Result Mail</h3>
 <div class="paragraph">
 <p>In most cases, the deployment of the content created or edited in FirstSpirit is performed via the ContentCreator.
 However, the ContentCreator does not inform the editor whether a publication was successful or failed.
@@ -722,8 +745,10 @@ com.espirit.ecom.contentconnect.spryker.module.schedule.ReviewScheduleResultExec
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>1.8. Generation schedule - Media generation</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-mediadeployment"><a class="anchor" href="#fs-mediadeployment"></a>8. Generation schedule - Media generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Unlike the content created with FirstSpirit, the released media is not transferred to the <em>CaaS</em>, but to the CDN provided by the e-Spirit AG.
 Therefore, the <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project</a> has the schedule <em>Media Deployment</em>, which is created within the <code><strong>ServerManager</strong></code> in the <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Schedule management</b></span></strong></code> area.
@@ -751,8 +776,8 @@ These are described in the following subchapters.</p>
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>1.8.1. Media Generation</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-generation"><a class="anchor" href="#fs-mediadeployment-generation"></a>8.1. Media Generation</h3>
 <div class="paragraph">
 <p>To transfer the media to the CDN provided by the e-Spirit AG, they must first be generated.
 Therefore the schedule contains the generation action <em>Media Generation</em>.
@@ -770,8 +795,8 @@ Furthermore, it is necessary that the URL Factory selected at this point for <co
 <div class="title">Figure 14. Properties of the Media Generation action</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>1.8.2. Publish to CDN</h4>
+<div class="sect2">
+<h3 id="fs-mediadeployment-publish"><a class="anchor" href="#fs-mediadeployment-publish"></a>8.2. Publish to CDN</h3>
 <div class="paragraph">
 <p>Once the media have been generated, they are transferred to the CDN.
 Therefore, the schedule contains the action <em>Publish to CDN</em>.
@@ -801,8 +826,10 @@ The necessary information is provided by the e-Spirit AG.</p>
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-previewdeployment"><a class="anchor" href="#fs-previewdeployment"></a>1.9. Generation schedule - preview generation</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-previewdeployment"><a class="anchor" href="#fs-previewdeployment"></a>9. Generation schedule - preview generation</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Under certain <a href="#uc-datasync">circumstances</a> it might happen that the datasets in the FirstSpirit project, the CaaS and in Spryker differ.
 In this case the contents from the <em>Online CaaS</em> and in Spryker can be updated by a <a href="#fs-deployment">full generation</a>.
@@ -914,14 +941,16 @@ Otherwise, due to technical restrictions, they are kept in Spryker and are only 
 </dl>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-wf"><a class="anchor" href="#fs-wf"></a>1.10. Workflows</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-wf"><a class="anchor" href="#fs-wf"></a>10. Workflows</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Content is released, deleted and published within the provided <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project</a> via workflows.
 These are already added to the project and are described in the following subchapters.</p>
 </div>
-<div class="sect3">
-<h4 id="fs-delete-wf-report"><a class="anchor" href="#fs-delete-wf-report"></a>1.10.1. Delete workflow for automated deletion</h4>
+<div class="sect2">
+<h3 id="fs-delete-wf-report"><a class="anchor" href="#fs-delete-wf-report"></a>10.1. Delete workflow for automated deletion</h3>
 <div class="paragraph">
 <p>The <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project</a> contains the <a href="#uc_orphanedpages">report <code><strong>Lost and Found</strong></code></a>, which shows an overview of all orphaned <a href="#rp_productpages">product</a> and <a href="#rp_categorypages">category pages</a>.
 These are pages that contain references to deleted or inactive products or categories in Spryker.</p>
@@ -933,8 +962,8 @@ With the exception of the dual control principle, its functionality corresponds 
 In addition to the deletion of the page, the workflow releases the parent structure and finally performs a <a href="#fs-deployment">full deployment</a>.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-bwfs"><a class="anchor" href="#fs-bwfs"></a>1.10.2. BasicWorkflows</h4>
+<div class="sect2">
+<h3 id="fs-bwfs"><a class="anchor" href="#fs-bwfs"></a>10.2. BasicWorkflows</h3>
 <div class="paragraph">
 <p>Content is released, deleted, and published by editors within the supplied <a href="https://github.com/e-Spirit/ecom-spryker-reference-project/">reference project <em>FirstSpirit Connect Reference Project</em></a> via the <em>BasicWorkflows</em>.
 These were adapted project-specifically and extended by the possibility to execute a <a href="#fs-deployment">full generation</a>.
@@ -1017,8 +1046,8 @@ If this is not desired, the rights must be adjusted manually.</p>
 </table>
 </div>
 </div>
-<div class="sect3">
-<h4 id="fs-wf-adaptions"><a class="anchor" href="#fs-wf-adaptions"></a>1.10.3. Project-specific adjustments</h4>
+<div class="sect2">
+<h3 id="fs-wf-adaptions"><a class="anchor" href="#fs-wf-adaptions"></a>10.3. Project-specific adjustments</h3>
 <div class="paragraph">
 <p>By default, the <em>BasicWorkflows</em> workflows has two ways to release or to delete an item:</p>
 </div>
@@ -1119,8 +1148,10 @@ The new statement hides the workflow for all pages that do not match a content, 
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="fs-projectsettings"><a class="anchor" href="#fs-projectsettings"></a>1.11. Project settings</h3>
+</div>
+<div class="sect1">
+<h2 id="fs-projectsettings"><a class="anchor" href="#fs-projectsettings"></a>11. Project settings</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>There is some essential project-specific information that needs to be entered for the connection between FirstSpirit and Spryker.
 It is entered using the project settings form and must be specified within the project being used.</p>
@@ -1183,7 +1214,6 @@ For each template, an entry is automatically created that contains a reference t
 </td>
 </tr>
 </table>
-</div>
 </div>
 </div>
 </div>

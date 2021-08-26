@@ -158,11 +158,27 @@
         </li>
       </ul>
     </li>
+    <li class="component">
+      <a class="title" href="../../../../../dxm/1.0/index.html">DXM</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../dxm/1.0/index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
     <li class="component is-current">
       <a class="title" href="../../../index.html">E-Commerce</a>
       <ul class="versions">
         <li class="version is-current is-latest">
           <a href="../../../index.html">1.0</a>
+        </li>
+      </ul>
+    </li>
+    <li class="component">
+      <a class="title" href="../../../../../cloud/1.0/index.html">FirstSpirit Cloud</a>
+      <ul class="versions">
+        <li class="version is-latest">
+          <a href="../../../../../cloud/1.0/index.html">1.0</a>
         </li>
       </ul>
     </li>
@@ -211,8 +227,9 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<div class="sect2">
-<h3 id="rp_categorypages"><a class="anchor" href="#rp_categorypages"></a>Extension of existing category pages</h3>
+<div class="sect1">
+<h2 id="rp_categorypages"><a class="anchor" href="#rp_categorypages"></a>Extension of existing category pages</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>Just like the <a href="#rp_staticsite">static pages</a> described above, category pages that already exist on the   side can also be displayed in {cc} using the <em>{ocm}</em> and enriched with editorial content.
 This also requires the filling of the output channel of the page and section template within the {fs} project as well as a adaptation of the corresponding Twig templates in  .</p>
@@ -232,8 +249,8 @@ These can be removed from the project via the <a href="#uc_orphanedpages">report
 </tr>
 </table>
 </div>
-<div class="sect3">
-<h4 id="rp_cp_pagetemp"><a class="anchor" href="#rp_cp_pagetemp"></a>Page template</h4>
+<div class="sect2">
+<h3 id="rp_cp_pagetemp"><a class="anchor" href="#rp_cp_pagetemp"></a>Page template</h3>
 <div class="paragraph">
 <p>Just like <a href="#rp_pagetemp">static pages</a>, the extension of a category page in the {fs} project is based on a page reference.
 It and its associated page are also automatically created in the background and invisible to the editor.</p>
@@ -271,8 +288,8 @@ The content areas of the page template correspond to the CMS block positions def
 They must therefore be named identically.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_cp_sectiontemp"><a class="anchor" href="#rp_cp_sectiontemp"></a>Section template</h4>
+<div class="sect2">
+<h3 id="rp_cp_sectiontemp"><a class="anchor" href="#rp_cp_sectiontemp"></a>Section template</h3>
 <div class="paragraph">
 <p>In addition to the already described <a href="#rp_section">Shoppable Video section</a> and the Text-Image section, the {carousel_github}[section template <code>carousel_section</code>] is available for adding editorial content to category pages.
 The carousel section in turn embeds one or more {banner_github}[banners].</p>
@@ -291,8 +308,8 @@ This corresponds to a generic template that regulates the output of all molecule
 For this reason, no additional extensions are required that go beyond the requirements already described for the Shoppable Video section.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="rp_cp_twigtemp"><a class="anchor" href="#rp_cp_twigtemp"></a>Twig Templates</h4>
+<div class="sect2">
+<h3 id="rp_cp_twigtemp"><a class="anchor" href="#rp_cp_twigtemp"></a>Twig Templates</h3>
 <div class="paragraph">
 <p>The {categorypage_caas_channel}[{fs} page template <code>categorypage</code>] contained in the reference project is an example of a category page.
 It has the content areas <code>banner</code>, <code>top</code> and <code>bottom</code> and maps the Twig template <code>catalog-with-cms-slot.twig</code>.
@@ -499,6 +516,7 @@ In this way, the Twig template generically controls the output of all molecules 
 <p>The <code>attributes</code> attribute provides additional configuration attributes that can be defined in the output channel of a section template.
 They are provided in this way directly in the tag of the corresponding molecule, so that they can be easily accessed via TypeScript.
 If no configuration attributes are defined within the output channel of a section, the <code>attributes</code> attribute remains empty.</p>
+</div>
 </div>
 </div>
 </div>
