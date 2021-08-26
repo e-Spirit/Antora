@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
-    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -346,7 +345,7 @@ These are part of the delivery and already contain all necessary components.</p>
 <h3 id="_import_of_the_images"><a class="anchor" href="#_import_of_the_images"></a>Import of the images</h3>
 <div class="paragraph">
 <p>The first step in setting up he CaaS platform for operation with Kubernetes requires the import of the images  into your central Docker registry (e.g. Artifactory).
-The images are contained in the file <code>caas-docker-images-{build-version}.zip</code> in the delivery.</p>
+The images are contained in the file <code>caas-docker-images-&lt;build-version&gt;.zip</code> in the delivery.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -370,7 +369,7 @@ The images are contained in the file <code>caas-docker-images-{build-version}.zi
 <h3 id="conf_chart"><a class="anchor" href="#conf_chart"></a>Configuration of the Helm chart</h3>
 <div class="paragraph">
 <p>After the import of the images the configuration of the Helm chart is necessary.
-This is part of the delivery and contained in the file <code>caas-{build-version}.tgz</code>.
+This is part of the delivery and contained in the file <code>caas-&lt;build-version&gt;.tgz</code>.
 A <a href="https://docs.helm.sh/chart_template_guide/#values-files">default configuration</a> of the chart is already make in the <code>values.yaml</code> file.
 All parameters specified in this <code>values.yaml</code> can be overwritten with a manually created <code>custom-values.yaml</code> by a specific value.</p>
 </div>
@@ -560,8 +559,13 @@ The installation is done with the following commands, which must be executed in 
 helm install RELEASE_NAME . --namespace=caas --values /path/to/custom-values.yaml</code></pre>
 </div>
 </div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>The name of the release can be chosen freely.</p>
 </div>
@@ -571,7 +575,9 @@ helm install RELEASE_NAME . --namespace=caas --values /path/to/custom-values.yam
 <div class="paragraph">
 <p>If an already existing namespace is to be used, the creation is omitted and the desired namespace must be specified within the installation command.</p>
 </div>
-</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Since the containers are first downloaded from the used image registry, the installation can take several minutes.
@@ -643,13 +649,6 @@ This minimum number of instances is mandatory, especially for the Mongo cluster.
 <p>The scaling of the REST Interface is done with the help of a <a href="https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/#how-does-the-horizontal-pod-autoscaler-work">Horizontal Pod Autoscaler</a>.
 Its activation as well as configuration must be done in the <code>custom-values.yaml</code> file to overwrite the default values defined in the <code>values.yaml</code> file.</p>
 </div>
-<div class="listingblock">
-<div class="title">default configuration of the REST Interface</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">restApi:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The Horizontal Pod Autoscaler allows to scale down or up the REST Interface depending on the current CPU load.
 The parameter <code>targetCPUUtilizationPercentage</code> specifies the percentage value from which scaling should take place.
@@ -713,13 +712,6 @@ The information contained in the documentation must be taken into account when s
 </td>
 </tr>
 </table>
-</div>
-<div class="listingblock">
-<div class="title">definition of the replica parameter</div>
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">mongo:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -846,23 +838,10 @@ The respective access data is contained in the credentials block of the <code>va
 The labels can therefore be configured in the <code>custom-values.yaml</code> file and are valid for all ServiceMonitors of the CaaS Helm chart.
 Furthermore, the parameter <code>scrapeInterval</code> allows a definition of the frequency with which the respective metrics are retrieved.</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">monitoring:
-  prometheus:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
-</div>
 <div class="paragraph">
 <p>The MongoDB metrics are provided via a sidecar container and retrieved with the help of a separate database user.
 You can configure the database user in the <code>credentials</code> block of the <code>custom-values.yaml</code>.
 The sidecar container is stored with the following standard configuration:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">mongo:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
 </div>
 </div>
 <div class="sect3">
@@ -874,13 +853,6 @@ Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Docume
 <p>Prometheus is typically configured to consider only alerts with specific labels.
 The labels can therefore be configured in the <code>custom-values.yaml</code> file and apply to all alerts in the CaaS Helm chart:</p>
 </div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">monitoring:
-  prometheus:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
-</div>
 </div>
 <div class="sect3">
 <h4 id="_grafana_dashboards"><a class="anchor" href="#_grafana_dashboards"></a>Grafana Dashboards</h4>
@@ -890,12 +862,6 @@ Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Docume
 <div class="paragraph">
 <p>Typically, the Grafana Sidecar Container is configured to consider only configmaps with specific labels and in a defined namespace.
 The labels of the configmap and the namespace in which it is deployed can therefore be configured in the <code>custom-values.yaml</code> file:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-yaml hljs" data-lang="yaml">monitoring:
-Unresolved include directive in modules/CaaS_Platform/pages/CaaS_Platform_Documentation_EN.adoc - include::../../../../../caas-kubernetes/build/filtered/main/helm/caas/values.yaml[]</code></pre>
-</div>
 </div>
 </div>
 </div>
@@ -1037,15 +1003,22 @@ See the <a href="#apikey_management">Management of API Keys</a> section for deta
 </tr>
 </table>
 </div>
-<div class="exampleblock">
-<div class="content">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>The credentials of the admin user are defined in the parameters <code>credentials.webAdminUser</code> and <code>credentials.webAdminPassword</code> of the Helm chart.</p>
 </div>
 <div class="paragraph">
 <p>Details can be found in chapter <a href="#conf_chart_authentication">Authentication</a>.</p>
 </div>
-</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect3">
@@ -1743,7 +1716,7 @@ It replaces the existing installation with the new version without any downtime.
 To do this, execute the following command, which starts the process:</p>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">helm upgrade RELEASE_NAME caas-{build-version}.tgz --values /path/to/custom-values.yaml</code></pre>
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">helm upgrade RELEASE_NAME caas-<build-version>.tgz --values /path/to/custom-values.yaml</code></pre>
 </div>
 </div>
 </dd>
@@ -1806,6 +1779,10 @@ To do this, execute the following command, which starts the process:</p>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

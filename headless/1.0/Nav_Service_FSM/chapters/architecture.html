@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
-    <link rel="icon" href="../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -223,9 +222,9 @@
 </aside>
 <article class="doc">
 <div class="sect2">
-<h3 id="architecture"><a class="anchor" href="#architecture"></a>Architecture</h3>
+<h3 id="architecture"><a class="anchor" href="#architecture"></a>1. Architecture</h3>
 <div class="paragraph">
-<p>The functionalities of the {nav} are realized by the interaction of different components (see figure <a href="#architecture_image">Architecture</a>).</p>
+<p>The functionalities of the Navigation Service are realized by the interaction of different components.</p>
 </div>
 <div class="paragraph">
 <p>These components are as follows:</p>
@@ -233,18 +232,12 @@
 <div class="ulist">
 <ul>
 <li>
-<p>{nav}</p>
+<p>Navigation Service</p>
 </li>
 <li>
-<p>{navm}</p>
+<p>Navigation Service module</p>
 </li>
 </ul>
-</div>
-<div id="architecture_image" class="imageblock">
-<div class="content">
-<img src="../_images/images/architecture.png" alt="architecture">
-</div>
-<div class="title">Figure 1. Architecture</div>
 </div>
 <div class="paragraph">
 <p>The interaction of the components always follows the following scheme:</p>
@@ -252,27 +245,31 @@
 <div class="ulist">
 <ul>
 <li>
-<p>The creation and updating of navigation-relevant content takes place at {fs}.
-Changes are made available to the <em>{navs}</em> (see <em>REST API</em>) in the context of an update.
-For this purpose, the {server} creates a connection to it and transmits all relevant data.</p>
+<p>The creation and updating of navigation-relevant content takes place at FirstSpirit.
+Changes are made available to the <em>Navigation Service endpoint</em> (see <em>REST API</em>) in the context of an update.
+For this purpose, the FirstSpirit server creates a connection to it and transmits all relevant data.</p>
 </li>
 <li>
-<p>The {nav} receives this data and updates its internal data model based on the information provided.</p>
+<p>The Navigation Service receives this data and updates its internal data model based on the information provided.</p>
 </li>
 <li>
-<p>The customer&#8217;s application requests the stored information as needed from <em>{navs}</em>, which provides a REST API for this purpose.
+<p>The customer&#8217;s application requests the stored information as needed from <em>Navigation Service endpoint</em>, which provides a REST API for this purpose.
 The querying of the data is performed according to the pull principle.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>The communication between the {server} and the {nav} is done by HTTPS.</p>
+<p>The communication between the FirstSpirit server and the Navigation Service is done by HTTPS.</p>
 </div>
 </div>
 </article>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

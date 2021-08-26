@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
-    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -246,7 +245,7 @@ Using the CaaS Connect module reduces the configuration and administration effor
 <div class="sect2">
 <h3 id="technicalrequirements"><a class="anchor" href="#technicalrequirements"></a>1.1. Technical requirements</h3>
 <div class="paragraph">
-<p>Besides the FirstSpirit version {fsRuntimeVersion}, the module requires access to the CaaS platform.
+<p>Besides the FirstSpirit version, the module requires access to the CaaS platform.
 An API key with appropriate permissions must be configured, and the accessibility of the platform endpoint over the network must be ensured.
 For more information on installing and using the CaaS platform, refer to <a href="https://docs.e-spirit.com/modules/caas">the appropriate documentation</a>.</p>
 </div>
@@ -295,12 +294,6 @@ If a field is empty or the entry is invalid, the field is highlighted with a red
 The different configuration points are explained in more detail in the chapter <a href="#automated-config">Automated configuration of the module</a>.
 The minimal configuration includes a reachable CaaS platform and an API key that has read and write access to all CaaS projects.
 More information about API keys and permissions can be found in the <a href="https://docs.e-spirit.com/modules/caas">CaaS platform documentation</a>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/service-config.png" alt="service config">
-</div>
-<div class="title">Figure 1. Configuration dialog of the <code>CaaS Connect Service</code> component</div>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -390,12 +383,6 @@ format. For more information about the format and its limitations see
 <p>When adding the project component <code>CaaS Connect project app</code> to a project, it activates the CaaS Connect module for that project.
 No project-specific configurations are possible and therefore not necessary.
 However, the configuration dialog of the project component can be used to lookup the CaaS base URLs that are available for the project.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/project-app-config.png" alt="project app config">
-</div>
-<div class="title">Figure 2. Configuration dialog of the project component of CaaS Connect</div>
 </div>
 <div class="paragraph">
 <p>Adding the project component generates two jobs for the respective project, <code>CaaS Connect Release Generation</code> and <code>CaaS Connect Preview Generation</code>.
@@ -593,6 +580,10 @@ A new attempt to create the index is triggered by starting the service or execut
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

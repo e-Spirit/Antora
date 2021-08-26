@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
-    <link rel="icon" href="../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -223,21 +222,21 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="components"><a class="anchor" href="#components"></a>Components</h2>
+<h2 id="components"><a class="anchor" href="#components"></a>1. Components</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Using the {nav} in an existing {fs} project infrastructure requires two additional components</p>
+<p>Using the Navigation Service in an existing FirstSpirit project infrastructure requires two additional components</p>
 </div>
 <div class="paragraph">
-<p>When the {navm} has been installed, a {fs} service named <em>{servicename}</em> and a {pak} named <em>{componentname}</em> are provided to the {server}.</p>
+<p>When the Navigation Service module has been installed, a FirstSpirit service named <em>Navigation Client Service</em> and a project component named <em>Navigation Project Configuration</em> are provided to the FirstSpirit server.</p>
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">{servicename}</dt>
+<dt class="hdlist1">Navigation Client Service</dt>
 <dd>
-<p>Upon installation of the {navm}, the {servicename} is added to the {server} and is then started.
-For a transfer to the {navs} the {pak} must be added to the respective project.
-The {servicename} then takes care of creating the navigations of the {fs} projects.</p>
+<p>Upon installation of the Navigation Service module, the Navigation Client Service is added to the FirstSpirit server and is then started.
+For a transfer to the Navigation Service endpoint the project component must be added to the respective project.
+The Navigation Client Service then takes care of creating the navigations of the FirstSpirit projects.</p>
 </dd>
 </dl>
 </div>
@@ -249,7 +248,7 @@ The {servicename} then takes care of creating the navigations of the {fs} projec
 </td>
 <td class="content">
 <div class="paragraph">
-<p>Only when the {servicename} is running will changes be transmitted to the {nav} .</p>
+<p>Only when the Navigation Client Service is running will changes be transmitted to the Navigation Service .</p>
 </div>
 </td>
 </tr>
@@ -257,10 +256,9 @@ The {servicename} then takes care of creating the navigations of the {fs} projec
 </div>
 <div class="dlist">
 <dl>
-<dt class="hdlist1">{componentname}</dt>
+<dt class="hdlist1">Navigation Project Configuration</dt>
 <dd>
-<p>By adding/removing the {pak} <em>{componentname}</em> to a {fs} project, it is regulated whether navigations are created for this project.
-It has its own configuration, which is described in the chapter <a href="#projectappconfig">[projectappconfig]</a>.</p>
+<p>By adding/removing the project component <em>Navigation Project Configuration</em> to a FirstSpirit project, it is regulated whether navigations are created for this project.</p>
 </dd>
 </dl>
 </div>
@@ -270,6 +268,10 @@ It has its own configuration, which is described in the chapter <a href="#projec
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

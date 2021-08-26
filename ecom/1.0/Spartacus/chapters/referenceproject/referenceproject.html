@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
-    <link rel="icon" href="../../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -234,27 +233,27 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="referenceproject"><a class="anchor" href="#referenceproject"></a>Reference project</h2>
+<h2 id="referenceproject"><a class="anchor" href="#referenceproject"></a>1. Reference project</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The <em>{modulname}</em> module provides different ways to access shop content from   and use it in {fs}.
-This requires different components both within the {fs} project and on the   side.
+<p>The <em>FirstSpirit Connect</em> module provides different ways to access shop content from Spartacus and use it in FirstSpirit.
+This requires different components both within the FirstSpirit project and on the Spartacus side.
 These components and the dependencies between them are described in the following subchapters using the reference project provided.</p>
 </div>
 <div class="sect2">
-<h3 id="rp_pages"><a class="anchor" href="#rp_pages"></a>Pages</h3>
+<h3 id="rp_pages"><a class="anchor" href="#rp_pages"></a>1.1. Pages</h3>
 <div class="paragraph">
-<p>In contrast to the delivery of content, its creation and maintenance shifts from the {ccloud} to {fs}.
-Therefore {fs} provides the {wc}.
-In it, <a href="#concept_pagestypes">Shop and {fsdp}s</a> can be displayed and enriched with editorial content using the {tppdocen}[<em>{ocm}</em>].</p>
+<p>In contrast to the delivery of content, its creation and maintenance shifts from the Commerce Cloud to FirstSpirit.
+Therefore FirstSpirit provides the ContentCreator.
+In it, <a href="#concept_pagestypes">Shop and FirstSpirit Driven Pages</a> can be displayed and enriched with editorial content using the <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a>.</p>
 </div>
 <div class="paragraph">
-<p>Editorial content in {fs} is always created and edited on the basis of a page reference.
-It and the page on which it is based are automatically generated in the background in the provided reference project as soon as a new page is created in the {wc}.
-The script <code>page_type_mapping</code> determines the corresponding {fs} page template which must be included in the project.</p>
+<p>Editorial content in FirstSpirit is always created and edited on the basis of a page reference.
+It and the page on which it is based are automatically generated in the background in the provided reference project as soon as a new page is created in the ContentCreator.
+The script <code>page_type_mapping</code> determines the corresponding FirstSpirit page template which must be included in the project.</p>
 </div>
 <div class="paragraph">
-<p>The reference project provides the following page templates for content, product, and category pages that correspond to the {sdp}s:</p>
+<p>The reference project provides the following page templates for content, product, and category pages that correspond to the Shop Driven Pages:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -282,13 +281,13 @@ The script <code>page_type_mapping</code> determines the corresponding {fs} page
 </ul>
 </div>
 <div class="paragraph">
-<p>The page templates for the {sdp}s map the respective {ccloud} page templates and differ only in the number of their content areas.
+<p>The page templates for the Shop Driven Pages map the respective Commerce Cloud page templates and differ only in the number of their content areas.
 Each of these content areas allows the integration of different sections, which are used to create and persist the editorial content.
-The mapping between the {ccloud} templates and the {fs} page templates for the {sdp}s is done in the <a href="#install_pset">project settings</a> as described in the installation chapter.
-Since {fsdp}s have no associated page in the {ccloud}, no mapping is required for them.</p>
+The mapping between the Commerce Cloud templates and the FirstSpirit page templates for the Shop Driven Pages is done in the <a href="#install_pset">project settings</a> as described in the installation chapter.
+Since FirstSpirit Driven Pages have no associated page in the Commerce Cloud, no mapping is required for them.</p>
 </div>
 <div class="paragraph">
-<p>For the Shop as well as for the {fsdp}s it must be ensured that the content areas of the {fs} templates match the <a href="#sp_installation_config_pages">slots</a> configured in the bridge:
+<p>For the Shop as well as for the FirstSpirit Driven Pages it must be ensured that the content areas of the FirstSpirit templates match the <a href="#sp_installation_config_pages">slots</a> configured in the bridge:
 For each defined slot, the page template must have a content area with <strong>the same</strong> name.
 Otherwise, the editorial content will be ignored by the Storefront and not be output in the live state.</p>
 </div>
@@ -300,7 +299,7 @@ Otherwise, the editorial content will be ignored by the Storefront and not be ou
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The mapping between the configured slots and the content areas of the {fs} page templates is not case-sensitive.
+<p>The mapping between the configured slots and the content areas of the FirstSpirit page templates is not case-sensitive.
 The names <code>Section1</code> and <code>section1</code> are therefore considered identical and are successfully mapped to each other.</p>
 </div>
 </td>
@@ -311,7 +310,7 @@ The names <code>Section1</code> and <code>section1</code> are therefore consider
 <p>In addition, all page templates must have the input components <code>pt_seoUrl</code> and <code>pt_cc_identifier</code>.
 The language-dependent text input component <code>pt_seoUrl</code> enables the definition of an SEO url and must therefore be editable.
 In contrast, the language-independent text input component <code>pt_cc_identifier</code> is a hidden component.
-It is filled automatically and ensures the accessibility of the page in the {wc}.</p>
+It is filled automatically and ensures the accessibility of the page in the ContentCreator.</p>
 </div>
 <div class="paragraph">
 <p>The following code snippet shows the definition of the two input components:</p>
@@ -334,9 +333,9 @@ It is filled automatically and ensures the accessibility of the page in the {wc}
 </div>
 </div>
 <div class="sect2">
-<h3 id="rp_sections"><a class="anchor" href="#rp_sections"></a>Sections</h3>
+<h3 id="rp_sections"><a class="anchor" href="#rp_sections"></a>1.2. Sections</h3>
 <div class="paragraph">
-<p>Within the reference project <em>{refproject}</em> included in the delivery, the content areas of a {fs} page template represent the slots of a {ccloud} page.
+<p>Within the reference project <em>FirstSpirit Connect Reference Project</em> included in the delivery, the content areas of a FirstSpirit page template represent the slots of a Commerce Cloud page.
 Sections can be added to them; each one corresponds to a content module.</p>
 </div>
 <div class="paragraph">
@@ -393,7 +392,7 @@ For this, also in this case, all link types available in the reference project a
 If no image is selected for a category the category element displays a default image.</p>
 </div>
 <div class="paragraph">
-<p>In contrast to the category element the information for the product element comes from the {ccloud} by default.
+<p>In contrast to the category element the information for the product element comes from the Commerce Cloud by default.
 They serve as a fallback and are overwritten by the content in the mentioned components.</p>
 </div>
 </dd>
@@ -410,17 +409,17 @@ The selected datasets are displayed as two-lined adresses in the form of an over
 </div>
 </div>
 <div class="sect2">
-<h3 id="rp_links"><a class="anchor" href="#rp_links"></a>Links</h3>
+<h3 id="rp_links"><a class="anchor" href="#rp_links"></a>1.3. Links</h3>
 <div class="paragraph">
-<p>The editorial contents maintained in {fs} can contain the following references, which link them with other contents.
+<p>The editorial contents maintained in FirstSpirit can contain the following references, which link them with other contents.
 They are based on various link templates that are already included in the reference project.</p>
 </div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Category and product links</dt>
 <dd>
-<p>The <em>{modulname}</em> module provides a report for products and categories in the {wc}.
-They serve to display the category and product information coming from  , which can be used for links to category or product detail pages.</p>
+<p>The <em>FirstSpirit Connect</em> module provides a report for products and categories in the ContentCreator.
+They serve to display the category and product information coming from Spartacus, which can be used for links to category or product detail pages.</p>
 <div class="paragraph">
 <p>Therefore, the reference project contains the link templates <code>category_link</code> and <code>product_link</code>, which correspond to a category or product link.
 They enable category or product detail pages to be referenced and are equivalent to each other.</p>
@@ -440,7 +439,7 @@ It allows the linking of pages that are maintained within the reference project.
 </div>
 <div class="paragraph">
 <p>The front-end processing of the links is done using the <code>SemanticPathService</code>.
-It generates the required URLs based on the <em>{c}</em> data passed to it.</p>
+It generates the required URLs based on the <em>CaaS</em> data passed to it.</p>
 </div>
 </div>
 </div>
@@ -449,6 +448,10 @@ It generates the required URLs based on the <em>{c}</em> data passed to it.</p>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../../_/js/site.js"></script>
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
   </body>

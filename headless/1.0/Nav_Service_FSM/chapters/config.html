@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../_'</script>
-    <link rel="icon" href="../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -223,30 +222,27 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h2>
+<h2 id="_configuration"><a class="anchor" href="#_configuration"></a>1. Configuration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The setup of the {nav} for operation on a server is done by configuring the {pak}: <code><em>{componentname}</em></code>.</p>
+<p>The setup of the Navigation Service for operation on a server is done by configuring the project component: <code><em>Navigation Project Configuration</em></code>.</p>
 </div>
 <div class="paragraph">
 <p>The following subchapters describe the required configuration steps.</p>
 </div>
-<div class="paragraph">
-<p>Unresolved include directive in modules/Nav_Service_FSM/pages/chapters/config.adoc - include::chapters/projectappconfig.adoc[]</p>
-</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="usage"><a class="anchor" href="#usage"></a>Usage</h2>
+<h2 id="usage"><a class="anchor" href="#usage"></a>2. Usage</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The {navm} makes it possible to query the structure of the {fs} site store of a {fs} project via the {navs}.</p>
+<p>The Navigation Service module makes it possible to query the structure of the FirstSpirit site store of a FirstSpirit project via the Navigation Service endpoint.</p>
 </div>
 <div class="paragraph">
 <p>The following sections describe how such a navigation is created and how to optionally enrich it with additional information.</p>
 </div>
 <div class="sect2">
-<h3 id="generation"><a class="anchor" href="#generation"></a>Creation of the navigation</h3>
+<h3 id="generation"><a class="anchor" href="#generation"></a>2.1. Creation of the navigation</h3>
 <div class="paragraph">
 <p>The navigations for the preview and release state are updated each time a page reference, structure folder or root node of the site structure has been changed or released.
 Additionally, an update of the navigation is triggered by changes to pages, if the page is referenced by at least a single page reference.</p>
@@ -270,18 +266,18 @@ Navigations are created for each language of the project as well as for each rel
 <p>Navigations that correspond to a language that is not part of the project are deleted daily as part of a change-triggered update.</p>
 </div>
 <div class="sect3">
-<h4 id="_resilience"><a class="anchor" href="#_resilience"></a>Resilience</h4>
+<h4 id="_resilience"><a class="anchor" href="#_resilience"></a>2.1.1. Resilience</h4>
 <div class="paragraph">
 <p>Occasionally, an update of the navigation may fail for a variety of reasons.
 Therefore, the process is reattempted several times over more than a day.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_scheduled_tasks"><a class="anchor" href="#_scheduled_tasks"></a>Scheduled Tasks</h4>
+<h4 id="_scheduled_tasks"><a class="anchor" href="#_scheduled_tasks"></a>2.1.2. Scheduled Tasks</h4>
 <div class="paragraph">
-<p>It is also possible to trigger the generation of the navigation by a {fs} scheduled task.
+<p>It is also possible to trigger the generation of the navigation by a FirstSpirit scheduled task.
 When installing the project app, two jobs are added to the project for this purpose: <em>Navigation Live Generation</em> and <em>Navigation Preview Generation</em>.
-These consist of two tasks each, which transmit the current navigations in all languages to the {nav} and delete existing navigations for which there is no corresponding language in the project.</p>
+These consist of two tasks each, which transmit the current navigations in all languages to the Navigation Service and delete existing navigations for which there is no corresponding language in the project.</p>
 </div>
 <div class="sect4">
 <h5 id="_navigation_at_generation_time"><a class="anchor" href="#_navigation_at_generation_time"></a>Navigation at generation time</h5>
@@ -306,12 +302,12 @@ It expects the following parameters:</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">element</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">en.espirit.firstspirit.access.store.IDprovider</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The {fs} element (page reference, structure folder or root node of the structure store element) for which the navigation should be calculated.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FirstSpirit element (page reference, structure folder or root node of the structure store element) for which the navigation should be calculated.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">language</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">en.espirit.firstspirit.access.Language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The {fs} language object for which the navigation should be calculated.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FirstSpirit language object for which the navigation should be calculated.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">key (optional)</p></td>
@@ -329,11 +325,11 @@ If the <em>key</em> parameter is set and the specified attribute has a primitive
 </div>
 </div>
 <div class="sect2">
-<h3 id="custmdata"><a class="anchor" href="#custmdata"></a>Custom Data</h3>
+<h3 id="custmdata"><a class="anchor" href="#custmdata"></a>2.2. Custom Data</h3>
 <div class="paragraph">
 <p>If the navigation data in the generated standard format is not sufficient, it is possible to add further information to the navigation.
 The Navigation Service Module provides the so-called <em>Custom Data Script</em> for this purpose.
-It allows users to transfer self-defined content to the {navs}.</p>
+It allows users to transfer self-defined content to the Navigation Service endpoint.</p>
 </div>
 <div class="paragraph">
 <p>One use case for this is, for example, a page description, which is required in addition to the navigation information for the presentation.</p>
@@ -342,9 +338,9 @@ It allows users to transfer self-defined content to the {navs}.</p>
 <p>The following chapter describes the setup of exactly this particular use case.</p>
 </div>
 <div class="sect3">
-<h4 id="_setting_up_a_custom_data_script"><a class="anchor" href="#_setting_up_a_custom_data_script"></a>Setting up a Custom Data Script</h4>
+<h4 id="_setting_up_a_custom_data_script"><a class="anchor" href="#_setting_up_a_custom_data_script"></a>2.2.1. Setting up a Custom Data Script</h4>
 <div class="paragraph">
-<p>Open the {sa} and add a script to your project with the following reference name: <code>navigation_service_custom_data</code>.</p>
+<p>Open the SiteArchitect and add a script to your project with the following reference name: <code>navigation_service_custom_data</code>.</p>
 </div>
 <div class="paragraph">
 <p>Within the script it is necessary to write the code into the first output channel.</p>
@@ -371,14 +367,14 @@ if (e instanceof PageRef) {
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The CustomData Script is evaluated directly after the creation with each following change at the {fs} project as well the release.</p>
+<p>The CustomData Script is evaluated directly after the creation with each following change at the FirstSpirit project as well the release.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="listingblock">
-<div class="title">The resulting JSON of an exemplary {fs} page reference</div>
+<div class="title">The resulting JSON of an exemplary FirstSpirit page reference</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-JSON hljs" data-lang="JSON">{
     "id": "815c307c-2ca6-4f02-9653-fa3454988fc2",
@@ -418,7 +414,7 @@ if (e instanceof PageRef) {
 </td>
 <td class="content">
 <div class="paragraph">
-<p>You can find all information on the use and format of the generated navigation structure in the corresponding <a href="https://navigationservice.e-spirit.cloud/docs/user/en/documentation.html">{navs} documentation</a>.</p>
+<p>You can find all information on the use and format of the generated navigation structure in the corresponding <a href="https://navigationservice.e-spirit.cloud/docs/user/en/documentation.html">Navigation Service endpoint documentation</a>.</p>
 </div>
 </td>
 </tr>
@@ -444,22 +440,22 @@ if (e instanceof PageRef) {
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">e</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">de.espirit.firstspirit.access.store.IDProvider</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The current {fs} element (page reference, structure folder or root node of the structure store element).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The current FirstSpirit element (page reference, structure folder or root node of the structure store element).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">context</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">de.espirit.firstspirit.access.BaseContext</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Instance of an <a href="https://docs.e-spirit.com/odfs/dev/en/espirit/firstspirit/access/BaseContext.html">{fs}-SpecialistBroker</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Instance of an <a href="https://docs.e-spirit.com/odfs/dev/en/espirit/firstspirit/access/BaseContext.html">FirstSpirit-SpecialistBroker</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">language</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">de.espirit.firstspirit.access.Language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The {fs} language object at runtime</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The FirstSpirit language object at runtime</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">customData</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Map&lt;String, Object&gt;</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Entries in this map are written to the custom data and then provided by the {navs}.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Entries in this map are written to the custom data and then provided by the Navigation Service endpoint.</p></td>
 </tr>
 </tbody>
 </table>
@@ -486,7 +482,7 @@ if (e instanceof PageRef) {
 </div>
 </div>
 <div class="sect2">
-<h3 id="_content_projections"><a class="anchor" href="#_content_projections"></a>Content projections</h3>
+<h3 id="_content_projections"><a class="anchor" href="#_content_projections"></a>2.3. Content projections</h3>
 <div class="paragraph">
 <p>In the case of a content projection for detailed views the related navigation nodes contain an attribute that can be used to resolve dynamic routes.
 A content projection is regarded as a projection for detail views if the following attributes are configured in the <strong>Content</strong> tab of a page reference:</p>
@@ -495,20 +491,14 @@ A content projection is regarded as a projection for detail views if the followi
 <p><strong>The *Number of entries per page</strong> value is greater than 0 (e.g. 1)
 <strong>The *Maximum number of pages</strong> value is not 1 (e.g. 0)</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/images/contentprojection-detail.png" alt="contentprojection detail">
-</div>
-<div class="title">Figure 1. Content projection of a detail page view for products</div>
-</div>
 <div class="paragraph">
 <p>If such a content projection exists in the project, the associated navigation node contains the attribute <code>seoRouteRegex</code>.
 The value of the attribute is a regular expression describing the dynamic route of the content projection.
 For the above example of a detail page view for products the value <code>^[\/]?products\/[^\s\/]+$</code> would be generated for the <code>seoRouteRegex</code> attribute.</p>
 </div>
 <div class="paragraph">
-<p>The {nav} also supports resolving a dynamic route to the corresponding navigation node.
-Further information is available in the {nav} documentation in the chapter <a href="https://navigationservice.e-spirit.cloud/docs/user/en/documentation.html#api-endpoints">API endpoints</a>.</p>
+<p>The Navigation Service also supports resolving a dynamic route to the corresponding navigation node.
+Further information is available in the Navigation Service documentation in the chapter <a href="https://navigationservice.e-spirit.cloud/docs/user/en/documentation.html#api-endpoints">API endpoints</a>.</p>
 </div>
 </div>
 </div>
@@ -517,6 +507,10 @@ Further information is available in the {nav} documentation in the chapter <a hr
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../_/js/site.js"></script>
 <script async src="../../../../_/js/vendor/highlight.js"></script>
   </body>

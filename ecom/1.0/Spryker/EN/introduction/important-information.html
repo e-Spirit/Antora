@@ -9,7 +9,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
-    <link rel="icon" href="../../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -234,8 +233,8 @@
 <div class="paragraph">
 <p>This chapter contains information that should be observed when using the <em>FirstSpirit Connect</em> module.</p>
 </div>
-<div class="sect3">
-<h4 id="_configuration_of_the_glue_web_server"><a class="anchor" href="#_configuration_of_the_glue_web_server"></a>1.1. Configuration of the glue web server</h4>
+<div class="sect2">
+<h3 id="_configuration_of_the_glue_web_server"><a class="anchor" href="#_configuration_of_the_glue_web_server"></a>1.1. Configuration of the glue web server</h3>
 <div class="paragraph">
 <p>During deployment, the content maintained in FirstSpirit is retrieved from the <em>Online CaaS</em> using the importer.
 It transfers the data to Spryker and persists them in the backend in its data system.</p>
@@ -245,9 +244,8 @@ It transfers the data to Spryker and persists them in the backend in its data sy
 Therefore, early timeouts during the import should be avoided.
 Due to this reason the web server of the glue API needs to be configured to allow http requests for a duration of at least 60 seconds.</p>
 </div>
-</div>
 <div class="sect3">
-<h4 id="_configuration_of_the_firstspirit_project_settings_page"><a class="anchor" href="#_configuration_of_the_firstspirit_project_settings_page"></a>1.2. Configuration of the FirstSpirit project settings page</h4>
+<h4 id="_configuration_of_the_firstspirit_project_settings_page"><a class="anchor" href="#_configuration_of_the_firstspirit_project_settings_page"></a>1.1.1. Configuration of the FirstSpirit project settings page</h4>
 <div class="paragraph">
 <p>The <em>CaaS</em> generations assume that a template for the project settings is maintained in the FirstSpirit project.
 Otherwise, the generation job terminates early and reports the following error in the job logs:</p>
@@ -270,8 +268,9 @@ This can happen when a deployment does not include a single PageRef (blue), whic
 <div class="title">Figure 1. Configuration of the project settings page in the project options</div>
 </div>
 </div>
-<div class="sect3">
-<h4 id="_use_of_the_spryker_b2c_demo_shop"><a class="anchor" href="#_use_of_the_spryker_b2c_demo_shop"></a>1.3. Use of the Spryker B2C Demo Shop</h4>
+</div>
+<div class="sect2">
+<h3 id="_use_of_the_spryker_b2c_demo_shop"><a class="anchor" href="#_use_of_the_spryker_b2c_demo_shop"></a>1.2. Use of the Spryker B2C Demo Shop</h3>
 <div class="paragraph">
 <p>As mentioned before, the entire documentation is geared to the connection of the Spryker B2C Demo Shop.
 When using it, some difficulties may occur that are neither caused by the <em>FirstSpirit Connect</em> module nor by the integration.
@@ -307,6 +306,10 @@ set memory_limit=-1
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../../_/js/site.js"></script>
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
   </body>

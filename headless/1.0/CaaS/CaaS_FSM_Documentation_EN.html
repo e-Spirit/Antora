@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
-    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -278,18 +277,12 @@ The necessary steps are explained in the following subchapters.</p>
 <div class="sect2">
 <h3 id="modules"><a class="anchor" href="#modules"></a>Installation of the module</h3>
 <div class="paragraph">
-<p>The module must be added to the FirstSpirit Server using the supplied <code>caas-{build-version}.fsm</code> file.
+<p>The module must be added to the FirstSpirit Server using the supplied <code>caas-&lt;build-version&gt;.fsm</code> file.
 To do this, open the <code><strong>ServerManager</strong></code> and select the <code><strong>menu:Server properties[modules]</strong></code> area.</p>
-</div>
-<div id="installed_modules" class="imageblock">
-<div class="content">
-<img src="_images/images/modules.png" alt="modules">
-</div>
-<div class="title">Figure 1. modules</div>
 </div>
 <div class="paragraph">
 <p>The main panel shows a list of all modules installed on the FirstSpirit Server.
-After clicking on btn:[Install], select the <code>caas-{build-version}.fsm</code> file and confirm the selection with btn:[Open].</p>
+After clicking on btn:[Install], select the <code>caas-&lt;build-version&gt;.fsm</code> file and confirm the selection with btn:[Open].</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -307,7 +300,7 @@ However, it only points out the invalid license without preventing or aborting t
 </table>
 </div>
 <div class="paragraph">
-<p>After the successful installation, the folder <code>Content as a Service</code> was added to the list of folders, which must be given <code>All Rights</code> using the <code>Configure</code> button (see figure <a href="#installed_modules">modules</a>).</p>
+<p>After the successful installation, the folder <code>Content as a Service</code> was added to the list of folders, which must be given <code>All Rights</code> using the <code>Configure</code> button (see figure <a href="#installed_modules">[installed_modules]</a>).</p>
 </div>
 <div class="paragraph">
 <p>The module also requires a configuration, which is explained in the following subchapter.</p>
@@ -335,22 +328,10 @@ If another CaaS instance is to be filled in deviation from this default configur
 </div>
 <div class="paragraph">
 <p>For the default configuration, open the <code><strong>ServerManager</strong></code> and select the <code><strong>menu:Server Properties [Modules]</strong></code> area.
-Then expand the folder <code>Content as a Service</code> and select the service contained in this folder (see figure <a href="#c_service">CaaS Service</a>).</p>
-</div>
-<div id="c_service" class="imageblock">
-<div class="content">
-<img src="_images/images/c_service.png" alt="c service">
-</div>
-<div class="title">Figure 2. CaaS Service</div>
+Then expand the folder <code>Content as a Service</code> and select the service contained in this folder (see figure <a href="#c_service">[c_service]</a>).</p>
 </div>
 <div class="paragraph">
 <p>The dialog that is opened via the btn:[Configure] button has four fields that are to be filled in as described below.</p>
-</div>
-<div id="module_service" class="imageblock">
-<div class="content">
-<img src="_images/images/service.png" alt="service">
-</div>
-<div class="title">Figure 3. CaaS Service - Configuration</div>
 </div>
 <div class="dlist">
 <dl>
@@ -418,16 +399,10 @@ The Project component offers the possibility to partially overwrite these settin
 <div class="paragraph">
 <p>To do this, open the <code><strong>ServerManager</strong></code> and select the area <code><strong>menu:Project properties[Project components]</strong></code>.</p>
 </div>
-<div id="tpp_p_list" class="imageblock">
-<div class="content">
-<img src="_images/images/tpp_p_list.png" alt="tpp p list">
-</div>
-<div class="title">Figure 4. Project components</div>
-</div>
 <div class="paragraph">
 <p>In the main panel you can see a list of all existing Project components.
 After clicking btn:[Add], select the <code>CaaSProjectConfiguration</code> and confirm your selection with btn:[OK].
-The Project component is added to the list in the main panel and must then be configured (see figure <a href="#tpp_p_list">Project components</a>).
+The Project component is added to the list in the main panel and must then be configured (see figure <a href="#tpp_p_list">[tpp_p_list]</a>).
 To do this, select the entry in the list and open the corresponding configuration dialog via btn:[Configure].</p>
 </div>
 <div class="paragraph">
@@ -490,12 +465,6 @@ The transfer of the template form values is thus the responsibility of the templ
 </td>
 </tr>
 </table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/tpp_g_conf.png" alt="tpp g conf">
-</div>
-<div class="title">Figure 5. Project component - Project</div>
 </div>
 </div>
 <div class="sect3">
@@ -601,12 +570,6 @@ For the implementations provided by FirstSpirit this applies to the <em>Advanced
 </td>
 </tr>
 </table>
-</div>
-<div id="p_comp_conf_release" class="imageblock">
-<div class="content">
-<img src="_images/images/tpp_p_conf.png" alt="tpp p conf">
-</div>
-<div class="title">Figure 6. Project component - release status</div>
 </div>
 </div>
 <div class="sect3">
@@ -752,12 +715,6 @@ Here you can set variables that are available in the page context at the time of
 </dd>
 </dl>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/tpp_b_conf.png" alt="tpp b conf">
-</div>
-<div class="title">Figure 7. Project component - Preview</div>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -768,12 +725,6 @@ Here you can set variables that are available in the page context at the time of
 <div class="paragraph">
 <p>To do this, open the <code><strong>Server and Project Configuration</strong></code> and select the item <code><strong>menu:Project properties[Template sets]</strong></code>.
 By clicking on btn:[Add] a dialog is displayed, which is to be filled as follows</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/templateset.png" alt="templateset">
-</div>
-<div class="title">Figure 8. create template set</div>
 </div>
 <div class="paragraph">
 <p>Then confirm the dialog with btn:[OK] to finish adding the template set.</p>
@@ -790,19 +741,13 @@ This has been automatically activated and is thus directly available in the proj
 <h3 id="generate"><a class="anchor" href="#generate"></a>Generation schedule (full generation)</h3>
 <div class="paragraph">
 <p>The initial filling of CaaS as well as the later notification of changes in the FirstSpirit project is done by messages that the CaaS module sends to the CaaS platform.
-To create these messages, a schedule is required that contains at least the actions described in the following subchapters (see also figure <a href="#fullgeneration">full generation</a>).</p>
+To create these messages, a schedule is required that contains at least the actions described in the following subchapters (see also figure <a href="#fullgeneration">[fullgeneration]</a>).</p>
 </div>
 <div class="paragraph">
 <p>Open the <code><strong>ServerManager</strong></code> for the required schedule and select the <code><strong>menu:Project properties[Schedule management]</strong></code> area.</p>
 </div>
 <div class="paragraph">
 <p>Add a new default schedule or edit an existing one.</p>
-</div>
-<div id="fullgeneration" class="imageblock">
-<div class="content">
-<img src="_images/images/fullgeneration.png" alt="fullgeneration">
-</div>
-<div class="title">Figure 9. full generation</div>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -872,12 +817,6 @@ The action is therefore <strong>obligatory</strong> for successful generation.</
 </li>
 </ul>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/timeout.png" alt="timeout">
-</div>
-<div class="title">Figure 10. parameters</div>
-</div>
 <div class="paragraph">
 <p>If the REST Interface of the specific CaaS instance is accessible via a proxy server, its URI can be specified additionally.</p>
 </div>
@@ -914,14 +853,8 @@ If a problem occurs during the transfer, it will be repeated as often as the val
 </div>
 <div class="paragraph">
 <p>Any name (here: <em>CaaS Generate</em>) must be specified in the <code><strong>Properties</strong></code> of the generation.
-Make sure that the option <code>Generate only if necessary</code> is deactivated and the option <code>Generate release version</code> is activated (see figure <a href="#caasprop">properties</a>).
+Make sure that the option <code>Generate only if necessary</code> is deactivated and the option <code>Generate release version</code> is activated (see figure <a href="#caasprop">[caasprop]</a>).
 Furthermore, the <code>CaaS URL Creator</code> must be selected for <code>Path Generation</code>.</p>
-</div>
-<div id="caasprop" class="imageblock">
-<div class="content">
-<img src="_images/images/caasgenerate.png" alt="caasgenerate">
-</div>
-<div class="title">Figure 11. properties</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -937,7 +870,7 @@ If the user nevertheless makes a selection, it has no effect.</p>
 </div>
 <div class="paragraph">
 <p>Depending on whether the order generates the release or preview state, the URL generation is automatically adjusted internally.
-Thus the FirstSpirit preview URLs are generated in a preview state schedule when the media are controlled via FirstSpirit (see figure <a href="#p_comp_conf_release">Project component - release status</a>).
+Thus the FirstSpirit preview URLs are generated in a preview state schedule when the media are controlled via FirstSpirit (see figure <a href="#p_comp_conf_release">[p_comp_conf_release]</a>).
 For a schedule with generation of the release state, however, the configured URL factory is still used.</p>
 </div>
 </td>
@@ -945,13 +878,7 @@ For a schedule with generation of the release state, however, the configured URL
 </table>
 </div>
 <div class="paragraph">
-<p>In the register <code><strong>Extended</strong></code> the previously created <a href="#caas_channel">template set</a> must be selected for all languages of the project (see figure <a href="#caasext">extended</a>).</p>
-</div>
-<div id="caasext" class="imageblock">
-<div class="content">
-<img src="_images/images/caasext.png" alt="caasext">
-</div>
-<div class="title">Figure 12. extended</div>
+<p>In the register <code><strong>Extended</strong></code> the previously created <a href="#caas_channel">template set</a> must be selected for all languages of the project (see figure <a href="#caasext">[caasext]</a>).</p>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1081,14 +1008,8 @@ In this case a restart of the FirstSpirit Server is required.</p>
 <h3 id="delta_generate"><a class="anchor" href="#delta_generate"></a>Generation schedule (delta generation)</h3>
 <div class="paragraph">
 <p>A second schedule is required to create the messages, which only informs CaaS about the changes made since the last delta generation of this schedule.
-It must <strong>supplement</strong> the actions of full generation described in the previous chapter with the action <code>CaaS DeltaGeneration</code> (see also figure <a href="#delta">delta generation</a>).
+It must <strong>supplement</strong> the actions of full generation described in the previous chapter with the action <code>CaaS DeltaGeneration</code> (see also figure <a href="#delta">[delta]</a>).
 This is explained in the following subchapter.</p>
-</div>
-<div id="delta" class="imageblock">
-<div class="content">
-<img src="_images/images/deltageneration.png" alt="deltageneration">
-</div>
-<div class="title">Figure 13. delta generation</div>
 </div>
 <div class="admonitionblock important">
 <table>
@@ -1424,12 +1345,6 @@ This allows even finer sorting of complex data and enables advanced application 
 <div class="paragraph">
 <p>The definition of additional collections and CaaS projects is done via a plug-in, which is provided via the menu bar as well as via the context menu in the Site Store of the FirstSpirit project.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/plugin.png" alt="plugin">
-</div>
-<div class="title">Figure 14. menu bar and context menu</div>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1446,8 +1361,8 @@ This allows even finer sorting of complex data and enables advanced application 
 </div>
 <div class="paragraph">
 <p>The plug-in opens a dialog in which a CaaS project and a collection can be specified for the selected page reference or the referenced structure folder.
-The initial value of the CaaS project is derived from the name of the FirstSpirit project, the initial value of the collection corresponds to the default <em>content</em> collection (see figure <a href="#edit_prf">Change the collection name for a structure folder</a>).
-For page references, it is also possible to customize the document name (see figure <a href="#edit_pr">Change the collection and document name for a page reference</a>).
+The initial value of the CaaS project is derived from the name of the FirstSpirit project, the initial value of the collection corresponds to the default <em>content</em> collection (see figure <a href="#edit_prf">[edit_prf]</a>).
+For page references, it is also possible to customize the document name (see figure <a href="#edit_pr">[edit_pr]</a>).
 This name is used to store the JSON objects generated on the basis of the page reference in CaaS.
 Without an adjustment, the document name corresponds to the reference name of the page reference.</p>
 </div>
@@ -1465,18 +1380,6 @@ Without an adjustment, the document name corresponds to the reference name of th
 </tr>
 </table>
 </div>
-<div id="edit_prf" class="imageblock">
-<div class="content">
-<img src="_images/images/edit_pagereffolder.png" alt="edit pagereffolder">
-</div>
-<div class="title">Figure 15. Change the collection name for a structure folder</div>
-</div>
-<div id="edit_pr" class="imageblock">
-<div class="content">
-<img src="_images/images/edit_pageref.png" alt="edit pageref">
-</div>
-<div class="title">Figure 16. Change the collection and document name for a page reference</div>
-</div>
 <div class="paragraph">
 <p>If a CaaS project or new collection is defined on a structure folder, the change applies to all items subordinate to it.
 However, following the usual FirstSpirit behavior, specifying a collection for a child always takes precedence over specifying a collection for a parent.
@@ -1489,12 +1392,6 @@ This means that the customization made for a structure folder is only applied to
 <p>In the example shown in the following figure, a separate collection <em>folder</em> was specified for the <em>structure folder</em>.
 This adjustment affects the <em>page 1</em> contained in it and the <em>subfolder</em> with the <em>page 2</em> contained in it.
 Since a change was also made for <em>page A</em> and the <em>page</em> collection was selected, the parent definition has no effect on it.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/example.png" alt="example">
-</div>
-<div class="title">Figure 17. Example</div>
 </div>
 <div class="paragraph">
 <p>During generation, the JSON objects based on <em>page A</em> are then stored in the <em>page</em> collection.
@@ -1613,12 +1510,6 @@ Deleting both a collection and a project is basically only possible manually via
 <p>If the used FirstSpirit project creates static web pages in addition to the CaaS contents, there may be links between them.
 Since the CaaS content is generated with the <a href="#gen"><code>CaaS URL Creator</code></a>, but static content is generated with a different URL Creator, the links cannot be resolved correctly.
 Including your own project as a remote project circumvents this by specifying a URL Creator.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/remote_project.png" alt="remote project">
-</div>
-<div class="title">Figure 18. configuration dialog of a remote project</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1790,6 +1681,10 @@ A previous deinstallation of the module is not necessary.</p>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>

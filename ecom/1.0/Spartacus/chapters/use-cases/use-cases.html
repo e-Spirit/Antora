@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
-    <link rel="icon" href="../../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -234,7 +233,7 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="use_cases"><a class="anchor" href="#use_cases"></a>Use cases</h2>
+<h2 id="use_cases"><a class="anchor" href="#use_cases"></a>1. Use cases</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Within the progress of a project, different situations can arise that require certain steps to be taken.
@@ -242,11 +241,11 @@ The following subchapters describe situations that can typically occur in integr
 and describe the necessary steps for resolving them by using the reference project supplied as a reference.</p>
 </div>
 <div class="sect2">
-<h3 id="uc_contentmodule"><a class="anchor" href="#uc_contentmodule"></a>Development of a new content module</h3>
+<h3 id="uc_contentmodule"><a class="anchor" href="#uc_contentmodule"></a>1.1. Development of a new content module</h3>
 <div class="paragraph">
-<p>Within the overall system created with the <em>{modulname}</em> integration, the   Storefront delivers the editorial content.
-However, the creation and maintenance of this content shifts from the {ccloud} to {fs}.
-For this reason, the provided reference project <em>{refproject}</em> contains the following section templates:</p>
+<p>Within the overall system created with the <em>FirstSpirit Connect</em> integration, the Spartacus Storefront delivers the editorial content.
+However, the creation and maintenance of this content shifts from the Commerce Cloud to FirstSpirit.
+For this reason, the provided reference project <em>FirstSpirit Connect Reference Project</em> contains the following section templates:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -265,11 +264,11 @@ For this reason, the provided reference project <em>{refproject}</em> contains t
 </ul>
 </div>
 <div class="paragraph">
-<p>Each of these section templates requires an Angular UI component on the   side.
+<p>Each of these section templates requires an Angular UI component on the Spartacus side.
 The UI components receive the contents to be displayed and define their output in the shop.</p>
 </div>
 <div class="paragraph">
-<p>In addition to the creation of a further section template in the {fs} project,
+<p>In addition to the creation of a further section template in the FirstSpirit project,
 the development of a new content module therefore always includes the implementation of an associated Angular UI component in the frontend.
 In detail, the following steps are required, which will be explained in more detail in the course of the chapter:</p>
 </div>
@@ -296,9 +295,9 @@ In detail, the following steps are required, which will be explained in more det
 <dl>
 <dt class="hdlist1">Creation of a section template</dt>
 <dd>
-<p>The development of a new content module first requires the creation of a new section template within the {jc}.
+<p>The development of a new content module first requires the creation of a new section template within the SiteArchitect.
 The template must then be integrated into a page and filled with content in all available languages.
-By saving these contents, they are automatically transferred to the <em>Preview {c}</em> and are thus available in the preview.</p>
+By saving these contents, they are automatically transferred to the <em>Preview CaaS</em> and are thus available in the preview.</p>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -325,8 +324,8 @@ The placeholder must be replaced by the reference name in all cases.</p>
 <dl>
 <dt class="hdlist1">Import and configuration of the DataVisualizer</dt>
 <dd>
-<p>The <code>fs-spartacus-view-components</code> library contains, among other things, the <code>DataVisualizer</code>, which enables an unprocessed output of the JSON structure stored in the <em>{c}</em> in the {wc}.
-Therefore the DataVisualizer requires an import into the main module of the   application (<code>app.module.ts</code>)
+<p>The <code>fs-spartacus-view-components</code> library contains, among other things, the <code>DataVisualizer</code>, which enables an unprocessed output of the JSON structure stored in the <em>CaaS</em> in the ContentCreator.
+Therefore the DataVisualizer requires an import into the main module of the Spartacus application (<code>app.module.ts</code>)
 as well as the configuration as a display component for the previously created section template.
 In addition, the import of the ConfigModule is necessary to provide all features.</p>
 <div class="listingblock">
@@ -358,8 +357,8 @@ export class AppModule { }</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>After the integration of the <code>DataVisualizer</code>, the page containing the new section shows its associated <em>{c}</em> information in the preview of the {wc}.
-With the button {copytocb} the displayed data can also be copied to the clipboard.
+<p>After the integration of the <code>DataVisualizer</code>, the page containing the new section shows its associated <em>CaaS</em> information in the preview of the ContentCreator.
+With the button <b class="button">COPY TO CLIPBOARD</b> the displayed data can also be copied to the clipboard.
 They are required for the subsequent creation of the <a href="#create_converter">converter</a>.</p>
 </div>
 <div class="admonitionblock important">
@@ -412,10 +411,10 @@ In the case of a section, for example, which only contains a <code>CMS_INPUT_TEX
 <dl>
 <dt class="hdlist1">Creation of a converter</dt>
 <dd>
-<p>The data stored in the <em>{c}</em> for the new section is very complex and also contains information that is not needed for the output in the shop.
+<p>The data stored in the <em>CaaS</em> for the new section is very complex and also contains information that is not needed for the output in the shop.
 For this reason, it is recommended to add an additional transformation step before transferring the data to the Angular UI component.
 The transformation of the information into a format that is optimal for the component is performed by a converter.
-This must contain the following code and is to be be saved under the name <code>&lt;SECTION_REF_NAME&gt;.component.converter.ts</code> at any position in the   project.
+This must contain the following code and is to be be saved under the name <code>&lt;SECTION_REF_NAME&gt;.component.converter.ts</code> at any position in the Spartacus project.
 Thereby the placeholder <code>&lt;SECTION_REF_NAME&gt;</code> corresponds to the reference name of the previously created <a href="#create_section">section template</a>.</p>
 <div class="listingblock">
 <div class="title">Converter</div>
@@ -447,23 +446,23 @@ This allows the later <a href="#storefront_extension">injection</a> of the new c
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>The new class <code>NewSectionComponentConverter</code> implements the converter interface provided by  , which expects the method <code>convert</code>.
+<td>The new class <code>NewSectionComponentConverter</code> implements the converter interface provided by Spartacus, which expects the method <code>convert</code>.
 Each time the section for which the converter is registered is processed, this method is called automatically.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td>Using the <code>source</code> parameter, the <code>convert</code> method gets all the information available for the section from the <em>{c}</em>.
+<td>Using the <code>source</code> parameter, the <code>convert</code> method gets all the information available for the section from the <em>CaaS</em>.
 The return value of the method allows the filtering of this data and defines which parameters are transferred to the Angular UI component.<br>
 The parameters <code>uid</code> and <code>typeCode</code> are assumed by the Storefront and are therefore mandatory.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>The structure of the associated values is derived from the <a href="#caas_document"><em>{c}</em> document</a> and must be adjusted accordingly, especially for the form data to be passed.
+<td>The structure of the associated values is derived from the <a href="#caas_document"><em>CaaS</em> document</a> and must be adjusted accordingly, especially for the form data to be passed.
 The displayed line refers to a simple <code>CMS_INPUT_TEXT</code> input component.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
-<td>The <code>NewSectionConverterToken</code> created here enables the later <a href="#storefront_extension">registration</a> of the <code>NewSectionComponentConverter</code> in the main module of the   application (<code>app.module.ts</code>).</td>
+<td>The <code>NewSectionConverterToken</code> created here enables the later <a href="#storefront_extension">registration</a> of the <code>NewSectionComponentConverter</code> in the main module of the Spartacus application (<code>app.module.ts</code>).</td>
 </tr>
 </table>
 </div>
@@ -474,8 +473,8 @@ The displayed line refers to a simple <code>CMS_INPUT_TEXT</code> input componen
 <dl>
 <dt class="hdlist1">Implementation of the Angular UI component</dt>
 <dd>
-<p>The data format defined with the help of the <a href="#create_converter">converter</a> enables the {angular}[implementation of the Angular UI component],
-which must be saved under the name <code>&lt;SECTION_REF_NAME&gt;.component.ts</code> at any position in the   project.</p>
+<p>The data format defined with the help of the <a href="#create_converter">converter</a> enables the <a href="https://angular.io/cli/generate">implementation of the Angular UI component</a>,
+which must be saved under the name <code>&lt;SECTION_REF_NAME&gt;.component.ts</code> at any position in the Spartacus project.</p>
 <div class="paragraph">
 <p>The following code snippet shows an example of the content of the component:</p>
 </div>
@@ -515,7 +514,7 @@ If data exists, it is transferred asynchronously to the content module using the
 <td><i class="conum" data-value="3"></i><b>3</b></td>
 <td>In this example, the component only outputs a headline.
 Therefore it uses the <code>value</code> parameter defined in the <a href="#create_converter">converter</a>, which contains the corresponding form data of the initially created <a href="#create_section">section</a>.
-It also includes the attribute <code>data-preview-id</code>, which contains the <code>previewId</code> passed by the converter as a value and allows editing of the headline in the {wc}.</td>
+It also includes the attribute <code>data-preview-id</code>, which contains the <code>previewId</code> passed by the converter as a value and allows editing of the headline in the ContentCreator.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
@@ -533,7 +532,7 @@ It receives the data returned by the <a href="#create_converter">converter</a> a
 <dd>
 <p>The output of the <a href="#create_section">section</a> created in the first step assumes the integration of the implemented <a href="#create_ui_component">Angular UI component</a>
 and the registration of the new <a href="#create_converter">converter</a> in the Storefront.
-This requires the following extension of the main module of the   application (<code>app.module.ts</code>):</p>
+This requires the following extension of the main module of the Spartacus application (<code>app.module.ts</code>):</p>
 <div class="listingblock">
 <div class="title">Extension of the main module</div>
 <div class="content">
@@ -569,11 +568,11 @@ export class AppModule { }</code></pre>
 <table>
 <tr>
 <td><i class="conum" data-value="1"></i><b>1</b></td>
-<td>Within the main module a declaration of the new component is first made to include it in the   project.</td>
+<td>Within the main module a declaration of the new component is first made to include it in the Spartacus project.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="2"></i><b>2</b></td>
-<td>The <code>imports' attribute links the <a href="#create_section">section template</a> created in the first step to the component, instructing   to always use this link when processing the section.
+<td>The <code>imports' attribute links the <a href="#create_section">section template</a> created in the first step to the component, instructing Spartacus to always use this link when processing the section.
 The placeholder `&lt;SECTION_REF_NAME&gt;</code> must be replaced with the reference name of the new section template.</td>
 </tr>
 <tr>
@@ -608,9 +607,9 @@ Example: <code>useValue: { headline: HeadlineConverterToken, carousel: CarouselC
 </div>
 </div>
 <div class="sect2">
-<h3 id="uc_datasets"><a class="anchor" href="#uc_datasets"></a>Dataset usage</h3>
+<h3 id="uc_datasets"><a class="anchor" href="#uc_datasets"></a>1.2. Dataset usage</h3>
 <div class="paragraph">
-<p>On the   side, the output of the content maintained in {fs} is done via <a href="#uc_contentmodule">Angular UI components</a>.
+<p>On the Spartacus side, the output of the content maintained in FirstSpirit is done via <a href="#uc_contentmodule">Angular UI components</a>.
 These receive the content to be displayed and define the HTML view in the shop.</p>
 </div>
 <div class="paragraph">
@@ -618,7 +617,7 @@ These receive the content to be displayed and define the HTML view in the shop.<
 The use of datasets requires an FS_INDEX input component, which in turn references the associated data source.</p>
 </div>
 <div class="paragraph">
-<p>The provided reference project <em>{refproject}</em> contains the section template <code>location_overview</code> as an example.
+<p>The provided reference project <em>FirstSpirit Connect Reference Project</em> contains the section template <code>location_overview</code> as an example.
 This allows the input of a headline and the selection of any number of dataset, each of which is an address.
 For this purpose it has the <code>FS_INDEX</code> input component <code>st_locations</code>, which in turn references the data source <code>locations</code>.</p>
 </div>
@@ -637,51 +636,51 @@ For this purpose it has the <code>FS_INDEX</code> input component <code>st_locat
 </div>
 </div>
 <div class="paragraph">
-<p>In the <em>{c}</em>, the selected datasets are stored only as a reference at the section.
+<p>In the <em>CaaS</em>, the selected datasets are stored only as a reference at the section.
 Therefore, when querying the data, the bridge automatically checks all documents for such references and determines the datasets by their ID.
-The <a href="#create_converter">converter</a> associated with the section takes the data on the   side and converts it to a format that is optimal for the <a href="#create_ui_component">Angular UI component</a>.
-Each of these components is associated with a {fs} section template and defines the HTML output of the transferred data within the shop.</p>
+The <a href="#create_converter">converter</a> associated with the section takes the data on the Spartacus side and converts it to a format that is optimal for the <a href="#create_ui_component">Angular UI component</a>.
+Each of these components is associated with a FirstSpirit section template and defines the HTML output of the transferred data within the shop.</p>
 </div>
 <div class="paragraph">
 <p>For the <code>location_overview</code> section template, the integration provides the <code>location-overview</code> component.
-It displays the datasets selected in the {fs} project in the form of an overview below the specified headline.</p>
+It displays the datasets selected in the FirstSpirit project in the form of an overview below the specified headline.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="uc_fsdrivenpage"><a class="anchor" href="#uc_fsdrivenpage"></a>Creation of a {fsdp}</h3>
+<h3 id="uc_fsdrivenpage"><a class="anchor" href="#uc_fsdrivenpage"></a>1.3. Creation of a FirstSpirit Driven Page</h3>
 <div class="paragraph">
-<p>The maintenance of editorial content both in {fs} and in the {ccloud} is based on a page.
-The integration differentiates between <a href="#concept_pagestypes">Shop and {fsdp}s</a>.</p>
+<p>The maintenance of editorial content both in FirstSpirit and in the Commerce Cloud is based on a page.
+The integration differentiates between <a href="#concept_pagestypes">Shop and FirstSpirit Driven Pages</a>.</p>
 </div>
 <div class="paragraph">
-<p>In contrast to the {sdp}s, the {fsdp}s exist exclusively in {fs} and do not have an associated page in the {ccloud}.
+<p>In contrast to the Shop Driven Pages, the FirstSpirit Driven Pages exist exclusively in FirstSpirit and do not have an associated page in the Commerce Cloud.
 They are used to create content or campaign pages, which are not necessarily included in the standard scope of the store.
-{fsdp}s can either use the layout of a {sdp} or their own layout, which is defined in the Storefront.
-In both cases, the styling of the {fsdp}s is done in Angular, for example, in the <code>styles.scss</code> file of the Storefront.</p>
+FirstSpirit Driven Pages can either use the layout of a Shop Driven Page or their own layout, which is defined in the Storefront.
+In both cases, the styling of the FirstSpirit Driven Pages is done in Angular, for example, in the <code>styles.scss</code> file of the Storefront.</p>
 </div>
 <div class="paragraph">
-<p>To create a new {fsdp}, some steps have to be performed on the SAP and   side as well as in {fs}.
+<p>To create a new FirstSpirit Driven Page, some steps have to be performed on the SAP and Spartacus side as well as in FirstSpirit.
 These steps are described below.</p>
 </div>
 <div class="paragraph">
-<p><strong>Configuration in SAP and  </strong></p>
+<p><strong>Configuration in SAP and Spartacus</strong></p>
 </div>
 <div class="paragraph">
-<p>In the system realized by the <em>{modulname}</em> integration the Storefront takes over the delivery of the content.
-It queries the content from both the {ccloud} and the respective <em>{c}</em> instance and links them together.
+<p>In the system realized by the <em>FirstSpirit Connect</em> integration the Storefront takes over the delivery of the content.
+It queries the content from both the Commerce Cloud and the respective <em>CaaS</em> instance and links them together.
 For this purpose it must be extended by the bridge as described in the <a href="#sp_installation_libraries">installation chapter</a>.</p>
 </div>
 <div class="paragraph">
-<p>In turn, the bridge expects a <a href="#sp_installation_config_pages">definition of the pages</a>, whose processing is to be enabled in the {wc}.
-For {fsdp}s, the configuration must consider whether the page uses the layout of a {sdp} or its own layout.</p>
+<p>In turn, the bridge expects a <a href="#sp_installation_config_pages">definition of the pages</a>, whose processing is to be enabled in the ContentCreator.
+For FirstSpirit Driven Pages, the configuration must consider whether the page uses the layout of a Shop Driven Page or its own layout.</p>
 </div>
 <div class="paragraph">
-<p>In the first case, a dummy page must exist in the {ccloud}, which is empty except for the desired layout.
+<p>In the first case, a dummy page must exist in the Commerce Cloud, which is empty except for the desired layout.
 This means, for example, that it only includes a general header and footer, but does not contain any other content.
-Such a page is required for every layout that should be usable by {fsdp}s.</p>
+Such a page is required for every layout that should be usable by FirstSpirit Driven Pages.</p>
 </div>
 <div class="paragraph">
-<p>In the second case, the {fsdp} does not have a mapping to a {ccloud} page and therefore no layout of such a page is assigned to it.
+<p>In the second case, the FirstSpirit Driven Page does not have a mapping to a Commerce Cloud page and therefore no layout of such a page is assigned to it.
 Thus the Storefront does not know which slots exist and in which order they should be output.
 For this reason the <a href="#b2clayoutconfig"><code>b2cLayoutConfig</code> configuration</a> must be extended accordingly.</p>
 </div>
@@ -693,7 +692,7 @@ For this reason the <a href="#b2clayoutconfig"><code>b2cLayoutConfig</code> conf
 </td>
 <td class="content">
 <div class="paragraph">
-<p>On the   side, there exist several general slots, which are output without additional configuration.
+<p>On the Spartacus side, there exist several general slots, which are output without additional configuration.
 Their specification is therefore only required in the bridge`s configuration, but not in the <code>b2cLayoutConfig</code> configuration.
 An example for this kind of slots is the <code>BottomHeaderSlot</code>.</p>
 </div>
@@ -702,14 +701,14 @@ An example for this kind of slots is the <code>BottomHeaderSlot</code>.</p>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Configuration in {fs}</strong></p>
+<p><strong>Configuration in FirstSpirit</strong></p>
 </div>
 <div class="paragraph">
-<p>In contrast to the delivery of content, its creation and maintenance is done in the {fs} {wc}.
-In it, Shop and {fsdp}s can be displayed and enriched with editorial content using the {tppdocen}[<em>{ocm}</em>].</p>
+<p>In contrast to the delivery of content, its creation and maintenance is done in the FirstSpirit ContentCreator.
+In it, Shop and FirstSpirit Driven Pages can be displayed and enriched with editorial content using the <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a>.</p>
 </div>
 <div class="paragraph">
-<p>The creation and editing of editorial content requires a <a href="#rp_pages">page template</a> in {fs}, which must be created if necessary.
+<p>The creation and editing of editorial content requires a <a href="#rp_pages">page template</a> in FirstSpirit, which must be created if necessary.
 It must be ensured that the content areas match the <a href="#sp_installation_config_pages">slots</a> configured in the bridge:
 For each defined slot, the page template must have a content area with <strong>the same</strong> name.
 Otherwise, the editorial content will be ignored by the Storefront and not be output in the live state.</p>
@@ -722,7 +721,7 @@ Otherwise, the editorial content will be ignored by the Storefront and not be ou
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The mapping between the configured slots and the content areas of the {fs} page templates is not case-sensitive.
+<p>The mapping between the configured slots and the content areas of the FirstSpirit page templates is not case-sensitive.
 The names <code>Section1</code> and <code>section1</code> are therefore considered identical and are successfully mapped to each other.</p>
 </div>
 </td>
@@ -731,22 +730,22 @@ The names <code>Section1</code> and <code>section1</code> are therefore consider
 </div>
 <div class="paragraph">
 <p>In addition, all page templates must have the <a href="#rp_pages_inputcomponents">text input components <code>pt_seoUrl</code> and <code>pt_cc_identifier</code></a>.
-The input component <code>pt_seoUrl</code> enables the definition of an SEO url and the input component <code>pt_cc_identifier</code> ensures the accessibility of the page in the {wc}.</p>
+The input component <code>pt_seoUrl</code> enables the definition of an SEO url and the input component <code>pt_cc_identifier</code> ensures the accessibility of the page in the ContentCreator.</p>
 </div>
 <div class="paragraph">
-<p>The transfer of the created or modified content to the <em>Online {c}</em> is done with each release.
-The <em>{c}</em> persists the content in JSON format in the form of content fragments and makes them available to the Storefront, which integrates them into the shop together with the {ccloud} content.</p>
+<p>The transfer of the created or modified content to the <em>Online CaaS</em> is done with each release.
+The <em>CaaS</em> persists the content in JSON format in the form of content fragments and makes them available to the Storefront, which integrates them into the shop together with the Commerce Cloud content.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="uc_translation"><a class="anchor" href="#uc_translation"></a>Translation of editorial content</h3>
+<h3 id="uc_translation"><a class="anchor" href="#uc_translation"></a>1.4. Translation of editorial content</h3>
 <div class="paragraph">
-<p>{fs} consistently pursues the concept of multiple languages and allows the output of different language variants.
+<p>FirstSpirit consistently pursues the concept of multiple languages and allows the output of different language variants.
 Translation of editorial content into these languages is often done in cooperation with external translation agencies or with the help of translation services.
-The integration therefore supports {tsdocwhitepaperen}[<em>{ts}</em>], which allows the export of content to be translated into a target system and to reimport translations into the {fs} project.</p>
+The integration therefore supports <a href="https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Whitepaper_EN.html"><em>TranslationStudio</em></a>, which allows the export of content to be translated into a target system and to reimport translations into the FirstSpirit project.</p>
 </div>
 <div class="paragraph">
-<p>If <em>{ts}</em> is configured in the project, the {wc} provides various workflows.
+<p>If <em>TranslationStudio</em> is configured in the project, the ContentCreator provides various workflows.
 These are executable via the <code><strong>Actions</strong></code> menu and are used to perform the following tasks:</p>
 </div>
 <div class="ulist">
@@ -767,9 +766,9 @@ These are executable via the <code><strong>Actions</strong></code> menu and are 
 </div>
 <div class="paragraph">
 <p>Each of these workflows opens a dialog where different settings for the translation have to be defined.
-These differ depending on the elements to be translated and are described in detail in the {tsdoceditorsen}[<em>{ts} Editor Manual</em>].
-A click on the btn:[Request Translation] button triggers the export of the content to be translated into the predefined target system.
-Once the translation is complete, a preselected workflow automatically imports the content into the {fs} project and embeds it in the correct places.</p>
+These differ depending on the elements to be translated and are described in detail in the <a href="https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Editor_Manual_EN.html"><em>TranslationStudio Editor Manual</em></a>.
+A click on the <b class="button">Request Translation</b> button triggers the export of the content to be translated into the predefined target system.
+Once the translation is complete, a preselected workflow automatically imports the content into the FirstSpirit project and embeds it in the correct places.</p>
 </div>
 <div class="paragraph">
 <p>Alternatively, an EasyEdit button is provided for translating single pages or sections.
@@ -778,17 +777,17 @@ This displays both the source text and its translation side by side and enables 
 </div>
 </div>
 <div class="sect2">
-<h3 id="uc_delete_pages"><a class="anchor" href="#uc_delete_pages"></a>Page deletion</h3>
+<h3 id="uc_delete_pages"><a class="anchor" href="#uc_delete_pages"></a>1.5. Page deletion</h3>
 <div class="paragraph">
 <p>Within the progress of a project, some pages are only required for a certain time.
 After that, they are no longer needed and can be removed from the project.
-For this purpose the reference project provides the delete workflow of the <em>{bwfs}</em>.</p>
+For this purpose the reference project provides the delete workflow of the <em>BasicWorkflows</em>.</p>
 </div>
 <div class="paragraph">
-<p>This workflow allows the removal of pages as well as media from the {fs} project.
+<p>This workflow allows the removal of pages as well as media from the FirstSpirit project.
 The deletion can be performed either directly or based on the principle of dual control.
 After deleting the corresponding element, the workflow releases the parent structure.
-The changes are thus directly transferred to the <em>Preview</em> and the <em>Online {c}</em>.</p>
+The changes are thus directly transferred to the <em>Preview</em> and the <em>Online CaaS</em>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -812,6 +811,10 @@ If the executing person is missing one of these rights, the workflow is not avai
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../../_/js/site.js"></script>
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
   </body>

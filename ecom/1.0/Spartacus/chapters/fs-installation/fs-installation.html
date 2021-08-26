@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../../../_/css/site.css">
     <script>var uiRootPath = '../../../../../_'</script>
-    <link rel="icon" href="../../../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -234,10 +233,10 @@
 </aside>
 <article class="doc">
 <div class="sect1">
-<h2 id="_fs_installation_and_configuration"><a class="anchor" href="#_fs_installation_and_configuration"></a>{fs} - Installation and Configuration</h2>
+<h2 id="_firstspirit_installation_and_configuration"><a class="anchor" href="#_firstspirit_installation_and_configuration"></a>1. FirstSpirit - Installation and Configuration</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Various components must be installed and configured in order to use the functions of the <em>{modulname}</em> module.
+<p>Various components must be installed and configured in order to use the functions of the <em>FirstSpirit Connect</em> module.
 The following subchapters explain the steps required.</p>
 </div>
 <div class="admonitionblock important">
@@ -248,8 +247,8 @@ The following subchapters explain the steps required.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>To use the <em>{modulname}</em> module, the <em>{ccon}</em> module must also be configured.
-The steps required to do this are described in the <em>{ccondocen}</em>.</p>
+<p>To use the <em>FirstSpirit Connect</em> module, the <em>CaaS Connect</em> module must also be configured.
+The steps required to do this are described in the <em><a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html">CaaS Connect Documentation</a></em>.</p>
 </div>
 </td>
 </tr>
@@ -268,7 +267,7 @@ These groups possess different rights, which are selected depending on their tas
 Users outside these groups are not authorized to use the reference project by default.</p>
 </div>
 <div class="paragraph">
-<p>If there is a need for additional accounts or groups, their creation must be requested by contacting the {techsupport}.
+<p>If there is a need for additional accounts or groups, their creation must be requested by contacting the <a href="https://help.e-spirit.com/">Technical Support</a>.
 For new accounts, the following information is required:</p>
 </div>
 <div class="ulist">
@@ -289,9 +288,9 @@ For new accounts, the following information is required:</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="fs_installation_pcomp"><a class="anchor" href="#fs_installation_pcomp"></a>Configuration of the project component</h3>
+<h3 id="fs_installation_pcomp"><a class="anchor" href="#fs_installation_pcomp"></a>1.1. Configuration of the project component</h3>
 <div class="paragraph">
-<p>A project-specific configuration is required in order to use the <em>{modulname}</em> module.
+<p>A project-specific configuration is required in order to use the <em>FirstSpirit Connect</em> module.
 It is set up using the project component, which is already added to the reference project supplied.</p>
 </div>
 <div class="admonitionblock important">
@@ -302,8 +301,8 @@ It is set up using the project component, which is already added to the referenc
 </td>
 <td class="content">
 <div class="paragraph">
-<p>To use the <em>{modulname}</em> module, the <em>{ccon}</em> module must also be configured.
-The necessary steps are described in the <em>{ccondocen}</em>.</p>
+<p>To use the <em>FirstSpirit Connect</em> module, the <em>CaaS Connect</em> module must also be configured.
+The necessary steps are described in the <em><a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html">CaaS Connect Documentation</a></em>.</p>
 </div>
 </td>
 </tr>
@@ -317,16 +316,16 @@ The necessary steps are described in the <em>{ccondocen}</em>.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The reference project also includes the project component of the <em>{cxt}</em>.
-This contains a predefined configuration, the modification of which can lead to a change in the behavior of the {wc}.
-An adjustment of the configuration is therefore only to be made after prior consultation with the {techsupport}.</p>
+<p>The reference project also includes the project component of the <em>CXT ContentCreator Extension</em>.
+This contains a predefined configuration, the modification of which can lead to a change in the behavior of the ContentCreator.
+An adjustment of the configuration is therefore only to be made after prior consultation with the <a href="https://help.e-spirit.com/">Technical Support</a>.</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>To perform configuration, open the <code><strong>{manager}</strong></code> and select <code><strong>menu:Project properties[Project components]</strong></code>.</p>
+<p>To perform configuration, open the <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Project components</b></span></strong></code>.</p>
 </div>
 <div id="projectComponents" class="imageblock">
 <div class="content">
@@ -336,7 +335,7 @@ An adjustment of the configuration is therefore only to be made after prior cons
 </div>
 <div class="paragraph">
 <p>A list of all existing project components is displayed in the main panel.
-Select the entry <code>{modulname} for SAP {ccloud} Project Configuration</code> and open the corresponding configuration dialog via btn:[Configure].</p>
+Select the entry <code>FirstSpirit Connect for SAP Commerce Cloud Project Configuration</code> and open the corresponding configuration dialog via <b class="button">Configure</b>.</p>
 </div>
 <div class="paragraph">
 <p>The dialog is organized in five tabs, of which currently only the fields of the tabs <code><strong>General</strong></code>, <code><strong>Product DAP</strong></code> and <code><strong>Category DAP</strong></code> are to be considered.
@@ -344,10 +343,10 @@ The following subchapters explain them in detail.
 The tabs <code><strong>Preview</strong></code> and <code><strong>Content</strong></code> currently do not have any functionality.</p>
 </div>
 <div class="sect3">
-<h4 id="fs_installation_pcomp_general"><a class="anchor" href="#fs_installation_pcomp_general"></a>General</h4>
+<h4 id="fs_installation_pcomp_general"><a class="anchor" href="#fs_installation_pcomp_general"></a>1.1.1. General</h4>
 <div class="paragraph">
 <p>The configuration dialog of the project component first contains the tab <code><strong>General</strong></code>.
-The information to be defined in it must be known to the {server} for a connection to the {ccloud}.</p>
+The information to be defined in it must be known to the FirstSpirit-Server for a connection to the Commerce Cloud.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -359,13 +358,13 @@ The information to be defined in it must be known to the {server} for a connecti
 <dl>
 <dt class="hdlist1">URI</dt>
 <dd>
-<p>Within the tab <code><strong>General</strong></code> the URI of the {ccloud} instance has to be entered first.
-It enables the {server} to establish a connection to the {ccloud}.</p>
+<p>Within the tab <code><strong>General</strong></code> the URI of the Commerce Cloud instance has to be entered first.
+It enables the FirstSpirit-Server to establish a connection to the Commerce Cloud.</p>
 </dd>
 <dt class="hdlist1">Connection timeout/Connection retries</dt>
 <dd>
 <p>Using the two fields <code>Connection timeout</code> and <code>Connection retries</code> the time span (in seconds) and the number of attempts can be defined,
-which the {server} uses to establish a connection to the {ccloud}.</p>
+which the FirstSpirit-Server uses to establish a connection to the Commerce Cloud.</p>
 </dd>
 </dl>
 </div>
@@ -377,7 +376,7 @@ which the {server} uses to establish a connection to the {ccloud}.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The {server} requires <a href="#cc_installation_oauth">OAuth authentication</a> to retrieve information from the {ccloud}.
+<p>The FirstSpirit-Server requires <a href="#cc_installation_oauth">OAuth authentication</a> to retrieve information from the Commerce Cloud.
 The required authentication data must be entered in the following fields of the <code><strong>General</strong></code> tab.
 The other tabs enable the overwriting of this information and therefore have the same fields.
 The overwriting is done by activating the checkbox <code>Override general OAuth settings</code> in one of the other tabs.</p>
@@ -390,13 +389,13 @@ The overwriting is done by activating the checkbox <code>Override general OAuth 
 <dl>
 <dt class="hdlist1">Auth Server URI</dt>
 <dd>
-<p>To connect to the {ccloud}, the {server} requires the specification of the default endpoint for OAuth authentication.
-The URI of this endpoint must be entered relatively to the URI of the {ccloud} instance.</p>
+<p>To connect to the Commerce Cloud, the FirstSpirit-Server requires the specification of the default endpoint for OAuth authentication.
+The URI of this endpoint must be entered relatively to the URI of the Commerce Cloud instance.</p>
 </dd>
 <dt class="hdlist1">Username/Password</dt>
 <dd>
 <p>The access data with which the authentication is carried out must be entered in the fields <code>Username</code> and <code>Password</code>.
-Usually this is the data of a technical {ccloud} account.</p>
+Usually this is the data of a technical Commerce Cloud account.</p>
 </dd>
 <dt class="hdlist1">OAuth Client ID</dt>
 <dd>
@@ -414,17 +413,17 @@ Therefore the combo box offers two options: <code>password</code> and <code>clie
 </dd>
 <dt class="hdlist1">Test OAuth settings</dt>
 <dd>
-<p>By clicking on this button the connection to the {ccloud} can be tested.
+<p>By clicking on this button the connection to the Commerce Cloud can be tested.
 If overriding the OAuth authentication was activated in one of the other tabs, the settings stored in it will be taken into account.</p>
 </dd>
 </dl>
 </div>
 </div>
 <div class="sect3">
-<h4 id="fs_installation_pcomp_product_dap"><a class="anchor" href="#fs_installation_pcomp_product_dap"></a>Product DAP</h4>
+<h4 id="fs_installation_pcomp_product_dap"><a class="anchor" href="#fs_installation_pcomp_product_dap"></a>1.1.2. Product DAP</h4>
 <div class="paragraph">
 <p>In addition to the tab <a href="#fs_installation_pcomp_general"><code><strong>General</strong></code></a>, the configuration dialog of the project component has the tabs <code><strong>Product DAP</strong></code> and <a href="#fs_installation_pcomp_category_dap"><code><strong>Category DAP</strong></code></a>.
-They are used to configure the reports in the {wc}, which require various information.</p>
+They are used to configure the reports in the ContentCreator, which require various information.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -436,8 +435,8 @@ They are used to configure the reports in the {wc}, which require various inform
 <dl>
 <dt class="hdlist1">Collection</dt>
 <dd>
-<p>The product report in the {wc} lists the products originating from the {ccloud} and enables editors to use these products.
-The products can be queried via a REST endpoint, which must be known by the {wc}.
+<p>The product report in the ContentCreator lists the products originating from the Commerce Cloud and enables editors to use these products.
+The products can be queried via a REST endpoint, which must be known by the ContentCreator.
 It therefore has to be specified in this field.</p>
 </dd>
 <dt class="hdlist1">PDP URL</dt>
@@ -490,9 +489,9 @@ Otherwise, the entries from the <code><strong>General</strong></code> tab will b
 </div>
 </div>
 <div class="sect3">
-<h4 id="fs_installation_pcomp_category_dap"><a class="anchor" href="#fs_installation_pcomp_category_dap"></a>Category DAP</h4>
+<h4 id="fs_installation_pcomp_category_dap"><a class="anchor" href="#fs_installation_pcomp_category_dap"></a>1.1.3. Category DAP</h4>
 <div class="paragraph">
-<p>The tab <code><strong>Category DAP</strong></code> is equivalent to the tab <a href="#fs_installation_pcomp_product_dap"><code><strong>Product DAP</strong></code></a> and is used to configure the category report in the {wc}.</p>
+<p>The tab <code><strong>Category DAP</strong></code> is equivalent to the tab <a href="#fs_installation_pcomp_product_dap"><code><strong>Product DAP</strong></code></a> and is used to configure the category report in the ContentCreator.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -504,12 +503,12 @@ Otherwise, the entries from the <code><strong>General</strong></code> tab will b
 <dl>
 <dt class="hdlist1">Catalog</dt>
 <dd>
-<p>The category report in the {wc} contains the categories from the {ccloud} and makes them available to the editors.
+<p>The category report in the ContentCreator contains the categories from the Commerce Cloud and makes them available to the editors.
 For this purpose, the corresponding catalog ID must be entered here.</p>
 </dd>
 <dt class="hdlist1">Catalog Version</dt>
 <dd>
-<p>The categories provided in the {wc} originate from a product catalog.
+<p>The categories provided in the ContentCreator originate from a product catalog.
 Therefore, in addition to the catalog ID, the version of the product catalog from which the categories are obtained must also be specified.</p>
 </dd>
 <dt class="hdlist1">CDP URL</dt>
@@ -529,16 +528,16 @@ Otherwise, the entries from the <code><strong>General</strong></code> tab will b
 </div>
 </div>
 <div class="sect2">
-<h3 id="fs_installation_wcomp"><a class="anchor" href="#fs_installation_wcomp"></a>Adding the web components</h3>
+<h3 id="fs_installation_wcomp"><a class="anchor" href="#fs_installation_wcomp"></a>1.2. Adding the web components</h3>
 <div class="paragraph">
-<p>For the {wc}, a web component is needed, which is already added to the reference project.
-By default it is installed globally in the <code><strong>{manager}</strong></code> in the area <code><strong>menu:Server Properties[Web applications]</strong></code>.
-In this case, all installation or configuration steps required for the web component have already been performed by the {creator}.</p>
+<p>For the ContentCreator, a web component is needed, which is already added to the reference project.
+By default it is installed globally in the <code><strong>ServerManager</strong></code> in the area <code><strong><span class="menuseq"><b class="menu">Server Properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Web applications</b></span></strong></code>.
+In this case, all installation or configuration steps required for the web component have already been performed by the e-Spirit AG.</p>
 </div>
 <div class="paragraph">
 <p>Alternatively, you may install the web component in the <code><strong>Project properties</strong></code>.
 <strong>Only in this case</strong> it still needs to be installed on an active web server.
-Therefore, open the <code><strong>{manager}</strong></code> and select <code><strong>menu:Project properties[Web components]</strong></code>.</p>
+Therefore, open the <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Web components</b></span></strong></code>.</p>
 </div>
 <div id="webcomponents" class="imageblock">
 <div class="content">
@@ -548,41 +547,41 @@ Therefore, open the <code><strong>{manager}</strong></code> and select <code><st
 </div>
 <div class="paragraph">
 <p>Within the main panel several tabs are visible, each with a list of the existing web components.
-This list contains the following entries for the <code><strong>{wc}</strong></code>:</p>
+This list contains the following entries for the <code><strong>ContentCreator</strong></code>:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>BasicWorkflows_ContentCreator_Library</code> (only required when using the <em>{bwfs}</em>)</p>
+<p><code>BasicWorkflows_ContentCreator_Library</code> (only required when using the <em>BasicWorkflows</em>)</p>
 </li>
 <li>
-<p><code>CXT {wc} Extension: WebApp for {wc}</code></p>
+<p><code>CXT ContentCreator Extension: WebApp for ContentCreator</code></p>
 </li>
 <li>
-<p><code>{modulname} for SAP {ccloud} Web App</code></p>
+<p><code>FirstSpirit Connect for SAP Commerce Cloud Web App</code></p>
 </li>
 <li>
-<p><code>{fs} ThirdPartyPreview WebApp</code></p>
+<p><code>FirstSpirit ThirdPartyPreview WebApp</code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>In the tab, select a web server via the selection box and start the installation by clicking the btn:[Install] button.
+<p>In the tab, select a web server via the selection box and start the installation by clicking the <b class="button">Install</b> button.
 After successful installation, a dialog opens, in which the activation of the web server is to be confirmed.</p>
 </div>
 <div class="paragraph">
-<p>For detailed information about adding web components, see the <em>{linkfsadocen}</em>.</p>
+<p>For detailed information about adding web components, see the <em><a href="https://docs.e-spirit.com/odfs/edocs/admi/introduction/index.html">FirstSpirit Manual for Administrators</a></em>.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="fs_previewurl"><a class="anchor" href="#fs_previewurl"></a>Definition of the external preview URL</h3>
+<h3 id="fs_previewurl"><a class="anchor" href="#fs_previewurl"></a>1.3. Definition of the external preview URL</h3>
 <div class="paragraph">
-<p>By using the <em>{ocm}</em>, the {wc} displays external content from the {ccloud} to which the <em>{ocm}</em> needs access.
-The preview URL of the Storefront must therefore be specified in the {wc} properties.
+<p>By using the <em>Omnichannel Manager</em>, the ContentCreator displays external content from the Commerce Cloud to which the <em>Omnichannel Manager</em> needs access.
+The preview URL of the Storefront must therefore be specified in the ContentCreator properties.
 Since the specification is always project-specific, there is no default configuration for it within the reference project.</p>
 </div>
 <div class="paragraph">
-<p>Open the <code><strong>menu:Project properties[{wc}]</strong></code> area within the <code><strong>{manager}</strong></code> and enter the URL of the Storefront in the <code>External preview URL</code> field.</p>
+<p>Open the <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">ContentCreator</b></span></strong></code> area within the <code><strong>ServerManager</strong></code> and enter the URL of the Storefront in the <code>External preview URL</code> field.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -592,22 +591,22 @@ Since the specification is always project-specific, there is no default configur
 </div>
 </div>
 <div class="sect2">
-<h3 id="install_workflow"><a class="anchor" href="#install_workflow"></a>Workflows</h3>
+<h3 id="install_workflow"><a class="anchor" href="#install_workflow"></a>1.4. Workflows</h3>
 <div class="paragraph">
-<p>Content is released and deleted by editors within the supplied reference project <em>{refproject}</em> via the <em>{bwfs}</em>.
+<p>Content is released and deleted by editors within the supplied reference project <em>FirstSpirit Connect Reference Project</em> via the <em>BasicWorkflows</em>.
 They are already added to the project and can be used as an alternative to project-specific workflows.</p>
 </div>
 <div class="paragraph">
-<p><span class="underline"><strong>Installation of the {bwfs} module</strong></span></p>
+<p><span class="underline"><strong>Installation of the BasicWorkflows module</strong></span></p>
 </div>
 <div class="paragraph">
-<p>Before using the workflows, the <em>{bwfs}</em> module must first be installed on the {fs} server and the web component must be activated.
+<p>Before using the workflows, the <em>BasicWorkflows</em> module must first be installed on the FirstSpirit server and the web component must be activated.
 The necessary steps are the same as the installation of the other modules and activation of the corresponding <a href="#fs_installation_wcomp">web component</a>.
-The web component of the <em>{bwfs}</em> is also required in the <code><strong>{wc}</strong></code> tab.</p>
+The web component of the <em>BasicWorkflows</em> is also required in the <code><strong>ContentCreator</strong></code> tab.</p>
 </div>
 <div class="paragraph">
-<p>The use of <em>{bwfs}</em> in {wc} also requires the selection of the provided <code>{bwfs} Status Provider</code> in the <code><strong>menu:Project properties[{wc}]</strong></code> area within the <code><strong>{manager}</strong></code>.
-This setting has already been made in the reference project <em>{refproject}</em>.</p>
+<p>The use of <em>BasicWorkflows</em> in ContentCreator also requires the selection of the provided <code>BasicWorkflows Status Provider</code> in the <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">ContentCreator</b></span></strong></code> area within the <code><strong>ServerManager</strong></code>.
+This setting has already been made in the reference project <em>FirstSpirit Connect Reference Project</em>.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -619,16 +618,16 @@ This setting has already been made in the reference project <em>{refproject}</em
 <p><span class="underline"><strong>Templates</strong></span></p>
 </div>
 <div class="paragraph">
-<p>The <em>{bwfs}</em> need different templates.
-These usually have to be imported into the {fs} project via the context menu.
+<p>The <em>BasicWorkflows</em> need different templates.
+These usually have to be imported into the FirstSpirit project via the context menu.
 However, they are already included in the reference project and an import of the templates is therefore not necessary.</p>
 </div>
 <div class="paragraph">
 <p><span class="underline"><strong>Permission assignment</strong></span></p>
 </div>
 <div class="paragraph">
-<p>In the final step, the release workflow must be allowed in each store to run on {fs} elements.
-To do this, you can open the permission assignment on the root nodes of the stores via the context menu entry <code><strong>menu:Extras[Change Permissions]</strong></code>.
+<p>In the final step, the release workflow must be allowed in each store to run on FirstSpirit elements.
+To do this, you can open the permission assignment on the root nodes of the stores via the context menu entry <code><strong><span class="menuseq"><b class="menu">Extras</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Change Permissions</b></span></strong></code>.
 This step has already been performed in the reference project and is therefore omitted.</p>
 </div>
 <div class="paragraph">
@@ -643,7 +642,7 @@ If this is not desired, the rights must be adjusted manually.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p>More information about the installation, configuration and functionality of the workflows can be found in the <em>{bwfdocen}</em>.</p>
+<p>More information about the installation, configuration and functionality of the workflows can be found in the <em><a href="https://docs.e-spirit.com/module/basicworkflows/BasicWorkflows_Documentation_EN.html">BasicWorkflows Documentation</a></em>.</p>
 </div>
 </td>
 </tr>
@@ -651,16 +650,16 @@ If this is not desired, the rights must be adjusted manually.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="install_translation_studio"><a class="anchor" href="#install_translation_studio"></a>{ts}</h3>
+<h3 id="install_translation_studio"><a class="anchor" href="#install_translation_studio"></a>1.5. TranslationStudio</h3>
 <div class="paragraph">
 <p>Translation of editorial content is often done in cooperation with external translation agencies or with the help of translation services.
-The integration therefore supports {tsdocwhitepaperen}[<em>{ts}</em>], which allows the export of content to be translated into a target system and to reimport translations into the {fs} project.
-By default, the <em>{ts}</em> module is installed within the cloud environment of the {creator}, so its functionalities can be activated on demand by performing a few steps.</p>
+The integration therefore supports <a href="https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Whitepaper_EN.html"><em>TranslationStudio</em></a>, which allows the export of content to be translated into a target system and to reimport translations into the FirstSpirit project.
+By default, the <em>TranslationStudio</em> module is installed within the cloud environment of the e-Spirit AG, so its functionalities can be activated on demand by performing a few steps.</p>
 </div>
 <div class="paragraph">
-<p>In addition to the module installation, the use of <em>{ts}</em> requires the installation of the <em>{ts}</em> application as well as the web and project component.
-Furthermore, various actions within the {fs} project are needed.
-Both the application setup and all further steps to be performed are described in the {tsdocinstallen}[<em>{ts} Installation Manual</em>].</p>
+<p>In addition to the module installation, the use of <em>TranslationStudio</em> requires the installation of the <em>TranslationStudio</em> application as well as the web and project component.
+Furthermore, various actions within the FirstSpirit project are needed.
+Both the application setup and all further steps to be performed are described in the <a href="https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Installation_Manual_EN.html"><em>TranslationStudio Installation Manual</em></a>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -670,7 +669,7 @@ Both the application setup and all further steps to be performed are described i
 </td>
 <td class="content">
 <div class="paragraph">
-<p>The installation of the project component replaces the button of the translation function provided by {fs} in the {wc}.
+<p>The installation of the project component replaces the button of the translation function provided by FirstSpirit in the ContentCreator.
 This button only has functionality if all other configuration steps have been completed successfully.</p>
 </div>
 </td>
@@ -679,17 +678,17 @@ This button only has functionality if all other configuration steps have been co
 </div>
 </div>
 <div class="sect2">
-<h3 id="install_pset"><a class="anchor" href="#install_pset"></a>Project settings</h3>
+<h3 id="install_pset"><a class="anchor" href="#install_pset"></a>1.6. Project settings</h3>
 <div class="paragraph">
-<p>The installation on the {ccloud} side includes the integration of the <a href="#sp_installation_libraries">library <code>fs-spartacus-bridge</code></a>.
-In addition to various <em>{c}</em> information, this library expects a definition of the {ccloud} templates, whose processing is to be enabled in the {wc}.</p>
+<p>The installation on the Commerce Cloud side includes the integration of the <a href="#sp_installation_libraries">library <code>fs-spartacus-bridge</code></a>.
+In addition to various <em>CaaS</em> information, this library expects a definition of the Commerce Cloud templates, whose processing is to be enabled in the ContentCreator.</p>
 </div>
 <div class="paragraph">
-<p>For each {sdp} specified in the bridge configuration, a page must exist within {fs} and within the {ccloud}.
-The mapping between the {fs} page template and the {ccloud} template is done via the project settings form.</p>
+<p>For each Shop Driven Page specified in the bridge configuration, a page must exist within FirstSpirit and within the Commerce Cloud.
+The mapping between the FirstSpirit page template and the Commerce Cloud template is done via the project settings form.</p>
 </div>
 <div class="paragraph">
-<p>For each {ccloud} template, the project settings contain an input component in which the corresponding page template is referenced.
+<p>For each Commerce Cloud template, the project settings contain an input component in which the corresponding page template is referenced.
 Furthermore, a content folder is selected for content, product, and category pages.
 These folders define the destination where the pages created based on the page templates are stored.
 The site store contains folders with the same names in which the corresponding page references are stored.</p>
@@ -707,10 +706,10 @@ The site store contains folders with the same names in which the corresponding p
 <div class="ulist">
 <ul>
 <li>
-<p><code>ps_template_&lt;Name of the {ccloud} Template&gt;</code> or</p>
+<p><code>ps_template_&lt;Name of the Commerce Cloud Template&gt;</code> or</p>
 </li>
 <li>
-<p><code>ps_folder_&lt;{ccloud} Page Type&gt;</code></p>
+<p><code>ps_folder_&lt;Commerce Cloud Page Type&gt;</code></p>
 </li>
 </ul>
 </div>
@@ -729,14 +728,14 @@ The site store contains folders with the same names in which the corresponding p
 </div>
 </div>
 <div class="sect2">
-<h3 id="install_schedule"><a class="anchor" href="#install_schedule"></a>Deployment schedules</h3>
+<h3 id="install_schedule"><a class="anchor" href="#install_schedule"></a>1.7. Deployment schedules</h3>
 <div class="paragraph">
-<p>With <em>{ccon}</em> the publication of editorial content as well as updating the <em>Online {c}</em> takes place with each release.
+<p>With <em>CaaS Connect</em> the publication of editorial content as well as updating the <em>Online CaaS</em> takes place with each release.
 An additional deployment process is not necessary in this case.</p>
 </div>
 <div class="paragraph">
 <p>However, during the progress of the project, situations may arise that require a deployment.
-Therefore, the <em>{ccon}</em> module provides two schedules that are automatically added to the project.
+Therefore, the <em>CaaS Connect</em> module provides two schedules that are automatically added to the project.
 They do not require any project-specific customization.</p>
 </div>
 </div>
@@ -746,6 +745,10 @@ They do not require any project-specific customization.</p>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../../../_/js/site.js"></script>
 <script async src="../../../../../_/js/vendor/highlight.js"></script>
   </body>

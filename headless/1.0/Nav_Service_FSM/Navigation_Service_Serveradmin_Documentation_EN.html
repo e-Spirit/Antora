@@ -8,7 +8,6 @@
     <meta name="generator" content="Antora 2.3.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
     <script>var uiRootPath = '../../../_'</script>
-    <link rel="icon" href="../../../_/img/shortcut-icon.ico" type="image/x-icon">
   </head>
   <body class="article">
 <header class="header">
@@ -222,25 +221,6 @@
 </aside>
 <article class="doc">
 <h1 class="page">Navigation Service - Serveradmin Documentation</h1>
-<div id="toc" class="toc">
-<div id="toctitle">Table of Contents</div>
-<ul class="sectlevel1">
-<li><a href="#_introduction">1. Introduction</a>
-<ul class="sectlevel2">
-<li><a href="#technicalrequirements">1.1. Technical requirements</a></li>
-<li><a href="#architecture">1.2. Architecture</a></li>
-</ul>
-</li>
-<li><a href="#components">2. Components</a></li>
-<li><a href="#_installation_and_configuration">3. Installation and configuration</a>
-<ul class="sectlevel2">
-<li><a href="#moduleinstallation">3.1. Module Installation</a></li>
-<li><a href="#moduleconfig">3.2. Configuration of the FirstSpirit service</a></li>
-<li><a href="#projectappconfig">3.3. Configuration of the Navigation Service project component</a></li>
-</ul>
-</li>
-</ul>
-</div>
 <div class="sect1">
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
 <div class="sectionbody">
@@ -267,16 +247,16 @@ According to the <a href="https://navigationservice.e-spirit.cloud/docs/user/en/
 </table>
 </div>
 <div class="sect2">
-<h3 id="technicalrequirements"><a class="anchor" href="#technicalrequirements"></a>1.1. Technical requirements</h3>
+<h3 id="_technical_requirements"><a class="anchor" href="#_technical_requirements"></a>1.1. Technical requirements</h3>
 <div class="paragraph">
-<p>Besides the FirstSpirit {fsRuntimeVersion} version, the module requires access to the Navigation Service.
+<p>Besides the FirstSpirit version, the module requires access to the Navigation Service.
 e-Spirit AG is responsible for setting this up as part of the provision of the infrastructure.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="architecture"><a class="anchor" href="#architecture"></a>1.2. Architecture</h3>
 <div class="paragraph">
-<p>The functionalities of the Navigation Service are realized by the interaction of different components (see figure <a href="#architecture_image">Architecture</a>).</p>
+<p>The functionalities of the Navigation Service are realized by the interaction of different components.</p>
 </div>
 <div class="paragraph">
 <p>These components are as follows:</p>
@@ -290,12 +270,6 @@ e-Spirit AG is responsible for setting this up as part of the provision of the i
 <p>Navigation Service module</p>
 </li>
 </ul>
-</div>
-<div id="architecture_image" class="imageblock">
-<div class="content">
-<img src="_images/images/architecture.png" alt="architecture">
-</div>
-<div class="title">Figure 1. Architecture</div>
 </div>
 <div class="paragraph">
 <p>The interaction of the components always follows the following scheme:</p>
@@ -359,8 +333,7 @@ The Navigation Client Service then takes care of creating the navigations of the
 <dl>
 <dt class="hdlist1">Navigation Project Configuration</dt>
 <dd>
-<p>By adding/removing the project component <em>Navigation Project Configuration</em> to a FirstSpirit project, it is regulated whether navigations are created for this project.
-It has its own configuration, which is described in the chapter <a href="#projectappconfig">Configuration of the Navigation Service project component</a>.</p>
+<p>By adding/removing the project component <em>Navigation Project Configuration</em> to a FirstSpirit project, it is regulated whether navigations are created for this project.</p>
 </dd>
 </dl>
 </div>
@@ -379,21 +352,15 @@ It is part of the distribution and already contains all necessary client compone
 <div class="sect2">
 <h3 id="moduleinstallation"><a class="anchor" href="#moduleinstallation"></a>3.1. Module Installation</h3>
 <div class="paragraph">
-<p>The module must be installed on the FirstSpirit server using the supplied <code>navigation-service-{build-version}.fsm</code> file.
+<p>The module must be installed on the FirstSpirit server using the supplied <code>navigation-service-&lt;build-version&gt;.fsm</code> file.
 Open the <code><strong>ServerManager</strong>' and select the area `<strong>menu:Server Properties [Modules]</strong></code>.</p>
-</div>
-<div id="installed_modules" class="imageblock">
-<div class="content">
-<img src="_images/images/modules.png" alt="modules">
-</div>
-<div class="title">Figure 2. Moduls</div>
 </div>
 <div class="paragraph">
 <p>Within the main panel there is a list of all modules installed on the FirstSpirit server.
-Select the <code>navigation-service-{build-version}.fsm</code> file after clicking <b class="button">Install</b> and confirm the selection with <b class="button">Open</b>.</p>
+Select the <code>navigation-service-&lt;build-version&gt;.fsm</code> file after clicking <b class="button">Install</b> and confirm the selection with <b class="button">Open</b>.</p>
 </div>
 <div class="paragraph">
-<p>After the successful installation the folder `navigation-service' has been added to the list of folders, which has to get all rights via the button <b class="button">Configure</b> (see figure <a href="#installed_modules">Moduls</a>).</p>
+<p>After the successful installation the folder `navigation-service' has been added to the list of folders, which has to get all rights via the button <b class="button">Configure</b> (see figure <a href="#installed_modules">[installed_modules]</a>).</p>
 </div>
 <div class="paragraph">
 <p>Furthermore, the module requires a configuration, which is explained in the following subchapter.</p>
@@ -433,116 +400,16 @@ For that purpose a configuration file with the following structure has to be pla
 </div>
 </div>
 </div>
-<div class="sect2">
-<h3 id="projectappconfig"><a class="anchor" href="#projectappconfig"></a>3.3. Configuration of the Navigation Service project component</h3>
-<div class="paragraph">
-<p>With the usage of the Navigation Service module the project component <em>Navigation Project Configuration</em> becomes available to the FirstSpirit server.</p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-<div class="paragraph">
-<p>The addition of the Navigation Project Configuration to a FirstSpirit project triggers an initial creation of its navigation structure.</p>
-</div>
-<div class="paragraph">
-<p>Removing the Navigation Project Configuration will delete the created navigations in the Navigation Service.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>To add the project component, open the <code><strong>ServerManager</strong></code> and select the <code><strong><span class="menuseq"><b class="menu">Project settings</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">project component</b></span></strong></code> area.</p>
-</div>
-<div class="paragraph">
-<p>A list of all existing project component is displayed in the main panel.
-After clicking <b class="button">Add</b>, select the <code>{component name}</code> and confirm the selection with <b class="button">OK</b>.</p>
-</div>
-<div id="projectcomponents_add" class="imageblock">
-<div class="content">
-<img src="_images/images/projectcomponents_add.png" alt="projectcomponents add">
-</div>
-<div class="title">Figure 3. Adding the project component: Navigation Project Configuration</div>
-</div>
-<div class="paragraph">
-<p>This project component will be added to the list in the content area and must be configured afterwards (see figure <a href="#projectcomponents_add">Adding the project component: Navigation Project Configuration</a>).</p>
-</div>
-<div class="paragraph">
-<p>Select the entry in the list and open the corresponding configuration dialog via <b class="button">Configure</b>.</p>
-</div>
-<div class="paragraph">
-<p>Fill in the fields as described below.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/projectcomponents_config.png" alt="projectcomponents config">
-</div>
-<div class="title">Figure 4. Navigation Service Configuration</div>
-</div>
-<div class="dlist">
-<dl>
-<dt class="hdlist1">CaaS 3.x mode</dt>
-<dd>
-<p>This mode is available in case the FirstSpirit server has the Content as a Service module installed in a version equal or greater than 3.
-If the <code>CaaS 3.x mode</code> is activated, the corresponding CaaS routes are used in the navigation as the reference to the data.
-Additionally, the <code>Advanced URLs</code> UrlFactory is used for the SEO routes.</p>
-</dd>
-<dt class="hdlist1">Content Reference URL Prefix</dt>
-<dd>
-<p>A optional prefix can be entered in this field. The value will be prepended to the generated <code>ContentReference</code> URL of each FirstSpirit page reference.</p>
-</dd>
-<dt class="hdlist1">Content Reference URL Factory</dt>
-<dd>
-<p>In this field the URL Factory which is responsible for the path generation of the referenced content can be selected.
-This selection field is disabled once <code>CaaS 3.x mode</code> has been enabled.</p>
-</dd>
-<dt class="hdlist1">SEO Route Url Factory</dt>
-<dd>
-<p>In this field the URL Factory which is responsible for the SEO routes can be selected.
-This selection field is disabled once <code>CaaS 3.x mode</code> has been enabled.</p>
-</dd>
-<dt class="hdlist1">Navigation URL (release and preview state)</dt>
-<dd>
-<p>These listed navigation URLs indicate the locations to which the navigations created for the project are transmitted.
-These are endpoints for the front-end developers, provided by e-Spirit.</p>
-</dd>
-<dt class="hdlist1">Available in languages</dt>
-<dd>
-<p>This is a list of all languages of the current FirstSpirit project, for each of which a navigation is provided.</p>
-</dd>
-<dt class="hdlist1">Ignore errors</dt>
-<dd>
-<p>This mode is <strong>not recommended</strong> and per default deactivated in all projects.
-If it is enabled, errors will be ignored when generating the navigation.
-Instead, <em>null</em> values will be written to the affected locations.
-You will therefore lose the certainty that data in the Navigation Service is always correct.</p>
-</dd>
-<dt class="hdlist1">Permissions</dt>
-<dd>
-<p>Here you can configure whether permissions information should be part of the navigation.
-The <em>Input name</em> defines the name of the <em>CMS_INPUT_PERMISSION</em> input component.
-Permissions will only be written to the navigation if this value is set.
-The <em>Activity name</em> specifies which set of permissions should be used.</p>
-</dd>
-</dl>
-</div>
-<div class="paragraph">
-<p>Unresolved include directive in modules/Nav_Service_FSM/pages/Navigation_Service_Serveradmin_Documentation_EN.adoc - include::chapters/legalnotice.adoc[]</p>
-</div>
-<div class="paragraph">
-<p>Details regarding any third-party software products in use but not created by e-Spirit AG, as well as the third-party licenses and, if applicable, update information can be found in the file <code>THIRD-PARTY.txt</code> included with the module.</p>
-</div>
-</div>
 </div>
 </div>
 </article>
   </div>
 </main>
 </div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
 <script src="../../../_/js/site.js"></script>
 <script async src="../../../_/js/vendor/highlight.js"></script>
   </body>
