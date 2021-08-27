@@ -326,12 +326,6 @@ The content is made available to the Storefront using the <em>CaaS</em> and is d
 It is still carried out by the Storefront.
 Even if the FirstSpirit server is maintained, this affects neither the Storefront nor the Commerce Cloud.</p>
 </div>
-<div id="img_dataflow" class="imageblock">
-<div class="content">
-<img src="/images/dataflow.png" alt="dataflow">
-</div>
-<div class="title">Figure 1. Data flow</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_architecture"><a class="anchor" href="#_architecture"></a>1.2. Architecture</h3>
@@ -345,15 +339,6 @@ The integration thus creates an overall system that combines the functional stre
 Within this overall system FirstSpirit and the Commerce Cloud represent the backend, while the <em>CaaS</em> forms the middleware and the Storefront is the front end.</p>
 </div>
 <div class="paragraph">
-<p>The following graphic shows the high-level architecture of this overall system:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/images/sp_architecture_simple.png" alt="sp architecture simple">
-</div>
-<div class="title">Figure 2. High-level architecture</div>
-</div>
-<div class="paragraph">
 <p>Within the newly created overall system, the Storefront continues to deliver the content, which it by default obtains from the Commerce Cloud.
 In addition, it queries the content of the respective <em>CaaS</em> instance and links it with those of the Commerce Cloud.
 For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.</p>
@@ -361,7 +346,7 @@ For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.
 <div class="paragraph">
 <p>In contrast to the delivery of the content, its creation and maintenance shifts from the Commerce Cloud to FirstSpirit.
 With the ContentCreator, FirstSpirit provides an intuitive WYSIWYG client for this purpose.
-The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows displaying external content in the ContentCreator (see figure <a href="#img_architecture2">Low-level architecture</a>).</p>
+The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows displaying external content in the ContentCreator (see figure <a href="#img_architecture2">[img_architecture2]</a>).</p>
 </div>
 <div class="paragraph">
 <p>By embedding the Storefront in the Omnichannel Manager, the editors are provided with a combined preview of the content, which in this case originate from the <em>Preview CaaS</em> and the Commerce Cloud.
@@ -380,12 +365,6 @@ In order to display content originating from the reference project, the Storefro
 <div class="paragraph">
 <p>The overall system of FirstSpirit, Spartacus and the Commerce Cloud thus has an architecture in which the editorial backend of FirstSpirit is clearly separated from the Storefront.
 A maintenance of FirstSpirit affects neither the Storefront nor the Commerce Cloud.</p>
-</div>
-<div id="img_architecture2" class="imageblock">
-<div class="content">
-<img src="../_images/images/sp_architecture.png" alt="sp architecture">
-</div>
-<div class="title">Figure 3. Low-level architecture</div>
 </div>
 </div>
 <div class="sect2">
@@ -413,7 +392,7 @@ Sections can be added to them; each one corresponds to a component (see figure <
 <div class="content">
 <img src="../_images/images/concept.png" alt="concept">
 </div>
-<div class="title">Figure 4. Page Rendering</div>
+<div class="title">Figure 1. Page Rendering</div>
 </div>
 </div>
 <div class="sect3">

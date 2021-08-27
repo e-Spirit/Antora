@@ -410,12 +410,6 @@ The content is made available to the Storefront using the <em>CaaS</em> and is d
 It is still carried out by the Storefront.
 Even if the FirstSpirit server is maintained, this affects neither the Storefront nor the Commerce Cloud.</p>
 </div>
-<div id="img_dataflow" class="imageblock">
-<div class="content">
-<img src="/images/dataflow.png" alt="dataflow">
-</div>
-<div class="title">Figure 1. Data flow</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_architecture"><a class="anchor" href="#_architecture"></a>1.2. Architecture</h3>
@@ -429,15 +423,6 @@ The integration thus creates an overall system that combines the functional stre
 Within this overall system FirstSpirit and the Commerce Cloud represent the backend, while the <em>CaaS</em> forms the middleware and the Storefront is the front end.</p>
 </div>
 <div class="paragraph">
-<p>The following graphic shows the high-level architecture of this overall system:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/sp_architecture_simple.png" alt="sp architecture simple">
-</div>
-<div class="title">Figure 2. High-level architecture</div>
-</div>
-<div class="paragraph">
 <p>Within the newly created overall system, the Storefront continues to deliver the content, which it by default obtains from the Commerce Cloud.
 In addition, it queries the content of the respective <em>CaaS</em> instance and links it with those of the Commerce Cloud.
 For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.</p>
@@ -445,7 +430,7 @@ For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.
 <div class="paragraph">
 <p>In contrast to the delivery of the content, its creation and maintenance shifts from the Commerce Cloud to FirstSpirit.
 With the ContentCreator, FirstSpirit provides an intuitive WYSIWYG client for this purpose.
-The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows displaying external content in the ContentCreator (see figure <a href="#img_architecture2">Low-level architecture</a>).</p>
+The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows displaying external content in the ContentCreator (see figure <a href="#img_architecture2">[img_architecture2]</a>).</p>
 </div>
 <div class="paragraph">
 <p>By embedding the Storefront in the Omnichannel Manager, the editors are provided with a combined preview of the content, which in this case originate from the <em>Preview CaaS</em> and the Commerce Cloud.
@@ -464,12 +449,6 @@ In order to display content originating from the reference project, the Storefro
 <div class="paragraph">
 <p>The overall system of FirstSpirit, Spartacus and the Commerce Cloud thus has an architecture in which the editorial backend of FirstSpirit is clearly separated from the Storefront.
 A maintenance of FirstSpirit affects neither the Storefront nor the Commerce Cloud.</p>
-</div>
-<div id="img_architecture2" class="imageblock">
-<div class="content">
-<img src="_images/images/sp_architecture.png" alt="sp architecture">
-</div>
-<div class="title">Figure 3. Low-level architecture</div>
 </div>
 </div>
 <div class="sect2">
@@ -497,7 +476,7 @@ Sections can be added to them; each one corresponds to a component (see figure <
 <div class="content">
 <img src="_images/images/concept.png" alt="concept">
 </div>
-<div class="title">Figure 4. Page Rendering</div>
+<div class="title">Figure 1. Page Rendering</div>
 </div>
 </div>
 <div class="sect3">
@@ -1008,12 +987,6 @@ An adjustment of the configuration is therefore only to be made after prior cons
 <div class="paragraph">
 <p>To perform configuration, open the <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Project components</b></span></strong></code>.</p>
 </div>
-<div id="projectComponents" class="imageblock">
-<div class="content">
-<img src="_images/images/projectcomponents.png" alt="Project properties - Project components">
-</div>
-<div class="title">Figure 5. Project properties - Project components</div>
-</div>
 <div class="paragraph">
 <p>A list of all existing project components is displayed in the main panel.
 Select the entry <code>FirstSpirit Connect for SAP Commerce Cloud Project Configuration</code> and open the corresponding configuration dialog via <b class="button">Configure</b>.</p>
@@ -1028,12 +1001,6 @@ The tabs <code><strong>Preview</strong></code> and <code><strong>Content</strong
 <div class="paragraph">
 <p>The configuration dialog of the project component first contains the tab <code><strong>General</strong></code>.
 The information to be defined in it must be known to the FirstSpirit-Server for a connection to the Commerce Cloud.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/config-general.png" alt="config general">
-</div>
-<div class="title">Figure 6. Project component - General</div>
 </div>
 <div class="dlist">
 <dl>
@@ -1106,12 +1073,6 @@ If overriding the OAuth authentication was activated in one of the other tabs, t
 <p>In addition to the tab <a href="#fs_installation_pcomp_general"><code><strong>General</strong></code></a>, the configuration dialog of the project component has the tabs <code><strong>Product DAP</strong></code> and <a href="#fs_installation_pcomp_category_dap"><code><strong>Category DAP</strong></code></a>.
 They are used to configure the reports in the ContentCreator, which require various information.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/config-product-dap.png" alt="config product dap">
-</div>
-<div class="title">Figure 7. Project component - Product DAP</div>
-</div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Collection</dt>
@@ -1174,12 +1135,6 @@ Otherwise, the entries from the <code><strong>General</strong></code> tab will b
 <div class="paragraph">
 <p>The tab <code><strong>Category DAP</strong></code> is equivalent to the tab <a href="#fs_installation_pcomp_product_dap"><code><strong>Product DAP</strong></code></a> and is used to configure the category report in the ContentCreator.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/config-category-dap.png" alt="config category dap">
-</div>
-<div class="title">Figure 8. Project component - Category DAP</div>
-</div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Catalog</dt>
@@ -1220,12 +1175,6 @@ In this case, all installation or configuration steps required for the web compo
 <strong>Only in this case</strong> it still needs to be installed on an active web server.
 Therefore, open the <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Web components</b></span></strong></code>.</p>
 </div>
-<div id="webcomponents" class="imageblock">
-<div class="content">
-<img src="_images/images/webcomponents.png" alt="webcomponents">
-</div>
-<div class="title">Figure 9. Web components in the Project properties</div>
-</div>
 <div class="paragraph">
 <p>Within the main panel several tabs are visible, each with a list of the existing web components.
 This list contains the following entries for the <code><strong>ContentCreator</strong></code>:</p>
@@ -1264,12 +1213,6 @@ Since the specification is always project-specific, there is no default configur
 <div class="paragraph">
 <p>Open the <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">ContentCreator</b></span></strong></code> area within the <code><strong>ServerManager</strong></code> and enter the URL of the Storefront in the <code>External preview URL</code> field.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/previewurl.png" alt="previewurl">
-</div>
-<div class="title">Figure 10. External Preview URL</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="install_workflow"><a class="anchor" href="#install_workflow"></a>3.4. Workflows</h3>
@@ -1288,12 +1231,6 @@ The web component of the <em>BasicWorkflows</em> is also required in the <code><
 <div class="paragraph">
 <p>The use of <em>BasicWorkflows</em> in ContentCreator also requires the selection of the provided <code>BasicWorkflows Status Provider</code> in the <code><strong><span class="menuseq"><b class="menu">Project properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">ContentCreator</b></span></strong></code> area within the <code><strong>ServerManager</strong></code>.
 This setting has already been made in the reference project <em>FirstSpirit Connect Reference Project</em>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/statusprovider.png" alt="statusprovider">
-</div>
-<div class="title">Figure 11. Element Status Provider</div>
 </div>
 <div class="paragraph">
 <p><span class="underline"><strong>Templates</strong></span></p>
@@ -1400,12 +1337,6 @@ The site store contains folders with the same names in which the corresponding p
 </td>
 </tr>
 </table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/project_set.png" alt="project set">
-</div>
-<div class="title">Figure 12. Project settings - Mapping for product pages</div>
 </div>
 </div>
 <div class="sect2">
@@ -1777,12 +1708,6 @@ They must therefore be included in the return value of the <a href="#create_conv
 </td>
 </tr>
 </table>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/datavisualizer.png" alt="datavisualizer">
-</div>
-<div class="title">Figure 13. Data Visualizer</div>
 </div>
 <div class="paragraph">
 <p><strong>Example</strong><br>

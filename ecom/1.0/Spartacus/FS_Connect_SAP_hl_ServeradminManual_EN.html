@@ -315,15 +315,6 @@ The integration thus creates an overall system that combines the functional stre
 Within this overall system FirstSpirit and the Commerce Cloud represent the backend, while the CaaS forms the middleware and the storefront is the front end.</p>
 </div>
 <div class="paragraph">
-<p>The following graphic shows the high-level architecture of this overall system:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/sp_architecture_simple.png" alt="sp architecture simple">
-</div>
-<div class="title">Figure 1. High-level architecture</div>
-</div>
-<div class="paragraph">
 <p>Within the newly created overall system, the Storefront continues to deliver the content, which it by default obtains from the Commerce Cloud.
 In addition, it queries the contents of the respective CaaS instance and links them with those of the Commerce Cloud.
 For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.</p>
@@ -331,7 +322,7 @@ For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.
 <div class="paragraph">
 <p>In contrast to the delivery of the contents, their creation and maintenance shifts from the Commerce Cloud to FirstSpirit.
 With the ContentCreator, FirstSpirit provides an intuitive WYSIWYG client for this purpose.
-The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows the preview and editing of external content in the ContentCreator (see figure <a href="#img_architecture2">Low-level architecture</a>).</p>
+The so-called <a href="https://docs.e-spirit.com/tpp/index.html.en"><em>Omnichannel Manager</em></a> (OCM) is integrated into this client, which allows the preview and editing of external content in the ContentCreator (see figure <a href="#img_architecture2">[img_architecture2]</a>).</p>
 </div>
 <div class="paragraph">
 <p>By embedding the Staged Storefront in the Omnichannel Manager, the editors are provided with a combined preview of the contents, which in this case originate from the preview CaaS and the Commerce Cloud.
@@ -350,12 +341,6 @@ In order to display content originating from the reference project, the Storefro
 <div class="paragraph">
 <p>The overall system of FirstSpirit, Spartacus and the Commerce Cloud thus has an architecture in which the editorial backend of FirstSpirit is clearly separated from the Storefront.
 A maintenance of FirstSpirit affects neither the Storefront nor the Commerce Cloud.</p>
-</div>
-<div id="img_architecture2" class="imageblock">
-<div class="content">
-<img src="_images/images/sp_architecture.png" alt="sp architecture">
-</div>
-<div class="title">Figure 2. Low-level architecture</div>
 </div>
 </div>
 </div>
@@ -390,12 +375,6 @@ The <em>CaaS Connect</em> and <em>Omnichannel Manager</em> modules as well as th
 </div>
 <div class="paragraph">
 <p>To install the modules, open <code><strong>ServerManager</strong></code> and select <code><strong><span class="menuseq"><b class="menu">Server properties</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Modules</b></span></strong></code>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/modules.png" alt="modules">
-</div>
-<div class="title">Figure 3. Server properties - Module installation</div>
 </div>
 <div class="paragraph">
 <p>The main panel displays a list of all modules installed on the FirstSpirit server.
@@ -466,12 +445,6 @@ to select the <code>spartacus-reference-project-&lt;VERSION&gt;.tar.gz</code> fi
 Then assign a project name and a description and confirm the import with <b class="button">Yes</b>.
 After the successful installation, the project is added to the list in the main panel.</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/importedproject.png" alt="importedproject">
-</div>
-<div class="title">Figure 4. Imported project in the ServerManager</div>
-</div>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -521,12 +494,6 @@ Choose the <code><strong>ContentCreator</strong></code> tab and add the followin
 </div>
 <div class="paragraph">
 <p>Select the web components one after the other using the <b class="button">Add</b> button and confirm each selection with <b class="button">OK</b>.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="_images/images/sp_webcomponents.png" alt="sp webcomponents">
-</div>
-<div class="title">Figure 5. Web components in the Server Properties</div>
 </div>
 <div class="paragraph">
 <p>Finally, select an <code>Active web server</code> in the tab using the selection box of the same name and start the installation by clicking the <b class="button">Install</b> button.

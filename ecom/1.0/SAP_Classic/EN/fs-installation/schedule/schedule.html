@@ -260,12 +260,6 @@ In this case, the synchronization of the data must be ensured on a project-speci
 <div class="paragraph">
 <p>The supplied reference project contains a schedule that incorporates the following actions:</p>
 </div>
-<div class="imageblock">
-<div class="content">
-<img src="../../../_images/schedule.png" alt="schedule">
-</div>
-<div class="title">Figure 1. Generation schedule actions</div>
-</div>
 <div class="paragraph">
 <p>The actions <code>Initialize {c}Generation</code>, <code>{c} Generate</code>, <code>{c} CleanUp</code>, and <code>Finalize {c} Generation</code> make up the <em>{c}</em> schedule.
 The actions described in the following sub-chapters are added to the schedule.
@@ -541,12 +535,6 @@ In the reference project, this is the Staged Content Catalog.</p>
 <p>In order for the second schedule to write into the online content catalog, the parameter <code>catalogVersion</code> must be added to the properties of the schedule action <code>SAPCC - Bulk Update</code> and configured with the value <code>Online</code>.
 If the value is missing or the configuration is incorrect, the bulk update terminates and an exception occurs.
 Otherwise, the log contains the information about which content catalog is used for deployment.</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../../_images/schedule-parameter.png" alt="schedule parameter">
-</div>
-<div class="title">Figure 2. Parameter catalogVersion</div>
 </div>
 <div class="admonitionblock important">
 <table>

@@ -309,15 +309,6 @@ The integration thus creates an overall system that combines the functional stre
 Within this overall system {fs} and the {ccloud} represent the backend, while the {c} forms the middleware and the storefront is the front end.</p>
 </div>
 <div class="paragraph">
-<p>The following graphic shows the high-level architecture of this overall system:</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../../_images/images/sp_architecture_simple.png" alt="sp architecture simple">
-</div>
-<div class="title">Figure 1. High-level architecture</div>
-</div>
-<div class="paragraph">
 <p>Within the newly created overall system, the Storefront continues to deliver the content, which it by default obtains from the {ccloud}.
 In addition, it queries the contents of the respective {c} instance and links them with those of the {ccloud}.
 For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.</p>
@@ -325,7 +316,7 @@ For this purpose it is extended by the <code>fs-spartacus-bridge</code> library.
 <div class="paragraph">
 <p>In contrast to the delivery of the contents, their creation and maintenance shifts from the {ccloud} to {fs}.
 With the {wc}, {fs} provides an intuitive WYSIWYG client for this purpose.
-The so-called {tppdocen}[<em>{ocm}</em>] (OCM) is integrated into this client, which allows the preview and editing of external content in the {wc} (see figure <a href="#img_architecture2">Low-level architecture</a>).</p>
+The so-called {tppdocen}[<em>{ocm}</em>] (OCM) is integrated into this client, which allows the preview and editing of external content in the {wc} (see figure <a href="#img_architecture2">[img_architecture2]</a>).</p>
 </div>
 <div class="paragraph">
 <p>By embedding the Staged Storefront in the {ocm}, the editors are provided with a combined preview of the contents, which in this case originate from the preview {c} and the {ccloud}.
@@ -344,12 +335,6 @@ In order to display content originating from the reference project, the Storefro
 <div class="paragraph">
 <p>The overall system of {fs},   and the {ccloud} thus has an architecture in which the editorial backend of {fs} is clearly separated from the Storefront.
 A maintenance of {fs} affects neither the Storefront nor the {ccloud}.</p>
-</div>
-<div id="img_architecture2" class="imageblock">
-<div class="content">
-<img src="../../_images/images/sp_architecture.png" alt="sp architecture">
-</div>
-<div class="title">Figure 2. Low-level architecture</div>
 </div>
 </div>
 </div>
