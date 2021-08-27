@@ -32,7 +32,7 @@
           <a class="navbar-link" href="#">E-Commerce</a>
           <div class="navbar-dropdown">
             <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spryker/index.html">Spryker</a>
-            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/FS_Connect_SAP_hl_Documentation_EN.html">Spartacus</a>
+            <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Spartacus/chapters/introduction.html">Spartacus</a>
             <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/Salesforce/index.html">Salesforce</a>
             <a class="navbar-item" href="https://e-spirit.github.io/Antora/ecom/1.0/SAP_Classic/firstspiritconnect-sap-documentation_EN.html">SAP Classic</a>
           </div>
@@ -236,8 +236,87 @@
 <h1 id="_firstspirit_connect_headless_for_sap_commerce_cloud" class="sect0"><a class="anchor" href="#_firstspirit_connect_headless_for_sap_commerce_cloud"></a>FirstSpirit Connect (Headless): For SAP Commerce Cloud</h1>
 <div class="paragraph">
 <p>e-Spirit AG
-2021-08-26
-Unresolved include directive in modules/Spartacus/pages/chapters/introduction.adoc - include::variables.adoc[]</p>
+2021-08-27
+:lang: de
+:espirit: e-Spirit AG
+:copyright: e-Spirit AG
+:creator: e-Spirit AG
+:publisher: e-Spirit AG
+:toclevels: 4
+:toc-placement: right
+:icons: font
+:sectanchors:
+:experimental:
+:title-logo: firstspirit-logo.png
+:sectnums:
+:source-highlighter: coderay
+:homepage: <a href="http://www.e-spirit.com" class="bare">http://www.e-spirit.com</a>
+:asterisk: &#42;
+:modulname: FirstSpirit Connect
+:espirit: e-Spirit AG
+:creator: e-Spirit AG
+:refproject: FirstSpirit Connect Reference Project
+:ccloud: Commerce Cloud
+:sp: Spartacus
+:c: CaaS
+:ccon: CaaS Connect
+:caas: Content as a Service
+:bwfs: BasicWorkflows
+:ocm: Omnichannel Manager
+:cxt: CXT ContentCreator Extension
+:filter: FirstSpiritPreviewFilter
+:ts: TranslationStudio
+:fs: FirstSpirit
+:manager: ServerManager
+:s_settings: Server-Eigenschaften
+:p_settings: Projekt-Eigenschaften
+:p_set: Projekteinstellungen
+:p_comp: Projekt-Komponente
+:w_comp: Web-Komponente
+:server: FirstSpirit-Server
+:jc: SiteArchitect
+:wc: ContentCreator
+:key: API Key
+:fsdp: FirstSpirit Driven Page
+:sdp: Shop Driven Page
+:sitestore: Strukturverwaltung
+:mediastore: Medienverwaltung
+:pagestore: Inhalteverwaltung
+:admindoc: FirstSpirit Dokumentation für Administratoren
+:tppsnapapi: TPP-SNAP-API
+:blank:
+:techsupport: <a href="https://help.e-spirit.com/">Technical Support</a>
+:linkfsadoc: <a href="https://docs.e-spirit.com/odfs/edocs/admi/index.html">FirstSpirit Dokumentation für Administratoren</a>
+:linkfsadocen: <a href="https://docs.e-spirit.com/odfs/edocs/admi/introduction/index.html">FirstSpirit Manual for Administrators</a>
+:spartacusdoc: FirstSpirit Connect (Headless) for Commerce Cloud-Dokumentation
+:spartacusdocen: FirstSpirit Connect (Headless) for Commerce Cloud documentation
+:storefront: link:https://sap.github.io/cloud-commerce-spartacus-storefront-docs/
+:sapblog: link:https://blogs.sap.com/2020/04/07/create-new-page-in-spartacus/
+:npmbrigde: link:https://www.npmjs.com/package/fs-spartacus-bridge
+:npmcomponents: link:https://www.npmjs.com/package/fs-spartacus-view-components
+:npmtppapi: link:https://www.npmjs.com/package/fs-tpp-api
+:npmspcommon: link:https://www.npmjs.com/package/fs-spartacus-common
+:angular: link:https://angular.io/cli/generate
+:bwfdoc: <a href="https://docs.e-spirit.com/module/basicworkflows/BasicWorkflows_Documentation_DE.html">BasicWorkflows-Dokumentation</a>
+:bwfdocen: <a href="https://docs.e-spirit.com/module/basicworkflows/BasicWorkflows_Documentation_EN.html">BasicWorkflows Documentation</a>
+:caasprodde: link:https://docs.e-spirit.com/module/caas/CaaS_Product_Documentation_DE.html
+:caasproden: link:https://docs.e-spirit.com/module/caas/CaaS_Product_Documentation_EN.html
+:ccondoc: <a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_DE.html">CaaS Connect-Dokumentation</a>
+:ccondocen: <a href="https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html">CaaS Connect Documentation</a>
+:tenantid: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_ServerAdministrator_DE.html#caas-service
+:tenantIden: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_ServerAdministrator_EN.html#caas-service
+:cprojectcomp: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_ServerAdministrator_DE.html#projectapp
+:cprojectcompen: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_ServerAdministrator_EN.html#projectapp
+:cconurlschema: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_DE.html#urlschema
+:cconurlschemaen: link:https://docs.e-spirit.com/module/caas-connect/CaaS_Connect_FSM_Documentation_EN.html#urlschema
+:tppdoc: link:https://docs.e-spirit.com/tpp/
+:tppdocen: link:https://docs.e-spirit.com/tpp/index.html.en
+:tsdocwhitepaper: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Whitepaper_DE.html
+:tsdocwhitepaperen: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Whitepaper_EN.html
+:tsdocinstall: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Installation_Manual_DE.html
+:tsdocinstallen: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Installation_Manual_EN.html
+:tsdoceditors: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Editor_Manual_DE.html
+:tsdoceditorsen: link:https://docs.e-spirit.com/cloud/translationstudio/TranslationStudio_Editor_Manual_EN.html</p>
 </div>
 <div class="sect1">
 <h2 id="_introduction"><a class="anchor" href="#_introduction"></a>1. Introduction</h2>
@@ -335,7 +414,7 @@ Even if the FirstSpirit server is maintained, this affects neither the Storefron
 </div>
 <div id="img_dataflow" class="imageblock">
 <div class="content">
-<img src="_images/images/dataflow.png" alt="dataflow">
+<img src="images/dataflow.png" alt="dataflow">
 </div>
 <div class="title">Figure 1. Data flow</div>
 </div>
