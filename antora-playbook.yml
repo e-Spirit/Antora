@@ -23,5 +23,4 @@ content:
 ui:
   bundle:
     url: https://github.com/e-Spirit/Antora-DefaultUI/raw/main/build/ui-bundle.zip
-#    url: https://github.com/e-Spirit/Antora-UI/raw/main/build/ui-bundle.zip
     snapshot: true
